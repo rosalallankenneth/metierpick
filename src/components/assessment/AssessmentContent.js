@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import TestDescription from "./TestDescription";
-import QuestionnaireForm from "./QuestionnaireForm";
+import QuestionnaireForm from "./Questionnaire";
 
 const AssessmentContent = () => {
   const [isReady, setIsReady] = useState(false);

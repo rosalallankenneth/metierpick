@@ -11,12 +11,12 @@ import ResponsiveDrawer from "./components/global/ResponsiveDrawer";
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#29066B"
-      //main: "#142459"
+      //main: "#29066B"
+      main: "#176BA0"
     },
     secondary: {
-      main: "#7D3AC1"
-      //main: "#176BA0"
+      //main: "#7D3AC1"
+      main: "#19AADE"
     }
   }
 });
