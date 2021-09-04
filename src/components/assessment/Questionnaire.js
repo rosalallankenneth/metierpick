@@ -11,7 +11,7 @@ import QuestionnaireForm from "./QuestionnaireForm";
 
 //const Button = styled(MuiButton)(spacing);
 
-const Questionnaire = props => {
+const Questionnaire = () => {
   //const { setIsReady } = props;
   //const clickCancel = () => setIsReady(false);
 

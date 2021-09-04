@@ -1,15 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
 
 import TestDescription from "./TestDescription";
 import QuestionnaireForm from "./Questionnaire";
 
-const AssessmentContent = () => {
-  const [isReady, setIsReady] = useState(false);
+// redux
+import { useSelector } from "react-redux";
 
-  if (isReady) {
-    return <QuestionnaireForm setIsReady={setIsReady} />;
+const AssessmentContent = () => {
+  const isReadyForAssessment = useSelector(state => state.assessment.isReady);
+
+  if (isReadyForAssessment) {
+    return <QuestionnaireForm />;
   } else {
-    return <TestDescription setIsReady={setIsReady} />;
+    return <TestDescription />;
   }
 };
 
