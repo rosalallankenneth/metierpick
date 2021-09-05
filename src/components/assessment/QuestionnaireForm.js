@@ -112,7 +112,7 @@ const json = {
           name: "email",
           isRequired: true,
           title:
-            "Thank you for taking the assessment. Please enter your email address below to complete the assessment, then press the 'Submit' button."
+            "Thank you for taking the assessment. Please enter your email address below to complete the assessment."
         }
       ]
     }
