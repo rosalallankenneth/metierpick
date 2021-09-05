@@ -13,7 +13,7 @@ Survey.completeText = "Thank you for completing the assessment!";
 const json = {
   pages: [
     {
-      title: "Multiple Intelligence Test",
+      title: "Multiple Intelligence Assessment",
       questions: [
         {
           type: "rating",
@@ -116,7 +116,8 @@ const json = {
         }
       ]
     }
-  ]
+  ],
+  completedHtml: "<p><h4>Thank you for completing the assessment!</h4></p>"
 };
 
 const survey = new Survey.Model(json);

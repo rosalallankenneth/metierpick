@@ -13,12 +13,14 @@ import HomeIcon from "@material-ui/icons/Home";
 import AssessmentIcon from "@material-ui/icons/Assessment";
 import HistoryIcon from "@material-ui/icons/History";
 import AccountIcon from "@material-ui/icons/AccountBox";
+import AboutIcon from "@material-ui/icons/Info";
 import LogoutIcon from "@material-ui/icons/ExitToApp";
+import { Typography } from "@material-ui/core";
 
 const useStyles = makeStyles(theme => ({
   banner: {
     fontWeight: "700",
-    fontSize: "30px"
+    fontSize: "20px"
   }
 }));
 
@@ -28,8 +30,13 @@ export default function MenuDrawer() {
   return (
     <div>
       <List>
-        <ListItem text>
-          <ListItemText primary="Student Career" className={classes.banner} />
+        <ListItem>
+          {
+            //<ListItemText primary="Student Career" className={classes.banner} />
+          }
+          <Typography className={classes.banner} align="center" color="primary">
+            BANNER
+          </Typography>
         </ListItem>
       </List>
       <Divider />
@@ -60,6 +67,13 @@ export default function MenuDrawer() {
             <AccountIcon />
           </ListItemIcon>
           <ListItemText primary="Account" />
+        </ListItem>
+
+        <ListItem button>
+          <ListItemIcon>
+            <AboutIcon />
+          </ListItemIcon>
+          <ListItemText primary="About" />
         </ListItem>
 
         <ListItem button>
