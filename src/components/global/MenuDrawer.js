@@ -6,7 +6,7 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
-import { makeStyles } from "@material-ui/core/styles";
+//import { makeStyles } from "@material-ui/core/styles";
 
 // material ui icons
 import HomeIcon from "@material-ui/icons/Home";
@@ -15,28 +15,22 @@ import HistoryIcon from "@material-ui/icons/History";
 import AccountIcon from "@material-ui/icons/AccountBox";
 import AboutIcon from "@material-ui/icons/Info";
 import LogoutIcon from "@material-ui/icons/ExitToApp";
-import { Typography } from "@material-ui/core";
 
-const useStyles = makeStyles(theme => ({
-  banner: {
-    fontWeight: "700",
-    fontSize: "20px"
-  }
-}));
+import MetierpickLogo from "../../assets/logo-v1.png";
+
+// const useStyles = makeStyles(theme => ({
+//   banner: {
+//     fontWeight: "700",
+//     fontSize: "20px"
+//   }
+// }));
 
 export default function MenuDrawer() {
-  const classes = useStyles();
-
   return (
     <div>
       <List>
         <ListItem>
-          {
-            //<ListItemText primary="Student Career" className={classes.banner} />
-          }
-          <Typography className={classes.banner} align="center" color="primary">
-            BANNER
-          </Typography>
+          <img src={MetierpickLogo} alt="metierpick-logo" />
         </ListItem>
       </List>
       <Divider />

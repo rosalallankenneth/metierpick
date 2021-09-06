@@ -13,7 +13,6 @@ Survey.completeText = "Thank you for completing the assessment!";
 const json = {
   pages: [
     {
-      title: "Multiple Intelligence Assessment",
       questions: [
         {
           type: "rating",
