@@ -1,6 +1,6 @@
 import React from "react";
 
-import TestDescription from "./TestDescription";
+import AssessmentDescription from "./AssessmentDescription";
 import QuestionnaireForm from "./Questionnaire";
 
 // redux
@@ -12,7 +12,7 @@ const AssessmentContent = () => {
   if (isReadyForAssessment) {
     return <QuestionnaireForm />;
   } else {
-    return <TestDescription />;
+    return <AssessmentDescription />;
   }
 };
 
