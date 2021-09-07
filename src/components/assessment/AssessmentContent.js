@@ -1,7 +1,7 @@
 import React from "react";
 
 import AssessmentDescription from "./AssessmentDescription";
-import QuestionnaireForm from "./Questionnaire";
+import Questionnaire from "./Questionnaire";
 
 // redux
 import { useSelector } from "react-redux";
@@ -10,7 +10,7 @@ const AssessmentContent = () => {
   const isReadyForAssessment = useSelector(state => state.assessment.isReady);
 
   if (isReadyForAssessment) {
-    return <QuestionnaireForm />;
+    return <Questionnaire />;
   } else {
     return <AssessmentDescription />;
   }

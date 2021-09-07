@@ -8,11 +8,16 @@ import { Provider } from "react-redux";
 // reducer
 import { rootReducer } from "./redux/reducers/combineReducer";
 
+// react router imports
+import { BrowserRouter as Router } from "react-router-dom";
+
 const store = createStore(rootReducer);
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <Router>
+      <App />
+    </Router>
   </Provider>,
   document.getElementById("root")
 );

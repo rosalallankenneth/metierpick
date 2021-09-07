@@ -16,7 +16,12 @@ import AccountIcon from "@material-ui/icons/AccountBox";
 import AboutIcon from "@material-ui/icons/Info";
 import LogoutIcon from "@material-ui/icons/ExitToApp";
 
+// assets
 import MetierpickLogo from "../../assets/logo-v1.png";
+
+// react router imports
+import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 // const useStyles = makeStyles(theme => ({
 //   banner: {
@@ -26,6 +31,8 @@ import MetierpickLogo from "../../assets/logo-v1.png";
 // }));
 
 export default function MenuDrawer() {
+  const currentRoute = useLocation().pathname;
+
   return (
     <div>
       <List>
@@ -35,35 +42,60 @@ export default function MenuDrawer() {
       </List>
       <Divider />
       <List>
-        <ListItem button>
+        <ListItem
+          button
+          component={Link}
+          to="/home"
+          selected={currentRoute === "/home" ? true : false}
+        >
           <ListItemIcon>
             <HomeIcon />
           </ListItemIcon>
           <ListItemText primary="Home" />
         </ListItem>
 
-        <ListItem button selected>
+        <ListItem
+          button
+          component={Link}
+          to="/"
+          selected={currentRoute === "/" ? true : false}
+        >
           <ListItemIcon>
             <AssessmentIcon />
           </ListItemIcon>
           <ListItemText primary="Take Assessment" />
         </ListItem>
 
-        <ListItem button>
+        <ListItem
+          button
+          component={Link}
+          to="/assessment-history"
+          selected={currentRoute === "/assessment-history" ? true : false}
+        >
           <ListItemIcon>
             <HistoryIcon />
           </ListItemIcon>
           <ListItemText primary="Assessment History" />
         </ListItem>
 
-        <ListItem button>
+        <ListItem
+          button
+          component={Link}
+          to="/account-settings"
+          selected={currentRoute === "/account-settings" ? true : false}
+        >
           <ListItemIcon>
             <AccountIcon />
           </ListItemIcon>
-          <ListItemText primary="Account" />
+          <ListItemText primary="Account Settings" />
         </ListItem>
 
-        <ListItem button>
+        <ListItem
+          button
+          component={Link}
+          to="/about"
+          selected={currentRoute === "/about" ? true : false}
+        >
           <ListItemIcon>
             <AboutIcon />
           </ListItemIcon>

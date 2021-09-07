@@ -1,7 +1,7 @@
 import React from "react";
 
 // material ui components
-import { Paper, Box, Typography } from "@material-ui/core";
+import { Paper, Box } from "@material-ui/core";
 //import MuiButton from "@material-ui/core/Button";
 //import Box from "@material-ui/core/Box";
 //import { styled } from "@material-ui/core/styles";
@@ -9,6 +9,7 @@ import { Paper, Box, Typography } from "@material-ui/core";
 
 // custom components
 import QuestionnaireForm from "./QuestionnaireForm";
+import ContentTitleBar from "../global/ContentTitleBar";
 
 //const Button = styled(MuiButton)(spacing);
 
@@ -19,13 +20,7 @@ const Questionnaire = () => {
   return (
     <>
       <Box mb={3}>
-        <Paper>
-          <Box p={3}>
-            <Typography variant="h5">
-              Multiple Intelligence Assessment
-            </Typography>
-          </Box>
-        </Paper>
+        <ContentTitleBar title="Multiple Intelligence Assessment" />
       </Box>
       <Paper>
         <Box py={2}>

@@ -1,7 +1,7 @@
 import React from "react";
 
 // material ui components
-import { Typography, Box, Paper } from "@material-ui/core";
+import { Box } from "@material-ui/core";
 
 // redux imports
 //import { useSelector } from "react-redux";
@@ -9,6 +9,7 @@ import { Typography, Box, Paper } from "@material-ui/core";
 // custom components
 import AssessmentInstructions from "./AssessmentInstructions";
 import AccordionDescription from "./AccordionDescription";
+import ContentTitleBar from "../global/ContentTitleBar";
 
 const TestDescription = () => {
   // retrieve redux state
@@ -16,11 +17,7 @@ const TestDescription = () => {
 
   return (
     <>
-      <Paper>
-        <Box p={3}>
-          <Typography variant="h4">Multiple Intelligence Assessment</Typography>
-        </Box>
-      </Paper>
+      <ContentTitleBar title="Multiple Intelligence Assessment" />
       <Box mt={3}>
         <AssessmentInstructions />
       </Box>

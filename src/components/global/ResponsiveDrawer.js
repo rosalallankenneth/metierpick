@@ -4,12 +4,20 @@ import React from "react";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Drawer from "@material-ui/core/Drawer";
 import Hidden from "@material-ui/core/Hidden";
+import Box from "@material-ui/core/Box";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 
 // custome components
 import MenuDrawer from "./MenuDrawer";
 import NavBar from "./NavBar";
-import ActiveContent from "./ActiveContent";
+import HomeContent from "../home/HomeContent";
+import AssessmentContent from "../assessment/AssessmentContent";
+import AssessmentHistoryContent from "../history/AssessmentHistoryContent";
+import AccountSettingsContent from "../account/AccountSettingsContent";
+import AboutContent from "../about/AboutContent";
+
+// react router imports
+import { Route, Switch } from "react-router-dom";
 
 const drawerWidth = 240;
 
@@ -87,7 +95,25 @@ function ResponsiveDrawer(props) {
 
       <main className={classes.content}>
         <div className={classes.toolbar} />
-        <ActiveContent />
+        <Box p={1}>
+          <Switch>
+            <Route exact path="/home">
+              <HomeContent />
+            </Route>
+            <Route exact path="/assessment-history">
+              <AssessmentHistoryContent />
+            </Route>
+            <Route exact path="/account-settings">
+              <AccountSettingsContent />
+            </Route>
+            <Route exact path="/about">
+              <AboutContent />
+            </Route>
+            <Route path="/">
+              <AssessmentContent />
+            </Route>
+          </Switch>
+        </Box>
       </main>
     </div>
   );
