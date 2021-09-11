@@ -7,7 +7,11 @@ import { useState } from "react";
 import { Typography, Box } from "@material-ui/core";
 
 // assessment items
-import { linguisticItems } from "../../data/assessmentItems";
+import {
+  linguisticItems,
+  logicalMathItems,
+  spatialItems
+} from "../../data/assessmentItems";
 
 // change color theme for forms
 let defaultThemeColors = Survey.StylesManager.ThemeColors["modern"];
@@ -20,6 +24,8 @@ Survey.completeText = "Thank you for completing the assessment!";
 const json = {
   pages: [
     linguisticItems,
+    logicalMathItems,
+    spatialItems,
     {
       questions: [
         {

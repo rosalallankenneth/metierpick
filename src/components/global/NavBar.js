@@ -24,7 +24,7 @@ const useStyles = makeStyles(theme => ({
     }
   },
   title: {
-    margin: "0 auto"
+    margin: "0"
   }
 }));
 

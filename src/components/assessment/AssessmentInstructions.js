@@ -79,6 +79,13 @@ const AssessmentInstructions = () => {
               their email for contacting purposes.
             </Typography>
           </ListItem>
+          <ListItem>
+            <Typography>
+              Note: You don't have to study anything for this assessment. There
+              is no right or wrong answer. Just be yourself and answer the items
+              honestly to get accurate results of your insights.
+            </Typography>
+          </ListItem>
         </List>
         <Box mt={1}>
           <Button

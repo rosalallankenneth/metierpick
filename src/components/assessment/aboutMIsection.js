@@ -26,52 +26,52 @@ const aboutMIsection = () => {
         <List>
           <ListItem>
             <Typography>
-              1. Linguistic – the ability to use words effectively, both orally
-              and in writing.
+              1. <b>Linguistic</b> – the ability to use words effectively, both
+              orally and in writing.
             </Typography>
           </ListItem>
           <ListItem>
             <Typography>
-              2. Logical-Mathematical – the ability of reasoning and to use
-              numbers well.
+              2. <b>Logical-Mathematical</b> – the ability of reasoning and to
+              use numbers well.
             </Typography>
           </ListItem>
           <ListItem>
             <Typography>
-              3. Spatial - the ability to detect the visual-spatial world and
-              convert those perceptions.
+              3. <b>Spatial</b> - the ability to detect the visual-spatial world
+              and convert those perceptions.
             </Typography>
           </ListItem>
           <ListItem>
             <Typography>
-              4. Bodily-Kinesthetic – the ability of expressing thoughts and
-              emotions with one's entire body, as well as the ability to make or
-              alter things with one's hands.
+              4. <b>Bodily-Kinesthetic</b> – the ability of expressing thoughts
+              and emotions with one's entire body, as well as the ability to
+              make or alter things with one's hands.
             </Typography>
           </ListItem>
           <ListItem>
             <Typography>
-              5. Musical – the ability of listening to, distinguishing between,
-              changing, and expressing musical forms.
+              5. <b>Musical</b> – the ability of listening to, distinguishing
+              between, changing, and expressing musical forms.
             </Typography>
           </ListItem>
           <ListItem>
             <Typography>
-              6. Interpersonal – the ability to detect and distinguish
+              6. <b>Interpersonal</b> – the ability to detect and distinguish
               differences in other people's emotions, intents, motives, and
               emotions.
             </Typography>
           </ListItem>
           <ListItem>
             <Typography>
-              7. Intrapersonal – self-awareness and the ability to behave
+              7. <b>Intrapersonal</b> – self-awareness and the ability to behave
               adaptively based on that awareness.
             </Typography>
           </ListItem>
           <ListItem>
             <Typography>
-              8. Naturalist – the ability in recognizing and classifying the
-              many species—flora and fauna—that make up an individual's
+              8. <b>Naturalist</b> – the ability in recognizing and classifying
+              the many species—flora and fauna—that make up an individual's
               surroundings.
             </Typography>
           </ListItem>

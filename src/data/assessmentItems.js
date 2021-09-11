@@ -178,7 +178,7 @@ const logicalMathItems = {
       type: itemType,
       name: "B10",
       title:
-        " I feel more comfortable when something has been measured, categorized, analyzed, or quantifi ed in some way.",
+        "I feel more comfortable when something has been measured, categorized, analyzed, or quantified in some way.",
       isRequired: true,
       mininumRateDescription: minRate,
       maximumRateDescription: maxRate
@@ -232,7 +232,7 @@ const spatialItems = {
     {
       type: itemType,
       name: "C6",
-      title: "I can generally fi nd my way around unfamiliar territory.",
+      title: "I can generally find my way around unfamiliar territory.",
       isRequired: true,
       mininumRateDescription: minRate,
       maximumRateDescription: maxRate
