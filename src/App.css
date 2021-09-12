@@ -2,4 +2,12 @@
 
 .sv-title.sv-question__title {
   font-size: 18px;
+  background: none;
+}
+.sv-title.sv-question__title.sv-question__title--answer {
+  background-color: #d2ffd8;
+}
+.test-colors {
+  color: #5bba6f;
+  background-color: rgb(38, 40, 48);
 }

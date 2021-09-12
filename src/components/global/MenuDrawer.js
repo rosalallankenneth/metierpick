@@ -17,7 +17,7 @@ import AboutIcon from "@material-ui/icons/Info";
 import LogoutIcon from "@material-ui/icons/ExitToApp";
 
 // assets
-import MetierpickLogo from "../../assets/logo-v1.png";
+import MetierpickLogo from "../../assets/logo-v2.png";
 
 // react router imports
 import { Link } from "react-router-dom";

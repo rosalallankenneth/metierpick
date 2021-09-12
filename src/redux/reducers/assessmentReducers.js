@@ -1,17 +1,14 @@
 // starting state values
 const initialState = {
-  isReady: false
+  assessmentResults: null
 };
 
 // redux reducer for assessment form
 export const assessmentReducer = (state = initialState, action) => {
   switch (action.type) {
-    case "START_ASSESSMENT":
-      // change ready state to true
-      return { ...state, isReady: true };
-    case "STOP_ASSESSMENT":
-      // change ready state to false
-      return { ...state, isReady: false };
+    case "GET_RESULTS":
+      // return results after assessment
+      return { ...state, assessmentResults: action.payload.results };
     default:
       return state; // return old state
   }

@@ -11,10 +11,12 @@ import { makeStyles, useTheme } from "@material-ui/core/styles";
 import MenuDrawer from "./MenuDrawer";
 import NavBar from "./NavBar";
 import HomeContent from "../home/HomeContent";
-import AssessmentContent from "../assessment/AssessmentContent";
+import AssessmentDescription from "../assessment/AssessmentDescription";
+import Questionnaire from "../assessment/Questionnaire";
 import AssessmentHistoryContent from "../history/AssessmentHistoryContent";
 import AccountSettingsContent from "../account/AccountSettingsContent";
 import AboutContent from "../about/AboutContent";
+import ResultsPage from "../assessment/ResultsPage";
 
 // react router imports
 import { Route, Switch } from "react-router-dom";
@@ -109,8 +111,14 @@ function ResponsiveDrawer(props) {
             <Route exact path="/about">
               <AboutContent />
             </Route>
+            <Route exact path="/assessment-results">
+              <ResultsPage />
+            </Route>
+            <Route exact path="/take-assessment">
+              <Questionnaire />
+            </Route>
             <Route path="/">
-              <AssessmentContent />
+              <AssessmentDescription />
             </Route>
           </Switch>
         </Box>

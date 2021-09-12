@@ -1,10 +1,11 @@
 import React from "react";
 import * as Survey from "survey-react";
 import "survey-react/modern.css";
-import { useState } from "react";
+import { useHistory } from "react-router-dom";
+import { useDispatch } from "react-redux";
 
-// material ui imports
-import { Typography, Box } from "@material-ui/core";
+// redux actions
+import { getResults } from "../../redux/actions/assessmentActions";
 
 // assessment items
 import {
@@ -15,7 +16,7 @@ import {
 
 // change color theme for forms
 let defaultThemeColors = Survey.StylesManager.ThemeColors["modern"];
-defaultThemeColors["$main-color"] = "#176BA0";
+defaultThemeColors["$main-color"] = "#3FA34D";
 Survey.StylesManager.applyTheme("modern");
 
 // setters for form content
@@ -37,30 +38,34 @@ const json = {
         }
       ]
     }
-  ],
-  completedHtml: "<p><h4>Thank you for completing the assessment!</h4></p>"
+  ]
 };
 
 // create questionnaire components
 const survey = new Survey.Model(json);
 
 const QuestionnaireForm = () => {
-  const [resultsPage, setResultsPage] = useState(null);
+  survey.clear();
+
+  const history = useHistory();
+  const dispatch = useDispatch();
+
+  const handleStoreResults = data => {
+    dispatch(getResults(data));
+  };
+
+  const handleGoToResults = () => {
+    history.push("/assessment-results");
+  };
 
   survey.onComplete.add(function(sender) {
-    setResultsPage(
-      <Box px={3}>
-        <Typography variant="h6">Results Data</Typography>
-        <Box pt={2}>
-          <Typography>{JSON.stringify(sender.data)}</Typography>
-        </Box>
-      </Box>
-    );
+    handleStoreResults(sender.data);
+    handleGoToResults();
   });
+
   return (
     <>
       <Survey.Survey model={survey} showCompletedPage={false} />
-      {resultsPage}
     </>
   );
 };

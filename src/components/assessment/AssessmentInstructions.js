@@ -1,8 +1,5 @@
 import React from "react";
-
-// redux imports
-import { useDispatch } from "react-redux";
-import { startAssessment } from "../../redux/actions/assessmentActions";
+import { useHistory } from "react-router-dom";
 
 // material ui components
 import {
@@ -15,10 +12,9 @@ import {
 } from "@material-ui/core";
 
 const AssessmentInstructions = () => {
-  const dispatch = useDispatch();
-
+  const history = useHistory();
   const handleTakeAssessment = () => {
-    dispatch(startAssessment());
+    history.push("/take-assessment");
   };
 
   return (
