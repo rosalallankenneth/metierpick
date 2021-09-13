@@ -47,19 +47,29 @@ const AssessmentInstructions = () => {
             <Box pl={5}>
               <List>
                 <ListItem>
-                  <Typography>1 – Not Applicable</Typography>
+                  <Typography>
+                    <b>1</b> – Not Applicable
+                  </Typography>
                 </ListItem>
                 <ListItem>
-                  <Typography>2 – Slightly Applicable</Typography>
+                  <Typography>
+                    <b>2</b> – Slightly Applicable
+                  </Typography>
                 </ListItem>
                 <ListItem>
-                  <Typography>3 – Somewhat Applicable</Typography>
+                  <Typography>
+                    <b>3</b> – Somewhat Applicable
+                  </Typography>
                 </ListItem>
                 <ListItem>
-                  <Typography>4 – Applicable</Typography>
+                  <Typography>
+                    <b>4</b> – Applicable
+                  </Typography>
                 </ListItem>
                 <ListItem>
-                  <Typography>5 – Very Applicable</Typography>
+                  <Typography>
+                    <b>5</b> – Very Applicable
+                  </Typography>
                 </ListItem>
               </List>
             </Box>

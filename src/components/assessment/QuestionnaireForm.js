@@ -41,11 +41,12 @@ const json = {
   ]
 };
 
-// create questionnaire components
-const survey = new Survey.Model(json);
-
 const QuestionnaireForm = () => {
+  // create questionnaire components
+  const survey = new Survey.Model(json);
+
   survey.clear();
+  survey.render();
 
   const history = useHistory();
   const dispatch = useDispatch();
