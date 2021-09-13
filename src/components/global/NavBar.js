@@ -44,7 +44,7 @@ export default function NavBar({ handleDrawerToggle }) {
           <MenuIcon />
         </IconButton>
         <Typography variant="h6" noWrap className={classes.title}>
-          Decision Support System
+          Career DSS
         </Typography>
       </Toolbar>
     </AppBar>

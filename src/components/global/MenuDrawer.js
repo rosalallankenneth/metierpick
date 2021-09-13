@@ -30,8 +30,9 @@ import { useLocation } from "react-router-dom";
 //   }
 // }));
 
-export default function MenuDrawer() {
+export default function MenuDrawer(props) {
   const currentRoute = useLocation().pathname;
+  const { handleDrawerToggle } = props;
 
   return (
     <div>
@@ -47,6 +48,7 @@ export default function MenuDrawer() {
           component={Link}
           to="/home"
           selected={currentRoute === "/home" ? true : false}
+          onClick={handleDrawerToggle}
         >
           <ListItemIcon>
             <HomeIcon />
@@ -59,6 +61,7 @@ export default function MenuDrawer() {
           component={Link}
           to="/"
           selected={currentRoute === "/" ? true : false}
+          onClick={handleDrawerToggle}
         >
           <ListItemIcon>
             <AssessmentIcon />
@@ -71,6 +74,7 @@ export default function MenuDrawer() {
           component={Link}
           to="/assessment-history"
           selected={currentRoute === "/assessment-history" ? true : false}
+          onClick={handleDrawerToggle}
         >
           <ListItemIcon>
             <HistoryIcon />
@@ -83,6 +87,7 @@ export default function MenuDrawer() {
           component={Link}
           to="/account-settings"
           selected={currentRoute === "/account-settings" ? true : false}
+          onClick={handleDrawerToggle}
         >
           <ListItemIcon>
             <AccountIcon />
@@ -95,6 +100,7 @@ export default function MenuDrawer() {
           component={Link}
           to="/about"
           selected={currentRoute === "/about" ? true : false}
+          onClick={handleDrawerToggle}
         >
           <ListItemIcon>
             <AboutIcon />
@@ -102,7 +108,7 @@ export default function MenuDrawer() {
           <ListItemText primary="About" />
         </ListItem>
 
-        <ListItem button>
+        <ListItem button onClick={handleDrawerToggle}>
           <ListItemIcon>
             <LogoutIcon />
           </ListItemIcon>

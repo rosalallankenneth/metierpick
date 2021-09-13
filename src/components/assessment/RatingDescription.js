@@ -19,7 +19,6 @@ const useStyles = makeStyles(theme => ({
 
 const RatingDescription = props => {
   const { name, rating } = props;
-  //const name = rate[0].replace("_", "-");
 
   const classes = useStyles();
 

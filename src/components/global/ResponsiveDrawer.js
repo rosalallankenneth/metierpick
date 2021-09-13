@@ -78,7 +78,7 @@ function ResponsiveDrawer(props) {
               keepMounted: true // Better open performance on mobile.
             }}
           >
-            <MenuDrawer />
+            <MenuDrawer handleDrawerToggle={handleDrawerToggle} />
           </Drawer>
         </Hidden>
 

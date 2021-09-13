@@ -7,7 +7,7 @@ import { Typography, Box, Paper } from "@material-ui/core";
 
 // custom components
 import ContentTitleBar from "../global/ContentTitleBar";
-import RatingDescription from "./RatingDescription";
+import TopRatingSection from "./TopRatingSection";
 
 // utilities
 import { calcuRatings } from "../../utils/calcuRatings";
@@ -24,12 +24,15 @@ const ResultsPage = () => {
 
   // calculate ratings and store
   const ratings = calcuRatings(resultsData);
+  // filter ratings based on the top (at least) 3 highest ratings
+  const topRatings = ratings.filter(rate => rate[1] >= ratings[2][1]);
 
   return (
     <>
       <Box mb={3}>
         <ContentTitleBar title="Assessment Results" />
       </Box>
+
       <Box mb={3}>
         <Paper>
           <Box p={3}>
@@ -37,17 +40,20 @@ const ResultsPage = () => {
           </Box>
         </Paper>
       </Box>
+
+      <Box mb={3}>
+        <Paper>
+          <Box p={3}>
+            <TopRatingSection ratings={topRatings} />
+          </Box>
+        </Paper>
+      </Box>
+
       <Paper>
         <Box p={3}>
-          <Box>
-            <Typography variant="h6">Your Top-Rated Intelligences</Typography>
-            <Box mt={2}>
-              {// map through the rating values
-              ratings.map(rate => {
-                return <RatingDescription name={rate[0]} rating={rate[1]} />;
-              })}
-            </Box>
-          </Box>
+          <Typography variant="h6">
+            Your Rating on other Intelligences
+          </Typography>
         </Box>
       </Paper>
     </>
