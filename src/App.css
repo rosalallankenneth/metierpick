@@ -2,11 +2,18 @@
 
 .sv-title.sv-question__title {
   font-size: 18px;
+  font-weight: 500;
 }
 .sv-title.sv-question__title.sv-question__title--answer {
   background-color: #d2ffd8;
 }
+
+.leaflet-container {
+  height: 300px;
+}
+
 .test-colors {
   color: #5bba6f;
   background-color: rgb(38, 40, 48);
+  background-position: center;
 }

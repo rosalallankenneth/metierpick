@@ -4,9 +4,11 @@ import React from "react";
 import AppBar from "@material-ui/core/AppBar";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
+import AccountIcon from "@material-ui/icons/AccountCircle";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
+import { ButtonBase } from "@material-ui/core";
 
 const drawerWidth = 240;
 
@@ -25,6 +27,11 @@ const useStyles = makeStyles(theme => ({
   },
   title: {
     margin: "0"
+  },
+  accountIcon: {
+    marginLeft: "auto",
+    marginRight: 0,
+    borderRadius: "50%"
   }
 }));
 
@@ -46,6 +53,9 @@ export default function NavBar({ handleDrawerToggle }) {
         <Typography variant="h6" noWrap className={classes.title}>
           Career DSS
         </Typography>
+        <ButtonBase onClick={() => {}} className={classes.accountIcon}>
+          <AccountIcon />
+        </ButtonBase>
       </Toolbar>
     </AppBar>
   );
