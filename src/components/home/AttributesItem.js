@@ -3,7 +3,6 @@ import { Grid, Typography, Box, ButtonBase } from "@material-ui/core";
 
 const AttributesItem = props => {
   const { attr, classes } = props;
-
   const handleAttrClick = () => {};
 
   return (

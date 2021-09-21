@@ -23,22 +23,7 @@ Survey.StylesManager.applyTheme("modern");
 Survey.completeText = "Thank you for completing the assessment!";
 
 const json = {
-  pages: [
-    linguisticItems,
-    logicalMathItems,
-    spatialItems,
-    {
-      questions: [
-        {
-          type: "text",
-          name: "email",
-          isRequired: true,
-          title:
-            "Thank you for taking the assessment. Please enter your email address below to complete the assessment."
-        }
-      ]
-    }
-  ]
+  pages: [linguisticItems, logicalMathItems, spatialItems]
 };
 
 const QuestionnaireForm = () => {

@@ -8,6 +8,7 @@ import { Typography, Box, Paper } from "@material-ui/core";
 // custom components
 import ContentTitleBar from "../global/ContentTitleBar";
 import TopRatingSection from "./TopRatingSection";
+import UnderConstruction from "../global/UnderConstruction";
 
 // utilities
 import { calcuRatings } from "../../utils/calcuRatings";
@@ -37,6 +38,7 @@ const ResultsPage = () => {
         <Paper>
           <Box p={3}>
             <Typography variant="h6">Career Path Suggestions</Typography>
+            <UnderConstruction />
           </Box>
         </Paper>
       </Box>
@@ -54,6 +56,7 @@ const ResultsPage = () => {
           <Typography variant="h6">
             Your Rating on other Intelligences
           </Typography>
+          <UnderConstruction />
         </Box>
       </Paper>
     </>
