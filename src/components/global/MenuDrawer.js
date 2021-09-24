@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 // material ui components
 import Divider from "@material-ui/core/Divider";
@@ -6,7 +6,6 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
-//import { makeStyles } from "@material-ui/core/styles";
 
 // material ui icons
 import HomeIcon from "@material-ui/icons/Home";
@@ -22,22 +21,45 @@ import MetierpickLogo from "../../assets/logo-v2.png";
 // react router imports
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
-// const useStyles = makeStyles(theme => ({
-//   banner: {
-//     fontWeight: "700",
-//     fontSize: "20px"
-//   }
-// }));
+// custom components
+import AlertError from "../global/AlertError";
 
 export default function MenuDrawer(props) {
   const currentRoute = useLocation().pathname;
-  const { handleDrawerToggle } = props;
+  const { handleDrawerToggle, logout } = props;
+
+  const [isError, setIsError] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
+  const history = useHistory();
+
+  const handleLogout = async () => {
+    typeof handleDrawerToggle === "function" && handleDrawerToggle();
+    try {
+      setIsError(false);
+      await logout();
+      history.push("/login");
+    } catch {
+      setErrorMessage(
+        "Failed to logout. Please try again or refresh the page."
+      );
+      setIsError(true);
+    }
+  };
+
+  const handleCloseAlertError = () => {
+    setIsError(false);
+    setErrorMessage("");
+  };
 
   return (
     <div>
+      {isError && (
+        <AlertError message={errorMessage} onClose={handleCloseAlertError} />
+      )}
       <List>
-        <ListItem>
+        <ListItem component={Link} to="/" onClick={handleDrawerToggle}>
           <img src={MetierpickLogo} alt="metierpick-logo" />
         </ListItem>
       </List>
@@ -46,8 +68,8 @@ export default function MenuDrawer(props) {
         <ListItem
           button
           component={Link}
-          to="/home"
-          selected={currentRoute === "/home" ? true : false}
+          to="/"
+          selected={currentRoute === "/" ? true : false}
           onClick={handleDrawerToggle}
         >
           <ListItemIcon>
@@ -59,8 +81,8 @@ export default function MenuDrawer(props) {
         <ListItem
           button
           component={Link}
-          to="/"
-          selected={currentRoute === "/" ? true : false}
+          to="/take-assessment"
+          selected={currentRoute === "/take-assessment" ? true : false}
           onClick={handleDrawerToggle}
         >
           <ListItemIcon>
@@ -108,7 +130,7 @@ export default function MenuDrawer(props) {
           <ListItemText primary="About" />
         </ListItem>
 
-        <ListItem button onClick={handleDrawerToggle}>
+        <ListItem button onClick={handleLogout}>
           <ListItemIcon>
             <LogoutIcon />
           </ListItemIcon>

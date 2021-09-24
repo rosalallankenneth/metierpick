@@ -45,7 +45,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 function ResponsiveDrawer(props) {
-  const { window } = props;
+  const { window, logout } = props;
   const classes = useStyles();
   const theme = useTheme();
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -78,7 +78,10 @@ function ResponsiveDrawer(props) {
               keepMounted: true // Better open performance on mobile.
             }}
           >
-            <MenuDrawer handleDrawerToggle={handleDrawerToggle} />
+            <MenuDrawer
+              handleDrawerToggle={handleDrawerToggle}
+              logout={logout}
+            />
           </Drawer>
         </Hidden>
 
@@ -90,7 +93,7 @@ function ResponsiveDrawer(props) {
             variant="permanent"
             open
           >
-            <MenuDrawer />
+            <MenuDrawer logout={logout} />
           </Drawer>
         </Hidden>
       </nav>
@@ -99,8 +102,8 @@ function ResponsiveDrawer(props) {
         <div className={classes.toolbar} />
         <Box p={1}>
           <Switch>
-            <Route exact path="/home">
-              <HomeContent />
+            <Route exact path="/take-assessment">
+              <AssessmentDescription />
             </Route>
             <Route exact path="/assessment-history">
               <AssessmentHistoryContent />
@@ -114,11 +117,11 @@ function ResponsiveDrawer(props) {
             <Route exact path="/assessment-results">
               <ResultsPage />
             </Route>
-            <Route exact path="/take-assessment">
+            <Route exact path="/start-assessment">
               <Questionnaire />
             </Route>
             <Route path="/">
-              <AssessmentDescription />
+              <HomeContent />
             </Route>
           </Switch>
         </Box>

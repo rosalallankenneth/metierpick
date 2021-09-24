@@ -14,7 +14,7 @@ import {
 const AssessmentInstructions = () => {
   const history = useHistory();
   const handleTakeAssessment = () => {
-    history.push("/take-assessment");
+    history.push("/start-assessment");
   };
 
   return (

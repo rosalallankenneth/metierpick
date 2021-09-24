@@ -1,22 +1,11 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 // material ui imports
 import { Box, TextField, Grid, Button } from "@material-ui/core";
-// import DateFnsUtils from "@date-io/date-fns";
-// import {
-//   MuiPickersUtilsProvider,
-//   KeyboardDatePicker
-// } from "@material-ui/pickers";
 
 const ProfileForm = () => {
-  // The first commit of Material-UI
-  // const [selectedDate, setSelectedDate] = React.useState(
-  //   new Date("2000-01-01")
-  // );
-
-  // const handleDateChange = date => {
-  //   setSelectedDate(date);
-  // };
+  const user = useSelector(state => state.auth.user);
 
   return (
     <Box mt={3}>
@@ -34,7 +23,7 @@ const ProfileForm = () => {
           <Grid item sm={6} xs={12}>
             <TextField
               label="Email"
-              defaultValue="johndoe420@gmail.com"
+              defaultValue={user.email}
               fullWidth
               spellCheck={false}
             />
@@ -57,24 +46,6 @@ const ProfileForm = () => {
               spellCheck={false}
             />
           </Grid>
-
-          {/* 
-          <Grid item sm={6} xs={12}>
-            <MuiPickersUtilsProvider utils={DateFnsUtils}>
-              <KeyboardDatePicker
-                margin="normal"
-                id="date-picker-dialog"
-                label="Date of Birth"
-                format="MM/dd/yyyy"
-                fullWidth
-                value={selectedDate}
-                onChange={handleDateChange}
-                KeyboardButtonProps={{
-                  "aria-label": "change date"
-                }}
-              />
-            </MuiPickersUtilsProvider>
-          </Grid> */}
         </Grid>
 
         <Box mt={3}>

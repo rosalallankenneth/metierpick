@@ -6,7 +6,7 @@ const HomeMap = () => {
     <>
       <MapContainer
         center={[8.1624, 123.7741]}
-        zoom={9}
+        zoom={10}
         scrollWheelZoom={false}
       >
         <TileLayer
@@ -14,9 +14,7 @@ const HomeMap = () => {
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
         <Marker position={[8.1624, 123.7741]}>
-          <Popup>
-            A pretty CSS3 popup. <br /> Easily customizable.
-          </Popup>
+          <Popup>Data</Popup>
         </Marker>
       </MapContainer>
     </>

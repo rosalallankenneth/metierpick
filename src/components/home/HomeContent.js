@@ -13,7 +13,7 @@ const HomeContent = () => {
     <>
       <ContentTitleBar title="Home" />
       <Box mt={3}>
-        <Paper>
+        <Paper style={{ height: "300px" }}>
           <HomeMap />
         </Paper>
       </Box>

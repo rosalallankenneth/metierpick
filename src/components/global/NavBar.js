@@ -10,6 +10,9 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import { ButtonBase } from "@material-ui/core";
 
+// react router imports
+import { Link } from "react-router-dom";
+
 const drawerWidth = 240;
 
 const useStyles = makeStyles(theme => ({
@@ -53,7 +56,11 @@ export default function NavBar({ handleDrawerToggle }) {
         <Typography variant="h6" noWrap className={classes.title}>
           Career DSS
         </Typography>
-        <ButtonBase onClick={() => {}} className={classes.accountIcon}>
+        <ButtonBase
+          className={classes.accountIcon}
+          component={Link}
+          to="/account-settings"
+        >
           <AccountIcon />
         </ButtonBase>
       </Toolbar>

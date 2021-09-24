@@ -1,12 +1,12 @@
 // starting state values
 const initialState = {
-  username: "John Doe"
+  user: null
 };
 
 export const authReducer = (state = initialState, action) => {
   switch (action.type) {
     case "SET_USER":
-      return { ...state, username: action.payload.username };
+      return { ...state, user: action.payload.user };
     default:
       return state;
   }

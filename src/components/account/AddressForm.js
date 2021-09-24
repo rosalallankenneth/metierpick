@@ -8,10 +8,10 @@ const AddressForm = () => {
     <Box mt={3}>
       <form noValidate autoComplete="off">
         <Grid container direction="row" spacing={2}>
-          <Grid item xs={12}>
+          <Grid item sm={6} xs={12}>
             <TextField
-              label="Street / Barangay"
-              defaultValue="P-8, Lam-an"
+              label="Province"
+              defaultValue="Misamis Occidental"
               fullWidth
               spellCheck={false}
             />
@@ -26,10 +26,10 @@ const AddressForm = () => {
             />
           </Grid>
 
-          <Grid item sm={6} xs={12}>
+          <Grid item xs={12}>
             <TextField
-              label="Province"
-              defaultValue="Misamis Occidental"
+              label="Street / Barangay"
+              defaultValue="P-8, Lam-an"
               fullWidth
               spellCheck={false}
             />
