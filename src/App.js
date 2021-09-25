@@ -12,14 +12,11 @@ import { useDispatch, useSelector } from "react-redux";
 import { setUser } from "./redux/actions/authActions";
 
 // firebase
-import {
-  createUserWithEmailAndPassword,
-  signInWithEmailAndPassword
-} from "firebase/auth";
-import { auth } from "./firebase/auth";
+import { auth } from "./firebase/config";
+import { signup, login, logout } from "./firebase/auth";
 
 // custom components
-import ResponsiveDrawer from "./components/global/ResponsiveDrawer";
+import AppContainer from "./components/global/AppContainer";
 import theme from "./muitheme";
 import LoginPage from "./components/login/LoginPage";
 import SignupPage from "./components/signup/SignupPage";
@@ -40,17 +37,7 @@ function App() {
         setIsLoading(false);
       });
     });
-  }, [dispatch]);
-
-  const signup = (email, password) => {
-    return createUserWithEmailAndPassword(auth, email, password);
-  };
-
-  const login = (email, password) => {
-    return signInWithEmailAndPassword(auth, email, password);
-  };
-
-  const logout = () => auth.signOut(auth);
+  }, []);
 
   if (isLoading) {
     return <SplashScreen />;
@@ -65,11 +52,7 @@ function App() {
             {user ? <Redirect to="/" /> : <SignupPage signup={signup} />}
           </Route>
           <Route path="/">
-            {user ? (
-              <ResponsiveDrawer logout={logout} />
-            ) : (
-              <Redirect to="/login" />
-            )}
+            {user ? <AppContainer logout={logout} /> : <Redirect to="/login" />}
           </Route>
         </Switch>
       </ThemeProvider>

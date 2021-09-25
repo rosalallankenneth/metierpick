@@ -21,7 +21,6 @@ import MetierpickLogo from "../../assets/logo-v2.png";
 // react router imports
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
-import { useHistory } from "react-router-dom";
 
 // custom components
 import AlertError from "../global/AlertError";
@@ -32,14 +31,12 @@ export default function MenuDrawer(props) {
 
   const [isError, setIsError] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
-  const history = useHistory();
 
   const handleLogout = async () => {
     typeof handleDrawerToggle === "function" && handleDrawerToggle();
     try {
       setIsError(false);
       await logout();
-      history.push("/login");
     } catch {
       setErrorMessage(
         "Failed to logout. Please try again or refresh the page."

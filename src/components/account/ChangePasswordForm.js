@@ -9,15 +9,30 @@ const AddressForm = () => {
       <form noValidate autoComplete="off">
         <Grid container direction="row" spacing={2}>
           <Grid item xs={12}>
-            <TextField label="Old Password" fullWidth type="Password" />
+            <TextField
+              label="Old Password"
+              fullWidth
+              type="Password"
+              variant="outlined"
+            />
           </Grid>
 
           <Grid item xs={12}>
-            <TextField label="New Password" fullWidth type="Password" />
+            <TextField
+              label="New Password"
+              fullWidth
+              type="Password"
+              variant="outlined"
+            />
           </Grid>
 
           <Grid item xs={12}>
-            <TextField label="Confirm New Password" fullWidth type="Password" />
+            <TextField
+              label="Confirm New Password"
+              fullWidth
+              type="Password"
+              variant="outlined"
+            />
           </Grid>
         </Grid>
 

@@ -15,9 +15,6 @@ import CircularProgress from "@material-ui/core/CircularProgress";
 // custom components
 import Copyright from "../global/Copyright";
 
-// react router
-import { useHistory } from "react-router-dom";
-
 import MetierpickLogo from "../../assets/logo-v2.png";
 import AlertError from "../global/AlertError";
 
@@ -55,7 +52,6 @@ export default function SignupPage(props) {
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
-  const history = useHistory();
 
   // event handler for submit signup
   const handleSubmit = async e => {
@@ -69,8 +65,10 @@ export default function SignupPage(props) {
     try {
       setIsLoading(true);
       setIsError(false);
-      await signup(emailRef.current.value, passwordRef.current.value);
-      history.push("/login");
+      await signup(emailRef.current.value, passwordRef.current.value, {
+        firstname: firstNameRef.current.value,
+        lastname: lastNameRef.current.value
+      });
     } catch {
       setIsLoading(false);
       setErrorMessage("Signup unsuccessful.");

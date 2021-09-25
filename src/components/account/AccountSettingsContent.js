@@ -5,8 +5,8 @@ import { Paper, Typography, Box } from "@material-ui/core";
 
 // custom components
 import ContentTitleBar from "../global/ContentTitleBar";
-import ProfileForm from "./ProfileForm";
-import AddressForm from "./AddressForm";
+import BasicInformationForm from "./BasicInformationForm";
+import EmailForm from "./EmailForm";
 import ChangePasswordForm from "./ChangePasswordForm";
 
 const AccountContent = () => {
@@ -17,16 +17,15 @@ const AccountContent = () => {
       <Box mt={3}>
         <Paper>
           <Box p={3}>
-            <Typography variant="h6">Profile</Typography>
-            <ProfileForm />
+            <Typography variant="h6">Basic Information</Typography>
+            <BasicInformationForm />
           </Box>
         </Paper>
 
         <Box mt={3}>
           <Paper>
             <Box p={3}>
-              <Typography variant="h6">Address Information</Typography>
-              <AddressForm />
+              <EmailForm />
             </Box>
           </Paper>
         </Box>
