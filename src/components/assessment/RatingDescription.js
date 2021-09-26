@@ -13,7 +13,10 @@ const useStyles = makeStyles(theme => ({
   ratingValue: {
     textAlign: "center",
     fontWeight: 700,
-    fontSize: 20
+    fontSize: 20,
+    [theme.breakpoints.down("xs")]: {
+      fontSize: 14
+    }
   }
 }));
 

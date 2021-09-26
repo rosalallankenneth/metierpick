@@ -16,7 +16,7 @@ export const signup = (email, password, data) => {
 
 export const login = (email, password) => {
   // set current user in firebase auth
-  return signInWithEmailAndPassword(auth, email, password);
+  signInWithEmailAndPassword(auth, email, password);
 };
 
 export const logout = () => auth.signOut(auth);

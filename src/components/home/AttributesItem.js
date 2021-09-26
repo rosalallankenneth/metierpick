@@ -2,13 +2,18 @@ import React from "react";
 import { Grid, Typography, Box, ButtonBase } from "@material-ui/core";
 
 const AttributesItem = props => {
-  const { attr, classes } = props;
-  const handleAttrClick = () => {};
+  const { attr, classes, handleOpen, setModalTitle, setModalDesc } = props;
+
+  const handleAttrClick = () => {
+    setModalTitle(attr.name);
+    setModalDesc(attr.description);
+    handleOpen();
+  };
 
   return (
     <>
       <Grid item md={4} xs={12} key={attr.name}>
-        <ButtonBase onClick={handleAttrClick} className={classes.attrItem}>
+        <ButtonBase className={classes.attrItem} onClick={handleAttrClick}>
           <Box p={2}>
             <Typography align="center">
               <img

@@ -9,6 +9,7 @@ import { Typography, Box, Paper } from "@material-ui/core";
 import ContentTitleBar from "../global/ContentTitleBar";
 import TopRatingSection from "./TopRatingSection";
 import UnderConstruction from "../global/UnderConstruction";
+import OtherRatingSection from "./OtherRatingSection";
 
 // utilities
 import { calcuRatings } from "../../utils/calcuRatings";
@@ -25,8 +26,17 @@ const ResultsPage = () => {
 
   // calculate ratings and store
   const ratings = calcuRatings(resultsData);
+  let topRatings = [];
+  let otherRatings = [];
+
   // filter ratings based on the top (at least) 3 highest ratings
-  const topRatings = ratings.filter(rate => rate[1] >= ratings[2][1]);
+  ratings.forEach(rate => {
+    if (rate[1] >= ratings[2][1]) {
+      topRatings = [...topRatings, rate];
+    } else {
+      otherRatings = [...otherRatings, rate];
+    }
+  });
 
   return (
     <>
@@ -53,10 +63,7 @@ const ResultsPage = () => {
 
       <Paper>
         <Box p={3}>
-          <Typography variant="h6">
-            Your Rating on other Intelligences
-          </Typography>
-          <UnderConstruction />
+          <OtherRatingSection ratings={otherRatings} />
         </Box>
       </Paper>
     </>

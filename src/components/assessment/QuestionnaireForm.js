@@ -11,7 +11,12 @@ import { getResults } from "../../redux/actions/assessmentActions";
 import {
   linguisticItems,
   logicalMathItems,
-  spatialItems
+  spatialItems,
+  bodilyItems,
+  musicalItems,
+  interpersonalItems,
+  intrapersonalItems,
+  naturalistItems
 } from "../../data/assessmentItems";
 
 // change color theme for forms
@@ -19,11 +24,17 @@ let defaultThemeColors = Survey.StylesManager.ThemeColors["modern"];
 defaultThemeColors["$main-color"] = "#3FA34D";
 Survey.StylesManager.applyTheme("modern");
 
-// setters for form content
-Survey.completeText = "Thank you for completing the assessment!";
-
 const json = {
-  pages: [linguisticItems, logicalMathItems, spatialItems]
+  pages: [
+    linguisticItems,
+    logicalMathItems,
+    spatialItems,
+    bodilyItems,
+    musicalItems,
+    interpersonalItems,
+    intrapersonalItems,
+    naturalistItems
+  ]
 };
 
 const QuestionnaireForm = () => {

@@ -1,10 +1,13 @@
-import React, { useRef } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { setUserInfo } from "../../redux/actions/authActions";
+import React, { useRef, useEffect } from "react";
+import { useSelector } from "react-redux";
 import { getCurrentUserDocument } from "../../firebase/firestore";
 
 // material ui imports
 import { Box, TextField, Grid, Button } from "@material-ui/core";
+
+// redux
+import { useDispatch } from "react-redux";
+import { setUserInfo } from "../../redux/actions/authActions";
 
 // custom components
 import AddressForm from "./AddressForm";
@@ -18,9 +21,11 @@ const BasicInformationForm = () => {
 
   // get user data from firestore
   // then dispatch to redux state
-  (async () => {
-    dispatch(setUserInfo(await getCurrentUserDocument(email)));
-  })();
+  useEffect(() => {
+    (async () => {
+      dispatch(setUserInfo(await getCurrentUserDocument(email)));
+    })();
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const lastnameRef = useRef();
   const firstnameRef = useRef();

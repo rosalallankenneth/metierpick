@@ -23,21 +23,21 @@ const AssessmentInstructions = () => {
         <Typography variant="h6">Instructions</Typography>
         <List>
           <ListItem>
-            <Typography>
+            <Typography align="justify">
               1. This assessment is a rating-typed questionnaire that will
               assess one’s dominant (i.e., strengths) and inferior (i.e.,
               weaknesses) attributes in terms of capabilities and interests.
             </Typography>
           </ListItem>
           <ListItem>
-            <Typography>
+            <Typography align="justify">
               2. The items are taken from Dr. Armstrong’s book about{" "}
               <b>Multiple Intelligence theory</b> (see sections below for more
               information).
             </Typography>
           </ListItem>
           <ListItem>
-            <Typography>
+            <Typography align="justify">
               3. For each item, the respondent has to rate the statement based
               on its degree of applicability to themselves. The rating will be
               as follows:
@@ -75,18 +75,18 @@ const AssessmentInstructions = () => {
             </Box>
           </ListItem>
           <ListItem>
-            <Typography>
+            <Typography align="justify">
               4. This assessment is composed of 80 items in total.
             </Typography>
           </ListItem>
           <ListItem>
-            <Typography>
+            <Typography align="justify">
               5. At the end of the assessment, the respondent has to provide
               their email for contacting purposes.
             </Typography>
           </ListItem>
           <ListItem>
-            <Typography>
+            <Typography align="justify">
               Note: You don't have to study anything for this assessment. There
               is no right or wrong answer. Just be yourself and answer the items
               honestly to get accurate results of your insights.

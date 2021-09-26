@@ -19,13 +19,6 @@ const EmailForm = () => {
           <Box mt={2}>
             <Typography variant="body1">{email}</Typography>
           </Box>
-          {/* <TextField
-            label="Email"
-            defaultValue={email}
-            fullWidth
-            disabled
-            spellCheck={false}
-          /> */}
         </Grid>
       </Grid>
     </form>

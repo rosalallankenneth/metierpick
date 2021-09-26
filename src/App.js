@@ -37,7 +37,7 @@ function App() {
         setIsLoading(false);
       });
     });
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   if (isLoading) {
     return <SplashScreen />;

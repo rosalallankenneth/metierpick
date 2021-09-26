@@ -1,6 +1,11 @@
 const ICON_LI = require("../assets/mi-logos/icon1-linguistic.png").default;
 const ICON_LO = require("../assets/mi-logos/icon2-logical.png").default;
 const ICON_SP = require("../assets/mi-logos/icon3-spatial.png").default;
+const ICON_BO = require("../assets/mi-logos/icon4-bodily.png").default;
+const ICON_MU = require("../assets/mi-logos/icon5-musical.png").default;
+const ICON_IE = require("../assets/mi-logos/icon6-interpersonal.png").default;
+const ICON_IA = require("../assets/mi-logos/icon7-intrapersonal.png").default;
+const ICON_NA = require("../assets/mi-logos/icon8-naturalist.png").default;
 
 const categories = {
   Linguistic: [
@@ -14,6 +19,26 @@ const categories = {
   Spatial: [
     "The ability to perceive the visual-spatial world accurately (e.g., as a hunter, scout, or guide) and to perform transformations upon those perceptions (e.g., as an interior decorator, architect, artist, or inventor). This intelligence involves sensitivity to color, line, shape, form, space, and the relationships that exist between these elements. It includes the capacity to visualize, to graphically represent visual or spatial ideas, and to orient oneself appropriately in a spatial matrix.",
     ICON_SP
+  ],
+  Bodily_Kinesthetic: [
+    "Expertise in using one’s whole body to express ideas and feelings (e.g., as an actor, a mime, an athlete, or a dancer) and facility in using one’s hands to produce or transform things (e.g., as a craftsperson, sculptor, mechanic, or surgeon. This intelligence includes specific physical skills such as coordination, balance, dexterity, strength, flexibility, and speed, as well as proprioceptive, tactile, and haptic capacities.",
+    ICON_BO
+  ],
+  Musical: [
+    "The capacity to perceive (e.g., as a music aficionado), discriminate (e.g., as a music critic), transform (e.g., as a composer), and express (e.g., as a performer) musical forms. This intelligence includes sensitivity to the rhythm, pitch or melody, and timbre or tone color of a musical piece. One can have a figural or “top-down” understanding of music (global, intuitive), a formal or “bottom-up” understanding (analytic, technical), or both.",
+    ICON_MU
+  ],
+  Interpersonal: [
+    "The ability to perceive and make distinctions in the moods, intentions, motivations, and feelings of other people. This can include sensitivity to facial expressions, voice, and gestures; the capacity for discriminating among many different kinds of interpersonal cues; and the ability to respond effectively to those cues in some pragmatic way (e.g., to influence a group of people to follow a certain line of action).",
+    ICON_IE
+  ],
+  Intrapersonal: [
+    "Self-knowledge and the ability to act adaptively on the basis of that knowledge. This intelligence includes having an accurate picture of oneself (one’s strengths and limitations); awareness of inner moods, intentions, motivations, temperaments, and desires; and the capacity for self-discipline, self-understanding, and self-esteem.",
+    ICON_IA
+  ],
+  Naturalist: [
+    "Expertise in the recognition and classification of the numerous species—the flora and fauna—of an individual’s environment. This also includes sensitivity to other natural phenomena (e.g., cloud formations, mountains, etc.) and, in the case of those growing up in an urban environment, the capacity to discriminate among inanimate objects such as cars, sneakers, and CD covers.",
+    ICON_NA
   ]
 };
 

@@ -1,22 +1,19 @@
 import React from "react";
+import RatingDescription from "./RatingDescription";
 
 // material ui imports
 import { Typography, Box } from "@material-ui/core";
 
-// custom components
-import RatingDescription from "./RatingDescription";
-
-const TopRatingSection = prop => {
+const OtherRatingSection = prop => {
   const { ratings } = prop;
 
   return (
     <>
-      <Typography variant="h6">Your Top-Rated Intelligences</Typography>
+      <Typography variant="h6">Your Rating on Other Intelligences</Typography>
       <Box mt={1}>
         <Typography variant="body1" align="justify">
-          These are your most dominant attributes or the skills that you excel
-          and get interested the most. This is based on the ratings that you got
-          from the assessment, with a range of 5.00 (highest) to 1.00 (lowest).
+          These categories are considered as your inferior attributes or skills
+          that you are less good and interested.
         </Typography>
       </Box>
 
@@ -32,4 +29,4 @@ const TopRatingSection = prop => {
   );
 };
 
-export default TopRatingSection;
+export default OtherRatingSection;

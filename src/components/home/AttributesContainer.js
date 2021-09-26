@@ -1,24 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import { Grid, Box } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { categories } from "../../data/categoriesInformation";
 
 import AttributesItem from "./AttributesItem";
+import BasicModal from "../global/BasicModal";
 import bcgImgAttr from "../../assets/bcg-img-attr.jpg";
 
 const topAttributes = [
   {
     name: "Logical-Mathematical",
+    description: categories.Logical_Mathematical[0],
     icon: categories.Logical_Mathematical[1],
     rating: 5.0
   },
   {
     name: "Spatial",
+    description: categories.Spatial[0],
     icon: categories.Spatial[1],
     rating: 4.67
   },
   {
     name: "Linguistic",
+    description: categories.Linguistic[0],
     icon: categories.Linguistic[1],
     rating: 4.0
   }
@@ -55,6 +59,18 @@ const useStyles = makeStyles(theme => ({
 const AttributesContainer = () => {
   const classes = useStyles();
 
+  const [openModal, setOpenModal] = useState(false);
+  const [modalTitle, setModalTitle] = useState("Title");
+  const [modalDesc, setModalDesc] = useState("Description");
+
+  const handleOpenModal = () => {
+    setOpenModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setOpenModal(false);
+  };
+
   return (
     <>
       <Box className={classes.attrContainer}>
@@ -67,12 +83,25 @@ const AttributesContainer = () => {
           >
             {topAttributes.map(attr => {
               return (
-                <AttributesItem key={attr.name} attr={attr} classes={classes} />
+                <AttributesItem
+                  key={attr.name}
+                  attr={attr}
+                  classes={classes}
+                  handleOpen={handleOpenModal}
+                  setModalDesc={setModalDesc}
+                  setModalTitle={setModalTitle}
+                />
               );
             })}
           </Grid>
         </Box>
       </Box>
+      <BasicModal
+        open={openModal}
+        handleClose={handleCloseModal}
+        title={modalTitle}
+        description={modalDesc}
+      />
     </>
   );
 };

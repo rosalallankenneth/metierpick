@@ -1,15 +1,25 @@
 // constants
-const {
+import {
   prefixLinguistic,
   prefixLogical,
-  prefixSpatial
-} = require("../utils/prefixCategories");
+  prefixSpatial,
+  prefixBodily,
+  prefixMusical,
+  prefixInterpersonal,
+  prefixIntrapersonal,
+  prefixNaturalist
+} from "../utils/prefixCategories";
 
-const calcuRatings = results => {
+export const calcuRatings = results => {
   let linguisticRate = 0;
   let logicalRate = 0;
   let spatialRate = 0;
-  const itemCountEachCat = 3;
+  let bodilyRate = 0;
+  let musicalRate = 0;
+  let interpersonalRate = 0;
+  let intrapersonalRate = 0;
+  let naturalistRate = 0;
+  const itemCountEachCat = 5;
 
   // accumulate all categories rating
   Object.keys(results).forEach(key => {
@@ -22,6 +32,21 @@ const calcuRatings = results => {
       // SP - spatial
     } else if (key.startsWith(prefixSpatial)) {
       spatialRate += results[key];
+      // BO - bodily-kinesthetic
+    } else if (key.startsWith(prefixBodily)) {
+      bodilyRate += results[key];
+      // MU - musical
+    } else if (key.startsWith(prefixMusical)) {
+      musicalRate += results[key];
+      // IE - interpersonal
+    } else if (key.startsWith(prefixInterpersonal)) {
+      interpersonalRate += results[key];
+      // IA - intrapersonal
+    } else if (key.startsWith(prefixIntrapersonal)) {
+      intrapersonalRate += results[key];
+      // NA - naturalist
+    } else if (key.startsWith(prefixNaturalist)) {
+      naturalistRate += results[key];
     }
   });
 
@@ -29,13 +54,25 @@ const calcuRatings = results => {
   const Linguistic = (linguisticRate / itemCountEachCat).toFixed(2);
   const Logical_Mathematical = (logicalRate / itemCountEachCat).toFixed(2);
   const Spatial = (spatialRate / itemCountEachCat).toFixed(2);
+  const Bodily_Kinesthetic = (bodilyRate / itemCountEachCat).toFixed(2);
+  const Musical = (musicalRate / itemCountEachCat).toFixed(2);
+  const Interpersonal = (interpersonalRate / itemCountEachCat).toFixed(2);
+  const Intrapersonal = (intrapersonalRate / itemCountEachCat).toFixed(2);
+  const Naturalist = (naturalistRate / itemCountEachCat).toFixed(2);
 
   // store all rating results
-  const allRatings = { Linguistic, Logical_Mathematical, Spatial };
+  const allRatings = {
+    Linguistic,
+    Logical_Mathematical,
+    Spatial,
+    Bodily_Kinesthetic,
+    Musical,
+    Interpersonal,
+    Intrapersonal,
+    Naturalist
+  };
   // sort all ratings by highest value
   const sortedRatings = Object.entries(allRatings).sort((a, b) => b[1] - a[1]);
 
   return sortedRatings;
 };
-
-module.exports = { calcuRatings };
