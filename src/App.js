@@ -45,14 +45,26 @@ function App() {
     return (
       <ThemeProvider theme={theme}>
         <Switch>
-          <Route exact path="/login">
-            {user ? <Redirect to="/" /> : <LoginPage login={login} />}
+          <Route exact path="/dss-capstone/login">
+            {user ? (
+              <Redirect to="/dss-capstone/" />
+            ) : (
+              <LoginPage login={login} />
+            )}
           </Route>
-          <Route exact path="/signup">
-            {user ? <Redirect to="/" /> : <SignupPage signup={signup} />}
+          <Route exact path="/dss-capstone/signup">
+            {user ? (
+              <Redirect to="/dss-capstone/" />
+            ) : (
+              <SignupPage signup={signup} />
+            )}
           </Route>
-          <Route path="/">
-            {user ? <AppContainer logout={logout} /> : <Redirect to="/login" />}
+          <Route path="/dss-capstone/">
+            {user ? (
+              <AppContainer logout={logout} />
+            ) : (
+              <Redirect to="/dss-capstone/login" />
+            )}
           </Route>
         </Switch>
       </ThemeProvider>
