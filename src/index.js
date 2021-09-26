@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+
 // redux
 import { createStore } from "redux";
 import { Provider } from "react-redux";
@@ -9,15 +10,16 @@ import { Provider } from "react-redux";
 import { rootReducer } from "./redux/reducers/combineReducer";
 
 // react router imports
-import { BrowserRouter as Router } from "react-router-dom";
+//import { BrowserRouter as Router } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 
 const store = createStore(rootReducer);
 
 ReactDOM.render(
   <Provider store={store}>
-    <Router>
+    <HashRouter>
       <App />
-    </Router>
+    </HashRouter>
   </Provider>,
   document.getElementById("root")
 );

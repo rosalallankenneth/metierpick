@@ -105,25 +105,25 @@ function ResponsiveDrawer(props) {
         <div className={classes.toolbar} />
         <Box p={1}>
           <Switch>
-            <Route exact path="/dss-capstone/take-assessment">
+            <Route exact path="/take-assessment">
               <AssessmentDescription />
             </Route>
-            <Route exact path="/dss-capstone/assessment-history">
+            <Route exact path="/assessment-history">
               <AssessmentHistoryContent />
             </Route>
-            <Route exact path="/dss-capstone/account-settings">
+            <Route exact path="/account-settings">
               <AccountSettingsContent />
             </Route>
-            <Route exact path="/dss-capstone/about">
+            <Route exact path="/about">
               <AboutContent />
             </Route>
-            <Route exact path="/dss-capstone/assessment-results">
+            <Route exact path="/assessment-results">
               <ResultsPage />
             </Route>
-            <Route exact path="/dss-capstone/start-assessment">
+            <Route exact path="/start-assessment">
               <Questionnaire />
             </Route>
-            <Route path="/dss-capstone/">
+            <Route path="/">
               <HomeContent />
             </Route>
           </Switch>

@@ -56,11 +56,7 @@ export default function MenuDrawer(props) {
         <AlertError message={errorMessage} onClose={handleCloseAlertError} />
       )}
       <List>
-        <ListItem
-          component={Link}
-          to="/dss-capstone/"
-          onClick={handleDrawerToggle}
-        >
+        <ListItem component={Link} to="/" onClick={handleDrawerToggle}>
           <img src={MetierpickLogo} alt="metierpick-logo" />
         </ListItem>
       </List>
@@ -69,8 +65,8 @@ export default function MenuDrawer(props) {
         <ListItem
           button
           component={Link}
-          to="/dss-capstone/"
-          selected={currentRoute === "/dss-capstone/" ? true : false}
+          to="/"
+          selected={currentRoute === "/" ? true : false}
           onClick={handleDrawerToggle}
         >
           <ListItemIcon>
@@ -82,10 +78,8 @@ export default function MenuDrawer(props) {
         <ListItem
           button
           component={Link}
-          to="/dss-capstone/take-assessment"
-          selected={
-            currentRoute === "/dss-capstone/take-assessment" ? true : false
-          }
+          to="/take-assessment"
+          selected={currentRoute === "/take-assessment" ? true : false}
           onClick={handleDrawerToggle}
         >
           <ListItemIcon>
@@ -97,10 +91,8 @@ export default function MenuDrawer(props) {
         <ListItem
           button
           component={Link}
-          to="/dss-capstone/assessment-history"
-          selected={
-            currentRoute === "/dss-capstone/assessment-history" ? true : false
-          }
+          to="/assessment-history"
+          selected={currentRoute === "/assessment-history" ? true : false}
           onClick={handleDrawerToggle}
         >
           <ListItemIcon>
@@ -112,10 +104,8 @@ export default function MenuDrawer(props) {
         <ListItem
           button
           component={Link}
-          to="/dss-capstone/account-settings"
-          selected={
-            currentRoute === "/dss-capstone/account-settings" ? true : false
-          }
+          to="/account-settings"
+          selected={currentRoute === "/account-settings" ? true : false}
           onClick={handleDrawerToggle}
         >
           <ListItemIcon>
@@ -127,8 +117,8 @@ export default function MenuDrawer(props) {
         <ListItem
           button
           component={Link}
-          to="/dss-capstone/about"
-          selected={currentRoute === "/dss-capstone/about" ? true : false}
+          to="/about"
+          selected={currentRoute === "/about" ? true : false}
           onClick={handleDrawerToggle}
         >
           <ListItemIcon>
