@@ -1,7 +1,7 @@
 import React from "react";
 
 // material ui imports
-import { Typography, Box, Grid } from "@material-ui/core";
+import { Typography, Box, Grid, Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
 import { categories } from "../../data/categoriesInformation";
@@ -21,7 +21,14 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const RatingDescription = props => {
-  const { name, rating } = props;
+  const {
+    name,
+    rating,
+    handleOpenModal,
+    setModalTitle,
+    setModalWaysToLearn,
+    setModalIcon
+  } = props;
 
   const classes = useStyles();
 
@@ -32,7 +39,15 @@ const RatingDescription = props => {
   });
   const description = category[0];
   const icon = category[1];
+  const waysToLearn = category[2];
   const title = name.replace("_", "-");
+
+  const handleClickMoreInformation = () => {
+    setModalIcon(icon);
+    setModalTitle(title);
+    setModalWaysToLearn(waysToLearn);
+    handleOpenModal();
+  };
 
   return (
     <Box mt={3}>
@@ -47,6 +62,7 @@ const RatingDescription = props => {
           </Typography>
           <Typography className={classes.ratingValue}>{rating}</Typography>
         </Grid>
+
         <Grid item xs={10}>
           <Box>
             <Typography variant="body1">
@@ -56,6 +72,16 @@ const RatingDescription = props => {
               <Typography variant="subtitle2" align="justify">
                 {description}
               </Typography>
+            </Box>
+
+            <Box mt={1}>
+              <Button
+                color="primary"
+                variant="outlined"
+                onClick={handleClickMoreInformation}
+              >
+                More Information
+              </Button>
             </Box>
           </Box>
         </Grid>

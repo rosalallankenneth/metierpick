@@ -11,18 +11,23 @@ const useStyles = makeStyles(theme => ({
     justifyContent: "center"
   },
   paper: {
+    maxHeight: "90vh",
+    overflow: "auto",
     backgroundColor: theme.palette.background.paper,
     boxShadow: theme.shadows[5],
-    padding: theme.spacing(2, 4, 3),
-    margin: theme.spacing(3),
+    padding: theme.spacing(3),
+    width: "90vw",
     [theme.breakpoints.up("sm")]: {
       margin: theme.spacing(5)
+    },
+    [theme.breakpoints.up("md")]: {
+      width: "50vw"
     }
   }
 }));
 
 export default function TransitionsModal(props) {
-  const { open, handleClose, title, description } = props;
+  const { open, handleClose, children } = props;
   const classes = useStyles();
 
   return (
@@ -39,12 +44,7 @@ export default function TransitionsModal(props) {
       }}
     >
       <Fade in={open}>
-        <div className={classes.paper}>
-          <h2 id="modal-title">{title}</h2>
-          <p id="modal-description" style={{ textAlign: "justify" }}>
-            {description}
-          </p>
-        </div>
+        <div className={classes.paper}>{children}</div>
       </Fade>
     </Modal>
   );

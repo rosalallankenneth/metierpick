@@ -16,6 +16,8 @@
     "decision-tree": "^0.3.7",
     "firebase": "^9.0.2",
     "leaflet": "^1.7.1",
+    "lord-icon-element": "^2.1.0",
+    "lottie-web": "^5.7.13",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-leaflet": "^3.2.1",
