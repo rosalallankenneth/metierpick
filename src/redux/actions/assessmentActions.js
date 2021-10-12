@@ -1,6 +1,6 @@
 // get results after assessment
-export const getResults = results => ({
-  type: "GET_RESULTS",
+export const setResults = results => ({
+  type: "SET_RESULTS",
   payload: {
     results
   }

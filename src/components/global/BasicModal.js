@@ -11,12 +11,17 @@ const useStyles = makeStyles(theme => ({
     justifyContent: "center"
   },
   paper: {
+    maxHeight: "90vh",
+    overflow: "auto",
+    width: "90vw",
     backgroundColor: theme.palette.background.paper,
     boxShadow: theme.shadows[5],
-    padding: theme.spacing(2, 4, 3),
-    margin: theme.spacing(3),
+    padding: theme.spacing(3),
     [theme.breakpoints.up("sm")]: {
       margin: theme.spacing(5)
+    },
+    [theme.breakpoints.up("md")]: {
+      width: "50vw"
     }
   }
 }));

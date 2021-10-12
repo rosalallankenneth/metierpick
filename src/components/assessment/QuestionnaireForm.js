@@ -2,10 +2,15 @@ import React from "react";
 import * as Survey from "survey-react";
 import "survey-react/modern.css";
 import { useHistory } from "react-router-dom";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { setResults } from "../../redux/actions/assessmentActions";
+import { calcuRatings } from "../../utils/calcuRatings";
+import { formatResultsData } from "../../utils/formatResultsData";
 
-// redux actions
-import { getResults } from "../../redux/actions/assessmentActions";
+import {
+  createUserRatingsDocument,
+  getRatingsResult
+} from "../../firebase/assessment";
 
 // assessment items
 import {
@@ -38,26 +43,32 @@ const json = {
 };
 
 const QuestionnaireForm = () => {
+  const dispatch = useDispatch();
+  const history = useHistory();
+
+  // get user email from redux state
+  const email = useSelector(state => state.auth.user.email);
+
   // create questionnaire components
   const survey = new Survey.Model(json);
-
   survey.clear();
   survey.render();
 
-  const history = useHistory();
-  const dispatch = useDispatch();
+  // function called after complete assessment
+  const handleStoreResults = async data => {
+    const ratingsData = { email, ...calcuRatings(data) };
 
-  const handleStoreResults = data => {
-    dispatch(getResults(data));
-  };
+    // create ratings data in firestore and dispatch after for results page
+    const docId = await createUserRatingsDocument(ratingsData);
+    const resultsData = await getRatingsResult(docId);
+    const formattedData = await formatResultsData(resultsData);
+    await dispatch(setResults(formattedData));
 
-  const handleGoToResults = () => {
     history.push("/assessment-results");
   };
 
   survey.onComplete.add(function(sender) {
     handleStoreResults(sender.data);
-    handleGoToResults();
   });
 
   return (

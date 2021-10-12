@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { useHistory } from "react-router-dom";
+import { Redirect } from "react-router-dom";
 
 // material ui imports
 import { Typography, Box, Paper } from "@material-ui/core";
@@ -11,27 +11,23 @@ import TopRatingSection from "./TopRatingSection";
 import UnderConstruction from "../global/UnderConstruction";
 import OtherRatingSection from "./OtherRatingSection";
 
-// utilities
-import { calcuRatings } from "../../utils/calcuRatings";
-
 const ResultsPage = () => {
   const resultsData = useSelector(state => state.assessment.assessmentResults);
-  const history = useHistory();
 
   // when results data is empty, go back to assessment page
   if (resultsData === null || resultsData === undefined) {
-    history.push("/");
-    return null;
+    return <Redirect to="/assessment-history" />;
   }
 
-  // calculate ratings and store
-  const ratings = calcuRatings(resultsData);
+  const { ratings } = resultsData;
+  // sort all ratings by highest value
+  const sortedRatings = Object.entries(ratings).sort((a, b) => b[1] - a[1]);
   let topRatings = [];
   let otherRatings = [];
 
   // filter ratings based on the top (at least) 3 highest ratings
-  ratings.forEach(rate => {
-    if (rate[1] >= ratings[2][1]) {
+  sortedRatings.forEach(rate => {
+    if (rate[1] >= sortedRatings[2][1]) {
       topRatings = [...topRatings, rate];
     } else {
       otherRatings = [...otherRatings, rate];

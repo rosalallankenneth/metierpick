@@ -15,7 +15,7 @@ const firestoreConfig = {
 };
 
 // connect to db
-var db = initializeFirestore(firebaseApp, firestoreConfig);
+export const db = initializeFirestore(firebaseApp, firestoreConfig);
 
 // create a user upon signup
 export const createUserDocument = async (email, data) => {

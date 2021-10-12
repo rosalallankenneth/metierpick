@@ -12,11 +12,11 @@ const useStyles = makeStyles(theme => ({
   },
   paper: {
     maxHeight: "90vh",
+    width: "90vw",
     overflow: "auto",
     backgroundColor: theme.palette.background.paper,
     boxShadow: theme.shadows[5],
     padding: theme.spacing(3),
-    width: "90vw",
     [theme.breakpoints.up("sm")]: {
       margin: theme.spacing(5)
     },

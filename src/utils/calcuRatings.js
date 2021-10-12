@@ -71,8 +71,6 @@ export const calcuRatings = results => {
     Intrapersonal,
     Naturalist
   };
-  // sort all ratings by highest value
-  const sortedRatings = Object.entries(allRatings).sort((a, b) => b[1] - a[1]);
 
-  return sortedRatings;
+  return allRatings;
 };
