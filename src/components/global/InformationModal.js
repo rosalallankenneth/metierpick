@@ -19,9 +19,6 @@ const useStyles = makeStyles(theme => ({
     padding: theme.spacing(3),
     [theme.breakpoints.up("sm")]: {
       margin: theme.spacing(5)
-    },
-    [theme.breakpoints.up("md")]: {
-      width: "50vw"
     }
   }
 }));

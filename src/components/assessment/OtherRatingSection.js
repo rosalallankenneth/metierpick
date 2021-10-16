@@ -9,14 +9,15 @@ import {
   TableBody,
   TableRow,
   TableCell,
-  TableHead
+  TableHead,
+  Grid
 } from "@material-ui/core";
 import ThinkIcon from "@material-ui/icons/Memory";
 import LoveIcon from "@material-ui/icons/Favorite";
 import NeedIcon from "@material-ui/icons/Explore";
 
 // custom components
-import RatingDescription from "./RatingDescription";
+import RatingItemSecondary from "./RatingItemSecondary";
 import InformationModal from "../global/InformationModal";
 
 const OtherRatingSection = prop => {
@@ -24,6 +25,7 @@ const OtherRatingSection = prop => {
 
   const [openModal, setOpenModal] = useState(false);
   const [modalTitle, setModalTitle] = useState("Title");
+  const [modalDescription, setModalDescription] = useState("Description");
   const [modalWaysToLearn, setModalWaysToLearn] = useState({
     think: "",
     love: "",
@@ -43,27 +45,31 @@ const OtherRatingSection = prop => {
     <>
       <Typography variant="h6">Your Rating on other Intelligences</Typography>
       <Box mt={1}>
-        <Typography variant="body1" align="justify">
+        <Typography variant="body2" align="justify">
           These categories are considered as your inferior attributes or skills
-          that you are less good and interested.
+          that you are less good and interested. Click for an icon for more
+          information.
         </Typography>
       </Box>
 
-      <Box mt={2}>
-        {// map through the rating values
-        ratings.map(rate => {
-          return (
-            <RatingDescription
-              key={rate[0]}
-              name={rate[0]}
-              rating={rate[1]}
-              handleOpenModal={handleOpenModal}
-              setModalTitle={setModalTitle}
-              setModalWaysToLearn={setModalWaysToLearn}
-              setModalIcon={setModalIcon}
-            />
-          );
-        })}
+      <Box mt={3}>
+        <Grid container spacing={3}>
+          {// map through the rating values
+          ratings.map(rate => {
+            return (
+              <RatingItemSecondary
+                key={rate[0]}
+                name={rate[0]}
+                rating={rate[1]}
+                handleOpenModal={handleOpenModal}
+                setModalTitle={setModalTitle}
+                setModalDescription={setModalDescription}
+                setModalWaysToLearn={setModalWaysToLearn}
+                setModalIcon={setModalIcon}
+              />
+            );
+          })}
+        </Grid>
       </Box>
 
       <InformationModal open={openModal} handleClose={handleCloseModal}>
@@ -75,6 +81,16 @@ const OtherRatingSection = prop => {
         <Typography align="center" variant="h6">
           {modalTitle}
         </Typography>
+        <Box mt={2}>
+          <Typography align="left" variant="body1">
+            Long Description
+          </Typography>
+        </Box>
+        <Box my={2}>
+          <Typography align="justify" variant="body2">
+            {modalDescription}
+          </Typography>
+        </Box>
 
         <TableContainer>
           <Table>
@@ -82,7 +98,7 @@ const OtherRatingSection = prop => {
               <TableRow>
                 <TableCell align="center" colSpan={3}>
                   <Typography align="left">
-                    People that are highly {modalTitle} ...
+                    People that are highly {modalTitle} . . .
                   </Typography>
                 </TableCell>
               </TableRow>
@@ -112,10 +128,10 @@ const renderWaysToLearnItems = (title, description, RowIcon) => {
           <RowIcon />
         </TableCell>
         <TableCell>
-          <Typography>{title}</Typography>
+          <Typography variant="body2">{title}</Typography>
         </TableCell>
         <TableCell>
-          <Typography>{description}</Typography>
+          <Typography variant="body2">{description}</Typography>
         </TableCell>
       </TableRow>
     </>
