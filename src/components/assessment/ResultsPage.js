@@ -7,9 +7,9 @@ import { Typography, Box, Paper } from "@material-ui/core";
 
 // custom components
 import ContentTitleBar from "../global/ContentTitleBar";
-import TopRatingSection from "./TopRatingSection";
+import TopRatingSection from "./RatingSectionPrimary";
 import UnderConstruction from "../global/UnderConstruction";
-import OtherRatingSection from "./OtherRatingSection";
+import OtherRatingSection from "./RatingSectionSecondary";
 
 const ResultsPage = () => {
   const resultsData = useSelector(state => state.assessment.assessmentResults);

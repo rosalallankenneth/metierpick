@@ -73,7 +73,7 @@ const RatingDescription = props => {
         </ButtonBase>
         <Box mt={1}>
           <Typography className={classes.ratingText} align="center">
-            <b>{rating}</b>
+            <b>{parseFloat(rating).toFixed(2)}</b>
           </Typography>
           <Typography variant="body2" align="center">
             {title}

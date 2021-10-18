@@ -9,21 +9,22 @@ import {
   TableBody,
   TableRow,
   TableCell,
-  TableHead
+  Grid
 } from "@material-ui/core";
 import ThinkIcon from "@material-ui/icons/Memory";
 import LoveIcon from "@material-ui/icons/Favorite";
 import NeedIcon from "@material-ui/icons/Explore";
 
 // custom components
-import RatingDescription from "./RatingDescription";
+import RatingItemSecondary from "./RatingItemSecondary";
 import InformationModal from "../global/InformationModal";
 
-const TopRatingSection = prop => {
+const OtherRatingSection = prop => {
   const { ratings } = prop;
 
   const [openModal, setOpenModal] = useState(false);
   const [modalTitle, setModalTitle] = useState("Title");
+  const [modalDescription, setModalDescription] = useState("Description");
   const [modalWaysToLearn, setModalWaysToLearn] = useState({
     think: "",
     love: "",
@@ -41,30 +42,33 @@ const TopRatingSection = prop => {
 
   return (
     <>
-      <Typography variant="h6">Your Top-Rated Intelligences</Typography>
+      <Typography variant="h6">Your Rating on other Intelligences</Typography>
       <Box mt={1}>
-        <Typography variant="body1" align="justify">
-          These are your most dominant attributes or the skills that you excel
-          and get interested the most. This is based on the ratings that you got
-          from the assessment, with a range of 5.00 (highest) to 1.00 (lowest).
+        <Typography variant="body2" align="justify">
+          These categories are considered as your inferior attributes or skills
+          that you are less good and interested. Click for an icon for more
+          information.
         </Typography>
       </Box>
 
-      <Box mt={2}>
-        {// map through the rating values
-        ratings.map(rate => {
-          return (
-            <RatingDescription
-              key={rate[0]}
-              name={rate[0]}
-              rating={rate[1]}
-              handleOpenModal={handleOpenModal}
-              setModalTitle={setModalTitle}
-              setModalWaysToLearn={setModalWaysToLearn}
-              setModalIcon={setModalIcon}
-            />
-          );
-        })}
+      <Box mt={3}>
+        <Grid container spacing={3}>
+          {// map through the rating values
+          ratings.map(rate => {
+            return (
+              <RatingItemSecondary
+                key={rate[0]}
+                name={rate[0]}
+                rating={rate[1]}
+                handleOpenModal={handleOpenModal}
+                setModalTitle={setModalTitle}
+                setModalDescription={setModalDescription}
+                setModalWaysToLearn={setModalWaysToLearn}
+                setModalIcon={setModalIcon}
+              />
+            );
+          })}
+        </Grid>
       </Box>
 
       <InformationModal open={openModal} handleClose={handleCloseModal}>
@@ -76,19 +80,26 @@ const TopRatingSection = prop => {
         <Typography align="center" variant="h6">
           {modalTitle}
         </Typography>
+        <Box mt={3}>
+          <Typography align="left" variant="body1">
+            Long Description
+          </Typography>
+          <hr />
+        </Box>
+        <Box my={1}>
+          <Typography align="justify" variant="body2">
+            {modalDescription}
+          </Typography>
+        </Box>
+        <Box mt={3}>
+          <Typography align="left">
+            People that are highly {modalTitle} . . .
+          </Typography>
+          <hr />
+        </Box>
 
         <TableContainer>
           <Table>
-            <TableHead>
-              <TableRow>
-                <TableCell align="center" colSpan={3}>
-                  <Typography align="left">
-                    People that are highly {modalTitle} ...
-                  </Typography>
-                </TableCell>
-              </TableRow>
-            </TableHead>
-
             <TableBody>
               {renderWaysToLearnItems(
                 "Think",
@@ -113,13 +124,13 @@ const renderWaysToLearnItems = (title, description, RowIcon) => {
           <RowIcon />
         </TableCell>
         <TableCell>
-          <Typography>{title}</Typography>
+          <Typography variant="body2">{title}</Typography>
         </TableCell>
         <TableCell>
-          <Typography>{description}</Typography>
+          <Typography variant="body2">{description}</Typography>
         </TableCell>
       </TableRow>
     </>
   );
 };
-export default TopRatingSection;
+export default OtherRatingSection;
