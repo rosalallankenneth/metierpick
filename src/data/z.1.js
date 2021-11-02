@@ -328,7 +328,7 @@ const programs = [
   { PSCED_Name: "Asian Studies/Asian Culture", description: "IE,LI,IA" },
   { PSCED_Name: "Automotive Technology", description: "SP,BO,LO" },
   {
-    PSCED_Name: "Aviation Electronics/Electrical Engineering",
+    PSCED_Name: "Aviation Electronics/Electrical  Engineering",
     description: "LO,SP,BO"
   },
   { PSCED_Name: "Banking and Finance", description: "LO,IE,IA" },
@@ -379,7 +379,7 @@ const programs = [
   { PSCED_Name: "Construction Technology", description: "SP,LO,IE" },
   { PSCED_Name: "Cooperative Management", description: "IE,LO,IA" },
   { PSCED_Name: "Counseling Psychology", description: "IE,IA,LO" },
-  { PSCED_Name: "Creative and Performing Arts", description: "BO,MU,SP" },
+  { PSCED_Name: "Creative and Performing  Arts", description: "BO,MU,SP" },
   { PSCED_Name: "Criminal Justice", description: "IA,IE,LO" },
   { PSCED_Name: "Criminology", description: "IA,BO,SP" },
   {
@@ -652,40 +652,22 @@ const programs = [
   { PSCED_Name: "Zoology", description: "NA,SP,LO" }
 ];
 
-const consDataset = result.map(d => {
+const dataset = result.map(d => {
   let path = "";
   programs.forEach(p => {
     const attrs = p.description.split(",");
 
     if (
-      // attrs[0] === d.attr_1 &&
-      // attrs[1] === d.attr_2 &&
-      // attrs[2] === d.attr_3
-
-      attrs.includes(d.attr_1) ||
-      attrs.includes(d.attr_2) ||
+      (attrs.includes(d.attr_1) && attrs.includes(d.attr_2)) ||
       attrs.includes(d.attr_3)
     ) {
       path += `${p.PSCED_Name},`;
     }
   });
-  // path = path.substring(0, path.length - 1);
+  path = path.trim(",");
   return { ...d, path };
 });
 
-const reducedDataset = consDataset
-  .filter(d => d.path !== "")
-  .filter(i => i.path.split(",").length > 2);
+const reducedDataset = dataset.filter(d => d.path !== "");
 
-// console.table(JSON.stringify(reducedDataset));
-// console.log(reducedDataset);
-console.log(consDataset);
-
-let paths = "";
-consDataset.forEach(i => {
-  if (i.path !== "") {
-    paths += i.path;
-  }
-});
-
-console.log(new Set(paths.split(",")));
+console.table(JSON.stringify(reducedDataset));
