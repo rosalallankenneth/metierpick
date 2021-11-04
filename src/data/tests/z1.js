@@ -1,284 +1,76 @@
 let result = [
-  {
-    attr_1: "LI",
-    attr_2: "LO",
-    attr_3: "SP"
-  },
-  {
-    attr_1: "LI",
-    attr_2: "SP",
-    attr_3: "BO"
-  },
-  {
-    attr_1: "LI",
-    attr_2: "BO",
-    attr_3: "MU"
-  },
-  {
-    attr_1: "LI",
-    attr_2: "MU",
-    attr_3: "IE"
-  },
-  {
-    attr_1: "LI",
-    attr_2: "IE",
-    attr_3: "IA"
-  },
-  {
-    attr_1: "LI",
-    attr_2: "IA",
-    attr_3: "NA"
-  },
-  {
-    attr_1: "LI",
-    attr_2: "NA",
-    attr_3: "LO"
-  },
-  {
-    attr_1: "LO",
-    attr_2: "LI",
-    attr_3: "SP"
-  },
-  {
-    attr_1: "LO",
-    attr_2: "SP",
-    attr_3: "BO"
-  },
-  {
-    attr_1: "LO",
-    attr_2: "BO",
-    attr_3: "MU"
-  },
-  {
-    attr_1: "LO",
-    attr_2: "MU",
-    attr_3: "IE"
-  },
-  {
-    attr_1: "LO",
-    attr_2: "IE",
-    attr_3: "IA"
-  },
-  {
-    attr_1: "LO",
-    attr_2: "IA",
-    attr_3: "NA"
-  },
-  {
-    attr_1: "LO",
-    attr_2: "NA",
-    attr_3: "LI"
-  },
-  {
-    attr_1: "SP",
-    attr_2: "LI",
-    attr_3: "LO"
-  },
-  {
-    attr_1: "SP",
-    attr_2: "LO",
-    attr_3: "BO"
-  },
-  {
-    attr_1: "SP",
-    attr_2: "BO",
-    attr_3: "MU"
-  },
-  {
-    attr_1: "SP",
-    attr_2: "MU",
-    attr_3: "IE"
-  },
-  {
-    attr_1: "SP",
-    attr_2: "IE",
-    attr_3: "IA"
-  },
-  {
-    attr_1: "SP",
-    attr_2: "IA",
-    attr_3: "NA"
-  },
-  {
-    attr_1: "SP",
-    attr_2: "NA",
-    attr_3: "LI"
-  },
-  {
-    attr_1: "BO",
-    attr_2: "LI",
-    attr_3: "LO"
-  },
-  {
-    attr_1: "BO",
-    attr_2: "LO",
-    attr_3: "SP"
-  },
-  {
-    attr_1: "BO",
-    attr_2: "SP",
-    attr_3: "MU"
-  },
-  {
-    attr_1: "BO",
-    attr_2: "MU",
-    attr_3: "IE"
-  },
-  {
-    attr_1: "BO",
-    attr_2: "IE",
-    attr_3: "IA"
-  },
-  {
-    attr_1: "BO",
-    attr_2: "IA",
-    attr_3: "NA"
-  },
-  {
-    attr_1: "BO",
-    attr_2: "NA",
-    attr_3: "LI"
-  },
-  {
-    attr_1: "MU",
-    attr_2: "LI",
-    attr_3: "LO"
-  },
-  {
-    attr_1: "MU",
-    attr_2: "LO",
-    attr_3: "SP"
-  },
-  {
-    attr_1: "MU",
-    attr_2: "SP",
-    attr_3: "BO"
-  },
-  {
-    attr_1: "MU",
-    attr_2: "BO",
-    attr_3: "IE"
-  },
-  {
-    attr_1: "MU",
-    attr_2: "IE",
-    attr_3: "IA"
-  },
-  {
-    attr_1: "MU",
-    attr_2: "IA",
-    attr_3: "NA"
-  },
-  {
-    attr_1: "MU",
-    attr_2: "NA",
-    attr_3: "LI"
-  },
-  {
-    attr_1: "IE",
-    attr_2: "LI",
-    attr_3: "LO"
-  },
-  {
-    attr_1: "IE",
-    attr_2: "LO",
-    attr_3: "SP"
-  },
-  {
-    attr_1: "IE",
-    attr_2: "SP",
-    attr_3: "BO"
-  },
-  {
-    attr_1: "IE",
-    attr_2: "BO",
-    attr_3: "MU"
-  },
-  {
-    attr_1: "IE",
-    attr_2: "MU",
-    attr_3: "IA"
-  },
-  {
-    attr_1: "IE",
-    attr_2: "IA",
-    attr_3: "NA"
-  },
-  {
-    attr_1: "IE",
-    attr_2: "NA",
-    attr_3: "LI"
-  },
-  {
-    attr_1: "IA",
-    attr_2: "LI",
-    attr_3: "LO"
-  },
-  {
-    attr_1: "IA",
-    attr_2: "LO",
-    attr_3: "SP"
-  },
-  {
-    attr_1: "IA",
-    attr_2: "SP",
-    attr_3: "BO"
-  },
-  {
-    attr_1: "IA",
-    attr_2: "BO",
-    attr_3: "MU"
-  },
-  {
-    attr_1: "IA",
-    attr_2: "MU",
-    attr_3: "IE"
-  },
-  {
-    attr_1: "IA",
-    attr_2: "IE",
-    attr_3: "NA"
-  },
-  {
-    attr_1: "IA",
-    attr_2: "NA",
-    attr_3: "LI"
-  },
-  {
-    attr_1: "NA",
-    attr_2: "LI",
-    attr_3: "LO"
-  },
-  {
-    attr_1: "NA",
-    attr_2: "LO",
-    attr_3: "SP"
-  },
-  {
-    attr_1: "NA",
-    attr_2: "SP",
-    attr_3: "BO"
-  },
-  {
-    attr_1: "NA",
-    attr_2: "BO",
-    attr_3: "MU"
-  },
-  {
-    attr_1: "NA",
-    attr_2: "MU",
-    attr_3: "IE"
-  },
-  {
-    attr_1: "NA",
-    attr_2: "IE",
-    attr_3: "IA"
-  },
-  {
-    attr_1: "NA",
-    attr_2: "IA",
-    attr_3: "LI"
-  }
+  { attr_1: "LO", attr_2: "IE", attr_3: "IA" },
+  { attr_1: "LO", attr_2: "SP", attr_3: "BO" },
+  { attr_1: "NA", attr_2: "IE", attr_3: "LO" },
+  { attr_1: "LO", attr_2: "NA", attr_3: "SP" },
+  { attr_1: "NA", attr_2: "SP", attr_3: "IE" },
+  { attr_1: "NA", attr_2: "IE", attr_3: "IA" },
+  { attr_1: "NA", attr_2: "LO", attr_3: "IE" },
+  { attr_1: "NA", attr_2: "LO", attr_3: "SP" },
+  { attr_1: "LO", attr_2: "SP", attr_3: "IE" },
+  { attr_1: "NA", attr_2: "BO", attr_3: "IE" },
+  { attr_1: "NA", attr_2: "SP", attr_3: "LO" },
+  { attr_1: "LO", attr_2: "SP", attr_3: "IA" },
+  { attr_1: "NA", attr_2: "BO", attr_3: "SP" },
+  { attr_1: "LI", attr_2: "IE", attr_3: "IA" },
+  { attr_1: "SP", attr_2: "LO", attr_3: "BO" },
+  { attr_1: "SP", attr_2: "MU", attr_3: "BO" },
+  { attr_1: "SP", attr_2: "IA", attr_3: "MU" },
+  { attr_1: "IE", attr_2: "LI", attr_3: "IA" },
+  { attr_1: "SP", attr_2: "BO", attr_3: "LO" },
+  { attr_1: "SP", attr_2: "LO", attr_3: "IE" },
+  { attr_1: "IE", attr_2: "LO", attr_3: "IA" },
+  { attr_1: "IE", attr_2: "LI", attr_3: "MU" },
+  { attr_1: "IA", attr_2: "LI", attr_3: "IE" },
+  { attr_1: "IE", attr_2: "IA", attr_3: "LO" },
+  { attr_1: "SP", attr_2: "IE", attr_3: "MU" },
+  { attr_1: "BO", attr_2: "MU", attr_3: "SP" },
+  { attr_1: "IA", attr_2: "IE", attr_3: "LO" },
+  { attr_1: "IA", attr_2: "BO", attr_3: "SP" },
+  { attr_1: "IA", attr_2: "BO", attr_3: "IE" },
+  { attr_1: "IE", attr_2: "IA", attr_3: "MU" },
+  { attr_1: "SP", attr_2: "IE", attr_3: "IA" },
+  { attr_1: "IE", attr_2: "LI", attr_3: "LO" },
+  { attr_1: "IA", attr_2: "IE", attr_3: "LI" },
+  { attr_1: "IE", attr_2: "LO", attr_3: "LI" },
+  { attr_1: "NA", attr_2: "IE", attr_3: "SP" },
+  { attr_1: "LO", attr_2: "NA", attr_3: "IE" },
+  { attr_1: "LI", attr_2: "IE", attr_3: "LA" },
+  { attr_1: "SP", attr_2: "BO", attr_3: "IA" },
+  { attr_1: "SP", attr_2: "LO", attr_3: "NA" },
+  { attr_1: "IE", attr_2: "SP", attr_3: "LO" },
+  { attr_1: "NA", attr_2: "SP", attr_3: "BO" },
+  { attr_1: "LO", attr_2: "IE", attr_3: "NA" },
+  { attr_1: "SP", attr_2: "NA", attr_3: "LO" },
+  { attr_1: "LI", attr_2: "IE", attr_3: "LO" },
+  { attr_1: "BO", attr_2: "IA", attr_3: "SP" },
+  { attr_1: "BO", attr_2: "IE", attr_3: "SP" },
+  { attr_1: "BO", attr_2: "SP", attr_3: "LO" },
+  { attr_1: "IE", attr_2: "LI", attr_3: "BO" },
+  { attr_1: "LO", attr_2: "IE", attr_3: "LI" },
+  { attr_1: "IE", attr_2: "SP", attr_3: "IA" },
+  { attr_1: "IA", attr_2: "IE", attr_3: "SP" },
+  { attr_1: "LI", attr_2: "IA", attr_3: "IE" },
+  { attr_1: "SP", attr_2: "LI", attr_3: "IA" },
+  { attr_1: "LI", attr_2: "IE", attr_3: "SP" },
+  { attr_1: "LO", attr_2: "BO", attr_3: "IE" },
+  { attr_1: "SP", attr_2: "IE", attr_3: "LO" },
+  { attr_1: "LO", attr_2: "BO", attr_3: "SP" },
+  { attr_1: "MU", attr_2: "IE", attr_3: "LI" },
+  { attr_1: "IE", attr_2: "NA", attr_3: "SP" },
+  { attr_1: "IE", attr_2: "IA", attr_3: "BO" },
+  { attr_1: "MU", attr_2: "LI", attr_3: "IE" },
+  { attr_1: "IE", attr_2: "BO", attr_3: "IA" },
+  { attr_1: "IE", attr_2: "LI", attr_3: "LA" },
+  { attr_1: "SP", attr_2: "BO", attr_3: "IE" },
+  { attr_1: "LO", attr_2: "LI", attr_3: "IA" },
+  { attr_1: "IE", attr_2: "BO", attr_3: "LO" },
+  { attr_1: "IE", attr_2: "LO", attr_3: "NA" },
+  { attr_1: "IE", attr_2: "IA", attr_3: "LI" },
+  { attr_1: "SP", attr_2: "IE", attr_3: "BO" },
+  { attr_1: "IE", attr_2: "LO", attr_3: "SP" },
+  { attr_1: "LO", attr_2: "IE", attr_3: "SP" },
+  { attr_1: "BO", attr_2: "SP", attr_3: "IE" }
 ];
 
 const programs = [
@@ -386,7 +178,7 @@ const programs = [
     PSCED_Name: "Criminology and Police Administration",
     description: "IA,BO,IE"
   },
-  { PSCED_Name: "Crop Protection", description: "NA," },
+  { PSCED_Name: "Crop Protection", description: "NA,SP,IE" },
   { PSCED_Name: "Crop Science", description: "NA,SP,IE" },
   { PSCED_Name: "Culture Heritage Studies", description: "IE,IA,MU" },
   { PSCED_Name: "Curriculum and Instruction", description: "IE,LO,IA" },
@@ -652,34 +444,25 @@ const programs = [
   { PSCED_Name: "Zoology", description: "NA,SP,LO" }
 ];
 
-const consDataset = result.map(d => {
-  let path = "";
-  programs.forEach(p => {
-    const attrs = p.description.split(",");
+const consDataset = programs.map(d => {
+  const attrs = d.description.split(",");
 
-    if (
-      // attrs[0] === d.attr_1 &&
-      // attrs[1] === d.attr_2 &&
-      // attrs[2] === d.attr_3
-
-      attrs.includes(d.attr_1) ||
-      attrs.includes(d.attr_2) ||
-      attrs.includes(d.attr_3)
-    ) {
-      path += `${p.PSCED_Name},`;
-    }
-  });
-  // path = path.substring(0, path.length - 1);
-  return { ...d, path };
+  return {
+    attr_1: attrs[0],
+    attr_2: attrs[1],
+    attr_3: attrs[2],
+    path: d.PSCED_Name
+  };
 });
 
-const reducedDataset = consDataset
-  .filter(d => d.path !== "")
-  .filter(i => i.path.split(",").length > 2);
+// const reducedDataset = consDataset
+//   .filter(d => d.path !== "")
+//   .filter(i => i.path.split(",").length > 2);
 
-// console.table(JSON.stringify(reducedDataset));
+// console.log(JSON.stringify(reducedDataset));
 // console.log(reducedDataset);
-console.log(consDataset);
+// console.log(consDataset);
+// console.log(JSON.stringify(consDataset));
 
 let paths = "";
 consDataset.forEach(i => {
@@ -688,4 +471,11 @@ consDataset.forEach(i => {
   }
 });
 
-console.log(new Set(paths.split(",")));
+// console.log(new Set(paths.split(",")));
+
+const newDS = programs.map(p => p.description);
+const DS = [...new Set(newDS)].map(i => {
+  const attr = i.split(",");
+
+  return { attr_1: attr[0], attr_2: attr[1], attr_3: attr[2] };
+});

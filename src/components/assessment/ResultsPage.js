@@ -8,8 +8,9 @@ import { Typography, Box, Paper } from "@material-ui/core";
 // custom components
 import ContentTitleBar from "../global/ContentTitleBar";
 import TopRatingSection from "./RatingSectionPrimary";
-import UnderConstruction from "../global/UnderConstruction";
 import OtherRatingSection from "./RatingSectionSecondary";
+
+import { initDecisionTree } from "../../utils/initDecisionTree";
 
 const ResultsPage = () => {
   const resultsData = useSelector(state => state.assessment.assessmentResults);
@@ -34,6 +35,25 @@ const ResultsPage = () => {
     }
   });
 
+  // eslint-disable-next-line
+  topRatings = topRatings.map(attr => {
+    if (attr[0] === "Linguistic") return [...attr, "LI"];
+    if (attr[0] === "Logical_Mathematical") return [...attr, "LO"];
+    if (attr[0] === "Spatial") return [...attr, "SP"];
+    if (attr[0] === "Bodily_Kinesthetic") return [...attr, "BO"];
+    if (attr[0] === "Musical") return [...attr, "MU"];
+    if (attr[0] === "Interpersonal") return [...attr, "IE"];
+    if (attr[0] === "Intrapersonal") return [...attr, "IA"];
+    if (attr[0] === "Naturalist") return [...attr, "NA"];
+  });
+
+  const dtComic = {
+    attr_1: topRatings[0][2],
+    attr_2: topRatings[1][2],
+    attr_3: topRatings[2][2]
+  };
+  initDecisionTree(dtComic);
+
   return (
     <>
       <Box mb={3}>
@@ -44,7 +64,6 @@ const ResultsPage = () => {
         <Paper>
           <Box p={3}>
             <Typography variant="h6">Career Path Suggestions</Typography>
-            <UnderConstruction />
           </Box>
         </Paper>
       </Box>
