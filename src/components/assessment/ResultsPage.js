@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import { Redirect } from "react-router-dom";
 
 // material ui imports
-import { Typography, Box, Paper } from "@material-ui/core";
+import { Box, Paper } from "@material-ui/core";
 
 // custom components
 import ContentTitleBar from "../global/ContentTitleBar";
@@ -11,6 +11,7 @@ import TopRatingSection from "./RatingSectionPrimary";
 import OtherRatingSection from "./RatingSectionSecondary";
 
 import { initDecisionTree } from "../../utils/initDecisionTree";
+import CareerPathSection from "./CareerPathSection";
 
 const ResultsPage = () => {
   const resultsData = useSelector(state => state.assessment.assessmentResults);
@@ -47,12 +48,19 @@ const ResultsPage = () => {
     if (attr[0] === "Naturalist") return [...attr, "NA"];
   });
 
+  // const dtComic = {
+  //   attr_1: topRatings[0][2],
+  //   attr_2: topRatings[1][2],
+  //   attr_3: topRatings[2][2]
+  // };
+
   const dtComic = {
-    attr_1: topRatings[0][2],
-    attr_2: topRatings[1][2],
-    attr_3: topRatings[2][2]
+    attr_1: "IA",
+    attr_2: "IE",
+    attr_3: "LO"
   };
-  initDecisionTree(dtComic);
+  const paths = initDecisionTree(dtComic);
+  console.log(dtComic);
 
   return (
     <>
@@ -63,7 +71,7 @@ const ResultsPage = () => {
       <Box mb={3}>
         <Paper>
           <Box p={3}>
-            <Typography variant="h6">Career Path Suggestions</Typography>
+            <CareerPathSection paths={paths} />
           </Box>
         </Paper>
       </Box>

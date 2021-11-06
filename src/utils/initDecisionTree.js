@@ -16,6 +16,5 @@ export const initDecisionTree = comic => {
   // Testing Decision
   const decisionTreePrediction = decisionTree.predict(comic);
 
-  console.log("Attributes:", comic);
-  console.log("Result:", JSON.parse(decisionTreePrediction));
+  return JSON.parse(decisionTreePrediction);
 };
