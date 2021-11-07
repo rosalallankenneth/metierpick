@@ -48,17 +48,12 @@ const ResultsPage = () => {
     if (attr[0] === "Naturalist") return [...attr, "NA"];
   });
 
-  // const dtComic = {
-  //   attr_1: topRatings[0][2],
-  //   attr_2: topRatings[1][2],
-  //   attr_3: topRatings[2][2]
-  // };
-
   const dtComic = {
-    attr_1: "IA",
-    attr_2: "IE",
-    attr_3: "LO"
+    attr_1: topRatings[0][2],
+    attr_2: topRatings[1][2],
+    attr_3: topRatings[2][2]
   };
+
   const paths = initDecisionTree(dtComic);
   console.log(dtComic);
 

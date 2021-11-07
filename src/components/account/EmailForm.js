@@ -1,7 +1,7 @@
 import React from "react";
 
 // material ui imports
-import { Typography, Grid, Box } from "@material-ui/core";
+import { Grid, TextField } from "@material-ui/core";
 
 // redux
 import { useSelector } from "react-redux";
@@ -13,12 +13,15 @@ const EmailForm = () => {
     <form noValidate autoComplete="off">
       <Grid container direction="row" spacing={2}>
         <Grid item xs={12}>
-          <Typography variant="body2">
-            <b>Email</b>
-          </Typography>
-          <Box mt={2}>
-            <Typography variant="body1">{email}</Typography>
-          </Box>
+          <TextField
+            value={email}
+            fullWidth
+            name="Email"
+            label="Email"
+            type="text"
+            variant="outlined"
+            InputProps={{ readOnly: true, disableUnderline: true }}
+          />
         </Grid>
       </Grid>
     </form>
