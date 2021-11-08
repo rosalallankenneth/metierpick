@@ -12,7 +12,7 @@ const AttributesItem = props => {
 
   return (
     <>
-      <Grid item md={4} xs={12} key={attr.name}>
+      <Grid item lg={3} md={4} xs={6} key={attr.name}>
         <ButtonBase className={classes.attrItem} onClick={handleAttrClick}>
           <Box p={2}>
             <Typography align="center">
@@ -25,19 +25,10 @@ const AttributesItem = props => {
 
             <Typography
               className={classes.attrTitle}
-              variant="body1"
+              variant="body2"
               align="center"
             >
               <b>{attr.name}</b>
-            </Typography>
-
-            <Typography
-              className={classes.attrRating}
-              variant="h6"
-              align="center"
-              color="primary"
-            >
-              <b>{attr.rating.toFixed(2)}</b>
             </Typography>
           </Box>
         </ButtonBase>

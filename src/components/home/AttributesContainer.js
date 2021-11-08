@@ -1,32 +1,11 @@
 import React, { useState } from "react";
-import { Grid, Box } from "@material-ui/core";
+import { Grid, Box, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { categories } from "../../data/categoriesInformation";
 
 import AttributesItem from "./AttributesItem";
 import BasicModal from "../global/BasicModal";
 import bcgImgAttr from "../../assets/bcg-img-attr.jpg";
-
-const topAttributes = [
-  {
-    name: "Logical-Mathematical",
-    description: categories.Logical_Mathematical[0],
-    icon: categories.Logical_Mathematical[1],
-    rating: 5.0
-  },
-  {
-    name: "Spatial",
-    description: categories.Spatial[0],
-    icon: categories.Spatial[1],
-    rating: 4.67
-  },
-  {
-    name: "Linguistic",
-    description: categories.Linguistic[0],
-    icon: categories.Linguistic[1],
-    rating: 4.0
-  }
-];
 
 const useStyles = makeStyles(theme => ({
   attrContainer: {
@@ -52,7 +31,8 @@ const useStyles = makeStyles(theme => ({
     "&:hover": {
       background: "rgba(0, 0, 0, .3)"
     },
-    width: "100%"
+    width: "100%",
+    borderRadius: 10
   }
 }));
 
@@ -73,29 +53,42 @@ const AttributesContainer = () => {
 
   return (
     <>
-      <Box className={classes.attrContainer}>
-        <Box className={classes.bcgBlur} px={2}>
-          <Grid
-            container
-            spacing={3}
-            justifyContent="center"
-            alignItems="center"
-          >
-            {topAttributes.map(attr => {
-              return (
-                <AttributesItem
-                  key={attr.name}
-                  attr={attr}
-                  classes={classes}
-                  handleOpen={handleOpenModal}
-                  setModalDesc={setModalDesc}
-                  setModalTitle={setModalTitle}
-                />
-              );
-            })}
-          </Grid>
+      <Box p={3}>
+        <Typography variant="h6">Attributes Description</Typography>
+        <Box mt={1}>
+          <Typography variant="body2" align="justify">
+            Learn more about the different types of Intelligences.
+          </Typography>
         </Box>
       </Box>
+
+      <Box>
+        <Box mt={1}>
+          <Box className={classes.attrContainer}>
+            <Box className={classes.bcgBlur} p={2}>
+              <Grid container justifyContent="center" alignItems="center">
+                {Object.keys(categories).map(attr => {
+                  return (
+                    <AttributesItem
+                      key={attr}
+                      attr={{
+                        name: attr.replace("_", "-"),
+                        description: categories[attr][0],
+                        icon: categories[attr][1]
+                      }}
+                      classes={classes}
+                      handleOpen={handleOpenModal}
+                      setModalDesc={setModalDesc}
+                      setModalTitle={setModalTitle}
+                    />
+                  );
+                })}
+              </Grid>
+            </Box>
+          </Box>
+        </Box>
+      </Box>
+
       <BasicModal
         open={openModal}
         handleClose={handleCloseModal}

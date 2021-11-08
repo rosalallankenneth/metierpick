@@ -13,7 +13,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import CircularProgress from "@material-ui/core/CircularProgress";
 
 import MetierpickLogo from "../../assets/logo-v2.png";
-import HomeMap from "../home/HomeMap";
+import Map from "../../mapping-system/pages/Map";
 import AlertError from "../global/AlertError";
 import Copyright from "../global/Copyright";
 
@@ -88,7 +88,7 @@ export default function SignInSide(props) {
       <Grid container component="main" className={classes.root}>
         <CssBaseline />
         <Grid item xs={false} sm={4} md={7} className={classes.image}>
-          <HomeMap />
+          <Map />
         </Grid>
         <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
           <div className={classes.paper}>

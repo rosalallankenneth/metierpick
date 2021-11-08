@@ -20,7 +20,7 @@ const EmailForm = () => {
             label="Email"
             type="text"
             variant="outlined"
-            InputProps={{ readOnly: true, disableUnderline: true }}
+            InputProps={{ readOnly: true }}
           />
         </Grid>
       </Grid>

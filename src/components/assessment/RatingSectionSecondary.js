@@ -19,7 +19,7 @@ import NeedIcon from "@material-ui/icons/Explore";
 import RatingItemSecondary from "./RatingItemSecondary";
 import InformationModal from "../global/InformationModal";
 
-const OtherRatingSection = prop => {
+const RatingSectionSecondary = prop => {
   const { ratings } = prop;
 
   const [openModal, setOpenModal] = useState(false);
@@ -133,4 +133,4 @@ const renderWaysToLearnItems = (title, description, RowIcon) => {
     </>
   );
 };
-export default OtherRatingSection;
+export default RatingSectionSecondary;

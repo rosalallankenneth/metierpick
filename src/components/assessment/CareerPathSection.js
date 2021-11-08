@@ -28,9 +28,8 @@ const CareerPathSection = props => {
       <Typography variant="h6">Career Path Suggestions</Typography>
       <Box mt={1} mb={2}>
         <Typography variant="body2" align="justify">
-          These are your most dominant attributes or the skills that you excel
-          and get interested the most. This is based on the ratings that you got
-          from the assessment, with a range of 5.00 (highest) to 1.00 (lowest).
+          These are your most suitable career path (college programs) based on
+          the results of your assessment.
         </Typography>
       </Box>
       <CareerPathInformation

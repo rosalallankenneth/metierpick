@@ -27,7 +27,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const RatingDescription = props => {
+const RatingItemSecondary = props => {
   const {
     name,
     rating,
@@ -84,4 +84,4 @@ const RatingDescription = props => {
   );
 };
 
-export default RatingDescription;
+export default RatingItemSecondary;

@@ -35,7 +35,27 @@ const CareerPathInformation = props => {
               label="PSCED Name"
               type="text"
               variant="outlined"
-              InputProps={{ readOnly: true, disableUnderline: true }}
+              InputProps={{ readOnly: true }}
+            />
+            <TextField
+              value=""
+              fullWidth
+              margin="normal"
+              name="Full_Title"
+              label="Full Title"
+              type="text"
+              variant="outlined"
+              InputProps={{ readOnly: true }}
+            />
+            <TextField
+              value=""
+              fullWidth
+              margin="normal"
+              name="Description"
+              label="Description"
+              type="text"
+              variant="outlined"
+              InputProps={{ readOnly: true }}
             />
           </Box>
 
