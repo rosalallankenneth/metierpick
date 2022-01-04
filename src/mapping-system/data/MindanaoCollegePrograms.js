@@ -297,3 +297,5 @@ const programs = [
   { PSCED_Name: "Water Resources Engineering", description: "" },
   { PSCED_Name: "Zoology", description: "" }
 ];
+
+export default programs;

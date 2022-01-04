@@ -24,14 +24,18 @@ const useStyles = makeStyles(() => ({
   }
 }));
 
-const AddressForm = () => {
+const AddressForm = props => {
   const classes = useStyles();
-
-  // local state for selection of address
-  const [regionSelect, setRegionSelect] = useState("");
-  const [provinceSelect, setProvinceSelect] = useState("");
-  const [citySelect, setCitySelect] = useState("");
-  const [brgySelect, setBrgySelect] = useState("");
+  const {
+    regionSelect,
+    provinceSelect,
+    citySelect,
+    brgySelect,
+    setRegionSelect,
+    setProvinceSelect,
+    setCitySelect,
+    setBrgySelect
+  } = props;
 
   // local state for list of address
   const [provinceList, setProvinceList] = useState([]);

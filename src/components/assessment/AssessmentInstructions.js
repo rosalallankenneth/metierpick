@@ -48,27 +48,27 @@ const AssessmentInstructions = () => {
               <List>
                 <ListItem>
                   <Typography>
-                    <b>1</b> – Not Applicable
+                    <b>1</b> – Never
                   </Typography>
                 </ListItem>
                 <ListItem>
                   <Typography>
-                    <b>2</b> – Slightly Applicable
+                    <b>2</b> – Rarely
                   </Typography>
                 </ListItem>
                 <ListItem>
                   <Typography>
-                    <b>3</b> – Somewhat Applicable
+                    <b>3</b> – Sometimes
                   </Typography>
                 </ListItem>
                 <ListItem>
                   <Typography>
-                    <b>4</b> – Applicable
+                    <b>4</b> – Often
                   </Typography>
                 </ListItem>
                 <ListItem>
                   <Typography>
-                    <b>5</b> – Very Applicable
+                    <b>5</b> – Always
                   </Typography>
                 </ListItem>
               </List>
@@ -77,12 +77,6 @@ const AssessmentInstructions = () => {
           <ListItem>
             <Typography align="justify">
               4. This assessment is composed of 80 items in total.
-            </Typography>
-          </ListItem>
-          <ListItem>
-            <Typography align="justify">
-              5. At the end of the assessment, the respondent has to provide
-              their email for contacting purposes.
             </Typography>
           </ListItem>
           <ListItem>

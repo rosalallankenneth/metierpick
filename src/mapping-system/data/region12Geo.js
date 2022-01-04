@@ -1,4 +1,5 @@
 export const region12GeoData = {
+  id: 12, 
   type: "FeatureCollection",
   features: [
     {
@@ -310,7 +311,469 @@ export const region12GeoData = {
         TYPE_1: "Lalawigan|Probinsya",
         ENGTYPE_1: "Province",
         PROVINCE: "North Cotabato",
-        REGION: "SOCCSKSARGEN (Region XII)"
+        REGION: "SOCCSKSARGEN (Region XII)",
+        statistics: [
+          {
+            PSCED_Name: "Accountancy",
+            Enrollment: "531",
+            Graduates: "69"
+          },
+          {
+            PSCED_Name: "Accounting Technology",
+            Enrollment: "38",
+            Graduates: "208"
+          },
+          {
+            PSCED_Name: "Agri-Business",
+            Enrollment: "391",
+            Graduates: "133"
+          },
+          {
+            PSCED_Name: "Agricultural Chemistry",
+            Enrollment: "0",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Agricultural Economics",
+            Enrollment: "216",
+            Graduates: "27"
+          },
+          {
+            PSCED_Name: "Agricultural Engineering",
+            Enrollment: "259",
+            Graduates: "42"
+          },
+          {
+            PSCED_Name: "Agricultural Science",
+            Enrollment: "20",
+            Graduates: "66"
+          },
+          {
+            PSCED_Name: "Agricultural Technology",
+            Enrollment: "359",
+            Graduates: "89"
+          },
+          {
+            PSCED_Name: "Agriculture",
+            Enrollment: "2688",
+            Graduates: "549"
+          },
+          {
+            PSCED_Name: "Agronomy",
+            Enrollment: "10",
+            Graduates: "2"
+          },
+          {
+            PSCED_Name: "Animal Husbandry",
+            Enrollment: "0",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Animal Science",
+            Enrollment: "13",
+            Graduates: "10"
+          },
+          {
+            PSCED_Name: "Aquaculture",
+            Enrollment: "0",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Biology",
+            Enrollment: "196",
+            Graduates: "47"
+          },
+          {
+            PSCED_Name: "Business Administration",
+            Enrollment: "2208",
+            Graduates: "729"
+          },
+          {
+            PSCED_Name: "Business Administration/Management & Accountancy",
+            Enrollment: "145",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Business Entrepreneurship",
+            Enrollment: "319",
+            Graduates: "105"
+          },
+          {
+            PSCED_Name: "Chemistry",
+            Enrollment: "63",
+            Graduates: "12"
+          },
+          {
+            PSCED_Name: "Civil Engineering",
+            Enrollment: "671",
+            Graduates: "48"
+          },
+          {
+            PSCED_Name: "Communication",
+            Enrollment: "52",
+            Graduates: "23"
+          },
+          {
+            PSCED_Name: "Community Development",
+            Enrollment: "182",
+            Graduates: "29"
+          },
+          {
+            PSCED_Name: "Computer Engineering",
+            Enrollment: "302",
+            Graduates: "42"
+          },
+          {
+            PSCED_Name: "Computer Science",
+            Enrollment: "347",
+            Graduates: "102"
+          },
+          {
+            PSCED_Name: "Computer Technology",
+            Enrollment: "77",
+            Graduates: "92"
+          },
+          {
+            PSCED_Name: "Criminology",
+            Enrollment: "3174",
+            Graduates: "497"
+          },
+          {
+            PSCED_Name: "Crop Protection",
+            Enrollment: "24",
+            Graduates: "6"
+          },
+          {
+            PSCED_Name: "Development Communication",
+            Enrollment: "153",
+            Graduates: "31"
+          },
+          {
+            PSCED_Name: "Development Management/Administration",
+            Enrollment: "210",
+            Graduates: "89"
+          },
+          {
+            PSCED_Name: "Early Childhood Education",
+            Enrollment: "16",
+            Graduates: "1"
+          },
+          {
+            PSCED_Name: "Economics",
+            Enrollment: "0",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Education",
+            Enrollment: "1371",
+            Graduates: "191"
+          },
+          {
+            PSCED_Name: "Educational Administration/Management",
+            Enrollment: "9",
+            Graduates: "4"
+          },
+          {
+            PSCED_Name: "Educational Technology",
+            Enrollment: "144",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Electrical Engineering",
+            Enrollment: "131",
+            Graduates: "22"
+          },
+          {
+            PSCED_Name: "Electronics and Communications Engineering",
+            Enrollment: "28",
+            Graduates: "16"
+          },
+          {
+            PSCED_Name: "Electronics Engineering/Technology",
+            Enrollment: "172",
+            Graduates: "6"
+          },
+          {
+            PSCED_Name: "Elementary Education",
+            Enrollment: "1501",
+            Graduates: "698"
+          },
+          {
+            PSCED_Name: "English",
+            Enrollment: "147",
+            Graduates: "50"
+          },
+          {
+            PSCED_Name: "Extension Education",
+            Enrollment: "119",
+            Graduates: "12"
+          },
+          {
+            PSCED_Name: "Farming System",
+            Enrollment: "3",
+            Graduates: "6"
+          },
+          {
+            PSCED_Name: "Fisheries",
+            Enrollment: "162",
+            Graduates: "43"
+          },
+          {
+            PSCED_Name: "Food Service Administration",
+            Enrollment: "291",
+            Graduates: "22"
+          },
+          {
+            PSCED_Name: "Food Technology",
+            Enrollment: "154",
+            Graduates: "52"
+          },
+          {
+            PSCED_Name: "Forestry",
+            Enrollment: "64",
+            Graduates: "33"
+          },
+          {
+            PSCED_Name: "General Mathematics",
+            Enrollment: "26",
+            Graduates: "5"
+          },
+          {
+            PSCED_Name: "Government Accounting and Auditing",
+            Enrollment: "4",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Guidance and Counselling",
+            Enrollment: "9",
+            Graduates: "8"
+          },
+          {
+            PSCED_Name: "History",
+            Enrollment: "98",
+            Graduates: "12"
+          },
+          {
+            PSCED_Name: "Home Economics",
+            Enrollment: "15",
+            Graduates: "2"
+          },
+          {
+            PSCED_Name: "Horticulture",
+            Enrollment: "16",
+            Graduates: "14"
+          },
+          {
+            PSCED_Name: "Hotel and Restaurant Management",
+            Enrollment: "697",
+            Graduates: "227"
+          },
+          {
+            PSCED_Name: "Industrial Engineering",
+            Enrollment: "119",
+            Graduates: "16"
+          },
+          {
+            PSCED_Name: "Industrial Technology",
+            Enrollment: "443",
+            Graduates: "121"
+          },
+          {
+            PSCED_Name: "Information Management",
+            Enrollment: "770",
+            Graduates: "37"
+          },
+          {
+            PSCED_Name: "Information Technology",
+            Enrollment: "890",
+            Graduates: "342"
+          },
+          {
+            PSCED_Name: "International Relations",
+            Enrollment: "190",
+            Graduates: "37"
+          },
+          {
+            PSCED_Name: "Islamic Studies",
+            Enrollment: "653",
+            Graduates: "261"
+          },
+          {
+            PSCED_Name: "Language Education/Language Teaching",
+            Enrollment: "140",
+            Graduates: "26"
+          },
+          {
+            PSCED_Name: "Liberal Arts-Liacom",
+            Enrollment: "0",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Library and Information Science",
+            Enrollment: "165",
+            Graduates: "58"
+          },
+          {
+            PSCED_Name: "Management",
+            Enrollment: "0",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Mechanical Engineering",
+            Enrollment: "152",
+            Graduates: "42"
+          },
+          {
+            PSCED_Name: "Medical Technology",
+            Enrollment: "193",
+            Graduates: "46"
+          },
+          {
+            PSCED_Name: "Midwifery",
+            Enrollment: "392",
+            Graduates: "126"
+          },
+          {
+            PSCED_Name: "Nursing",
+            Enrollment: "1071",
+            Graduates: "144"
+          },
+          {
+            PSCED_Name: "Nutrition and Dietetics",
+            Enrollment: "131",
+            Graduates: "45"
+          },
+          {
+            PSCED_Name: "Office Administration/Management",
+            Enrollment: "35",
+            Graduates: "14"
+          },
+          {
+            PSCED_Name: "Other Education not elsewhere coded (NEC)",
+            Enrollment: "96",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Other Education Science and Teacher Training",
+            Enrollment: "21",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Personnel and Human Resources Management",
+            Enrollment: "2",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Pharmacy",
+            Enrollment: "123",
+            Graduates: "36"
+          },
+          {
+            PSCED_Name: "Philosophy",
+            Enrollment: "49",
+            Graduates: "3"
+          },
+          {
+            PSCED_Name: "Physical Education",
+            Enrollment: "324",
+            Graduates: "115"
+          },
+          {
+            PSCED_Name: "Pilipino/Filipino",
+            Enrollment: "8",
+            Graduates: "34"
+          },
+          {
+            PSCED_Name: "Plant Breeding",
+            Enrollment: "3",
+            Graduates: "1"
+          },
+          {
+            PSCED_Name: "Political Science",
+            Enrollment: "68",
+            Graduates: "17"
+          },
+          {
+            PSCED_Name: "Psychology",
+            Enrollment: "161",
+            Graduates: "63"
+          },
+          {
+            PSCED_Name: "Public Administration/Management",
+            Enrollment: "598",
+            Graduates: "42"
+          },
+          {
+            PSCED_Name: "Radiologic Technology",
+            Enrollment: "134",
+            Graduates: "66"
+          },
+          {
+            PSCED_Name: "Rural Development",
+            Enrollment: "69",
+            Graduates: "8"
+          },
+          {
+            PSCED_Name: "Secondary Education with no specialization",
+            Enrollment: "3340",
+            Graduates: "973"
+          },
+          {
+            PSCED_Name: "Secretarial/Medical Secretarial/Clerical",
+            Enrollment: "0",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Social Services",
+            Enrollment: "86",
+            Graduates: "16"
+          },
+          {
+            PSCED_Name: "Social Work",
+            Enrollment: "527",
+            Graduates: "91"
+          },
+          {
+            PSCED_Name: "Teaching",
+            Enrollment: "215",
+            Graduates: "26"
+          },
+          {
+            PSCED_Name: "Technician Teacher Education",
+            Enrollment: "737",
+            Graduates: "345"
+          },
+          {
+            PSCED_Name: "Technology/Engineering",
+            Enrollment: "887",
+            Graduates: "281"
+          },
+          {
+            PSCED_Name: "Theology/Theological Studies",
+            Enrollment: "56",
+            Graduates: "13"
+          },
+          {
+            PSCED_Name: "Tourism and Travel Management",
+            Enrollment: "413",
+            Graduates: "87"
+          },
+          {
+            PSCED_Name: "Transport Engineering",
+            Enrollment: "23",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Veterinary Medicine",
+            Enrollment: "270",
+            Graduates: "24"
+          },
+          {
+            PSCED_Name: "Veterinary Technology",
+            Enrollment: "244",
+            Graduates: "40"
+          }
+        ]
       }
     },
     {
@@ -597,7 +1060,74 @@ export const region12GeoData = {
         TYPE_1: "Lalawigan|Probinsya",
         ENGTYPE_1: "Province",
         PROVINCE: "Sarangani",
-        REGION: "SOCCSKSARGEN (Region XII)"
+        REGION: "SOCCSKSARGEN (Region XII)",
+        statistics: [
+          {
+            PSCED_Name: "Accounting Technology",
+            Enrollment: "96",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Agri-Business",
+            Enrollment: "510",
+            Graduates: "21"
+          },
+          {
+            PSCED_Name: "Communication",
+            Enrollment: "22",
+            Graduates: "11"
+          },
+          {
+            PSCED_Name: "Criminology",
+            Enrollment: "79",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Early Childhood Education",
+            Enrollment: "20",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Elementary Education",
+            Enrollment: "278",
+            Graduates: "161"
+          },
+          {
+            PSCED_Name: "Government Accounting and Auditing",
+            Enrollment: "0",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Hotel and Restaurant Management",
+            Enrollment: "2",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Information Technology",
+            Enrollment: "6",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Literature",
+            Enrollment: "484",
+            Graduates: "114"
+          },
+          {
+            PSCED_Name: "Office Administration/Management",
+            Enrollment: "310",
+            Graduates: "54"
+          },
+          {
+            PSCED_Name: "Secondary Education with no specialization",
+            Enrollment: "124",
+            Graduates: "43"
+          },
+          {
+            PSCED_Name: "Technician Teacher Education",
+            Enrollment: "535",
+            Graduates: "0"
+          }
+        ]
       }
     },
     {
@@ -747,7 +1277,499 @@ export const region12GeoData = {
         TYPE_1: "Lalawigan|Probinsya",
         ENGTYPE_1: "Province",
         PROVINCE: "South Cotabato",
-        REGION: "SOCCSKSARGEN (Region XII)"
+        REGION: "SOCCSKSARGEN (Region XII)",
+        statistics: [
+          {
+            PSCED_Name: "Accountancy",
+            Enrollment: "1984",
+            Graduates: "194"
+          },
+          {
+            PSCED_Name: "Accounting Technology",
+            Enrollment: "500",
+            Graduates: "452"
+          },
+          {
+            PSCED_Name: "Agricultural Technology",
+            Enrollment: "499",
+            Graduates: "321"
+          },
+          {
+            PSCED_Name: "Agriculture",
+            Enrollment: "2546",
+            Graduates: "455"
+          },
+          {
+            PSCED_Name: "Anthropology",
+            Enrollment: "0",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Applied Mathematics",
+            Enrollment: "0",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Architecture",
+            Enrollment: "158",
+            Graduates: "24"
+          },
+          {
+            PSCED_Name: "Arts",
+            Enrollment: "0",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Biology",
+            Enrollment: "75",
+            Graduates: "43"
+          },
+          {
+            PSCED_Name: "Business Administration",
+            Enrollment: "10076",
+            Graduates: "2720"
+          },
+          {
+            PSCED_Name: "Business Administration/Management & Accountancy",
+            Enrollment: "696",
+            Graduates: "124"
+          },
+          {
+            PSCED_Name: "Business Education",
+            Enrollment: "0",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Business Entrepreneurship",
+            Enrollment: "158",
+            Graduates: "36"
+          },
+          {
+            PSCED_Name: "Chemical Engineering",
+            Enrollment: "0",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Chemistry",
+            Enrollment: "10",
+            Graduates: "7"
+          },
+          {
+            PSCED_Name: "Civil Engineering",
+            Enrollment: "1438",
+            Graduates: "110"
+          },
+          {
+            PSCED_Name: "Commerce",
+            Enrollment: "0",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Communication",
+            Enrollment: "538",
+            Graduates: "124"
+          },
+          {
+            PSCED_Name: "Community Development",
+            Enrollment: "732",
+            Graduates: "119"
+          },
+          {
+            PSCED_Name: "Computer Engineering",
+            Enrollment: "226",
+            Graduates: "33"
+          },
+          {
+            PSCED_Name: "Computer Science",
+            Enrollment: "275",
+            Graduates: "86"
+          },
+          {
+            PSCED_Name: "Computer Technology",
+            Enrollment: "412",
+            Graduates: "188"
+          },
+          {
+            PSCED_Name: "Creative and Performing  Arts",
+            Enrollment: "82",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Criminal Justice",
+            Enrollment: "41",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Criminology",
+            Enrollment: "6806",
+            Graduates: "932"
+          },
+          {
+            PSCED_Name: "Crop Science",
+            Enrollment: "0",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Culture Heritage Studies",
+            Enrollment: "24",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Customs Administration",
+            Enrollment: "424",
+            Graduates: "112"
+          },
+          {
+            PSCED_Name: "Development Communication",
+            Enrollment: "25",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Development Economics",
+            Enrollment: "45",
+            Graduates: "2"
+          },
+          {
+            PSCED_Name: "Development Studies",
+            Enrollment: "16",
+            Graduates: "19"
+          },
+          {
+            PSCED_Name: "Early Childhood Education",
+            Enrollment: "1131",
+            Graduates: "36"
+          },
+          {
+            PSCED_Name: "Economics",
+            Enrollment: "81",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Education",
+            Enrollment: "859",
+            Graduates: "82"
+          },
+          {
+            PSCED_Name: "Educational Administration/Management",
+            Enrollment: "99",
+            Graduates: "5"
+          },
+          {
+            PSCED_Name: "Electrical Engineering",
+            Enrollment: "158",
+            Graduates: "32"
+          },
+          {
+            PSCED_Name: "Electronics and Communications Engineering",
+            Enrollment: "53",
+            Graduates: "8"
+          },
+          {
+            PSCED_Name: "Electronics Engineering/Technology",
+            Enrollment: "186",
+            Graduates: "32"
+          },
+          {
+            PSCED_Name: "Elementary Education",
+            Enrollment: "4866",
+            Graduates: "1547"
+          },
+          {
+            PSCED_Name: "English",
+            Enrollment: "935",
+            Graduates: "97"
+          },
+          {
+            PSCED_Name: "Environmental Planning/Management",
+            Enrollment: "3",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Environmental Science",
+            Enrollment: "35",
+            Graduates: "18"
+          },
+          {
+            PSCED_Name: "Fisheries",
+            Enrollment: "392",
+            Graduates: "99"
+          },
+          {
+            PSCED_Name: "Food Technology",
+            Enrollment: "0",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "General Mathematics",
+            Enrollment: "13",
+            Graduates: "39"
+          },
+          {
+            PSCED_Name: "Geodetic Engineering",
+            Enrollment: "0",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Government Accounting and Auditing",
+            Enrollment: "14",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Guidance and Counselling",
+            Enrollment: "162",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Hotel and Restaurant Management",
+            Enrollment: "3216",
+            Graduates: "596"
+          },
+          {
+            PSCED_Name: "Industrial Engineering",
+            Enrollment: "150",
+            Graduates: "33"
+          },
+          {
+            PSCED_Name: "Industrial Technology",
+            Enrollment: "0",
+            Graduates: "10"
+          },
+          {
+            PSCED_Name: "Information Management",
+            Enrollment: "284",
+            Graduates: "32"
+          },
+          {
+            PSCED_Name: "Information Technology",
+            Enrollment: "4729",
+            Graduates: "852"
+          },
+          {
+            PSCED_Name: "Language Education/Language Teaching",
+            Enrollment: "36",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Library and Information Science",
+            Enrollment: "45",
+            Graduates: "4"
+          },
+          {
+            PSCED_Name: "Library Science",
+            Enrollment: "12",
+            Graduates: "17"
+          },
+          {
+            PSCED_Name: "Local Government & Regional Development",
+            Enrollment: "0",
+            Graduates: "39"
+          },
+          {
+            PSCED_Name: "Management",
+            Enrollment: "11",
+            Graduates: "1"
+          },
+          {
+            PSCED_Name: "Marine Engineering/Technology",
+            Enrollment: "791",
+            Graduates: "183"
+          },
+          {
+            PSCED_Name: "Marine Transportation",
+            Enrollment: "909",
+            Graduates: "274"
+          },
+          {
+            PSCED_Name: "Mass Communication",
+            Enrollment: "1",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Mechanical Engineering",
+            Enrollment: "249",
+            Graduates: "26"
+          },
+          {
+            PSCED_Name: "Medical Technology",
+            Enrollment: "890",
+            Graduates: "219"
+          },
+          {
+            PSCED_Name: "Midwifery",
+            Enrollment: "680",
+            Graduates: "193"
+          },
+          {
+            PSCED_Name: "Natural Science",
+            Enrollment: "349",
+            Graduates: "126"
+          },
+          {
+            PSCED_Name: "Nursing",
+            Enrollment: "982",
+            Graduates: "106"
+          },
+          {
+            PSCED_Name: "Nutrition and Dietetics",
+            Enrollment: "0",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Office Administration/Management",
+            Enrollment: "2064",
+            Graduates: "380"
+          },
+          {
+            PSCED_Name: "Other Education not elsewhere coded (NEC)",
+            Enrollment: "96",
+            Graduates: "17"
+          },
+          {
+            PSCED_Name: "Other Education Science and Teacher Training",
+            Enrollment: "99",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Other Fine and Applied Arts",
+            Enrollment: "55",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Other IT-Related",
+            Enrollment: "41",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Personnel and Human Resources Management",
+            Enrollment: "58",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Pharmacy",
+            Enrollment: "541",
+            Graduates: "127"
+          },
+          {
+            PSCED_Name: "Physical Education",
+            Enrollment: "1108",
+            Graduates: "96"
+          },
+          {
+            PSCED_Name: "Physical Therapy",
+            Enrollment: "7",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Physics",
+            Enrollment: "0",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Pilipino/Filipino",
+            Enrollment: "144",
+            Graduates: "31"
+          },
+          {
+            PSCED_Name: "Political Science",
+            Enrollment: "107",
+            Graduates: "13"
+          },
+          {
+            PSCED_Name: "Psychology",
+            Enrollment: "603",
+            Graduates: "117"
+          },
+          {
+            PSCED_Name: "Public Administration/Management",
+            Enrollment: "229",
+            Graduates: "113"
+          },
+          {
+            PSCED_Name: "Radiologic Technology",
+            Enrollment: "203",
+            Graduates: "63"
+          },
+          {
+            PSCED_Name: "Real Estate",
+            Enrollment: "88",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Rural Development",
+            Enrollment: "0",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Science",
+            Enrollment: "148",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Science Education (teaching Science)",
+            Enrollment: "37",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Secondary Education with no specialization",
+            Enrollment: "5379",
+            Graduates: "1164"
+          },
+          {
+            PSCED_Name: "Social Science",
+            Enrollment: "1119",
+            Graduates: "329"
+          },
+          {
+            PSCED_Name: "Social Work",
+            Enrollment: "1447",
+            Graduates: "269"
+          },
+          {
+            PSCED_Name: "Sociology",
+            Enrollment: "18",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Special Education",
+            Enrollment: "10",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Sports Science (Sports Officiating/Coaching)",
+            Enrollment: "1",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Teaching",
+            Enrollment: "0",
+            Graduates: "5"
+          },
+          {
+            PSCED_Name: "Technician Teacher Education",
+            Enrollment: "2371",
+            Graduates: "308"
+          },
+          {
+            PSCED_Name: "Technology/Engineering",
+            Enrollment: "698",
+            Graduates: "86"
+          },
+          {
+            PSCED_Name: "Theology/Theological Studies",
+            Enrollment: "0",
+            Graduates: "0"
+          },
+          {
+            PSCED_Name: "Tourism",
+            Enrollment: "175",
+            Graduates: "55"
+          },
+          {
+            PSCED_Name: "Tourism and Travel Management",
+            Enrollment: "1360",
+            Graduates: "198"
+          }
+        ]
       }
     },
     {
@@ -956,7 +1978,416 @@ export const region12GeoData = {
         TYPE_1: "Lalawigan|Probinsya",
         ENGTYPE_1: "Province",
         PROVINCE: "Sultan Kudarat",
-        REGION: "SOCCSKSARGEN (Region XII)"
+        REGION: "SOCCSKSARGEN (Region XII)",
+        statistics: [
+          
+        {
+          
+          
+          "PSCED_Name": "Accountancy",
+          "Enrollment": "192",
+          "Graduates": "39"
+      },
+      {
+          
+          
+          "PSCED_Name": "Accounting Technology",
+          "Enrollment": "119",
+          "Graduates": "238"
+      },
+      {
+          
+          
+          "PSCED_Name": "Agri-Business",
+          "Enrollment": "388",
+          "Graduates": "73"
+      },
+      {
+          
+          
+          "PSCED_Name": "Agricultural Science",
+          "Enrollment": "119",
+          "Graduates": "2"
+      },
+      {
+          
+          
+          "PSCED_Name": "Agricultural Technology",
+          "Enrollment": "497",
+          "Graduates": "154"
+      },
+      {
+          
+          
+          "PSCED_Name": "Agricultural Technology Education",
+          "Enrollment": "51",
+          "Graduates": "0"
+      },
+      {
+          
+          
+          "PSCED_Name": "Agriculture",
+          "Enrollment": "26",
+          "Graduates": "22"
+      },
+      {
+          
+          
+          "PSCED_Name": "Biology",
+          "Enrollment": "316",
+          "Graduates": "85"
+      },
+      {
+          
+          
+          "PSCED_Name": "Business Administration",
+          "Enrollment": "466",
+          "Graduates": "143"
+      },
+      {
+          
+          
+          "PSCED_Name": "Business Administration/Management & Accountancy",
+          "Enrollment": "88",
+          "Graduates": "0"
+      },
+      {
+          
+          
+          "PSCED_Name": "Business Data Processing",
+          "Enrollment": "0",
+          "Graduates": "1"
+      },
+      {
+          
+          
+          "PSCED_Name": "Business Entrepreneurship",
+          "Enrollment": "167",
+          "Graduates": "93"
+      },
+      {
+          
+          
+          "PSCED_Name": "Civil Engineering",
+          "Enrollment": "223",
+          "Graduates": "37"
+      },
+      {
+          
+          
+          "PSCED_Name": "Commerce",
+          "Enrollment": "0",
+          "Graduates": "0"
+      },
+      {
+          
+          
+          "PSCED_Name": "Communication",
+          "Enrollment": "4",
+          "Graduates": "0"
+      },
+      {
+          
+          
+          "PSCED_Name": "Computer Engineering",
+          "Enrollment": "152",
+          "Graduates": "29"
+      },
+      {
+          
+          
+          "PSCED_Name": "Computer Science",
+          "Enrollment": "90",
+          "Graduates": "6"
+      },
+      {
+          
+          
+          "PSCED_Name": "Computer Technology",
+          "Enrollment": "217",
+          "Graduates": "113"
+      },
+      {
+          
+          
+          "PSCED_Name": "Criminology",
+          "Enrollment": "2363",
+          "Graduates": "706"
+      },
+      {
+          
+          
+          "PSCED_Name": "Early Childhood Education",
+          "Enrollment": "292",
+          "Graduates": "50"
+      },
+      {
+          
+          
+          "PSCED_Name": "Economics",
+          "Enrollment": "115",
+          "Graduates": "0"
+      },
+      {
+          
+          
+          "PSCED_Name": "Education",
+          "Enrollment": "38",
+          "Graduates": "0"
+      },
+      {
+          
+          
+          "PSCED_Name": "Educational Administration/Management",
+          "Enrollment": "277",
+          "Graduates": "6"
+      },
+      {
+          
+          
+          "PSCED_Name": "Elementary Education",
+          "Enrollment": "1930",
+          "Graduates": "731"
+      },
+      {
+          
+          
+          "PSCED_Name": "English",
+          "Enrollment": "0",
+          "Graduates": "0"
+      },
+      {
+          
+          
+          "PSCED_Name": "Environmental Science",
+          "Enrollment": "36",
+          "Graduates": "0"
+      },
+      {
+          
+          
+          "PSCED_Name": "Fisheries",
+          "Enrollment": "63",
+          "Graduates": "14"
+      },
+      {
+          
+          
+          "PSCED_Name": "Fisheries Technology",
+          "Enrollment": "24",
+          "Graduates": "27"
+      },
+      {
+          
+          
+          "PSCED_Name": "History",
+          "Enrollment": "0",
+          "Graduates": "0"
+      },
+      {
+          
+          
+          "PSCED_Name": "Hotel and Restaurant Management",
+          "Enrollment": "563",
+          "Graduates": "119"
+      },
+      {
+          
+          
+          "PSCED_Name": "Industrial Technology",
+          "Enrollment": "535",
+          "Graduates": "122"
+      },
+      {
+          
+          
+          "PSCED_Name": "Information Management",
+          "Enrollment": "299",
+          "Graduates": "82"
+      },
+      {
+          
+          
+          "PSCED_Name": "Information Technology",
+          "Enrollment": "1234",
+          "Graduates": "299"
+      },
+      {
+          
+          
+          "PSCED_Name": "Institutional Development Management",
+          "Enrollment": "15",
+          "Graduates": "0"
+      },
+      {
+          
+          
+          "PSCED_Name": "Laws",
+          "Enrollment": "124",
+          "Graduates": "0"
+      },
+      {
+          
+          
+          "PSCED_Name": "Library and Information Science",
+          "Enrollment": "24",
+          "Graduates": "0"
+      },
+      {
+          
+          
+          "PSCED_Name": "Management",
+          "Enrollment": "278",
+          "Graduates": "7"
+      },
+      {
+          
+          
+          "PSCED_Name": "Mass Communication",
+          "Enrollment": "19",
+          "Graduates": "1"
+      },
+      {
+          
+          
+          "PSCED_Name": "Midwifery",
+          "Enrollment": "983",
+          "Graduates": "247"
+      },
+      {
+          
+          
+          "PSCED_Name": "NA 2019/20",
+          "Enrollment": "0",
+          "Graduates": "0"
+      },
+      {
+          
+          
+          "PSCED_Name": "Nursing",
+          "Enrollment": "564",
+          "Graduates": "48"
+      },
+      {
+          
+          
+          "PSCED_Name": "Office Administration/Management",
+          "Enrollment": "361",
+          "Graduates": "28"
+      },
+      {
+          
+          
+          "PSCED_Name": "Other Civil Security and Military",
+          "Enrollment": "33",
+          "Graduates": "0"
+      },
+      {
+          
+          
+          "PSCED_Name": "Other Education not elsewhere coded (NEC)",
+          "Enrollment": "12",
+          "Graduates": "0"
+      },
+      {
+          
+          
+          "PSCED_Name": "Other Education Science and Teacher Training",
+          "Enrollment": "43",
+          "Graduates": "0"
+      },
+      {
+          
+          
+          "PSCED_Name": "Other IT-Related",
+          "Enrollment": "4",
+          "Graduates": "0"
+      },
+      {
+          
+          
+          "PSCED_Name": "Physical Education",
+          "Enrollment": "78",
+          "Graduates": "0"
+      },
+      {
+          
+          
+          "PSCED_Name": "Political Science",
+          "Enrollment": "139",
+          "Graduates": "19"
+      },
+      {
+          
+          
+          "PSCED_Name": "Public Administration/Management",
+          "Enrollment": "12",
+          "Graduates": "0"
+      },
+      {
+          
+          
+          "PSCED_Name": "Radiologic Technology",
+          "Enrollment": "12",
+          "Graduates": "0"
+      },
+      {
+          
+          
+          "PSCED_Name": "Real Estate",
+          "Enrollment": "26",
+          "Graduates": "1"
+      },
+      {
+          
+          
+          "PSCED_Name": "Secondary Education with no specialization",
+          "Enrollment": "1251",
+          "Graduates": "495"
+      },
+      {
+          
+          
+          "PSCED_Name": "Secretarial/Medical Secretarial/Clerical",
+          "Enrollment": "0",
+          "Graduates": "0"
+      },
+      {
+          
+          
+          "PSCED_Name": "Social Science",
+          "Enrollment": "126",
+          "Graduates": "111"
+      },
+      {
+          
+          
+          "PSCED_Name": "Social Work",
+          "Enrollment": "124",
+          "Graduates": "36"
+      },
+      {
+          
+          
+          "PSCED_Name": "Teaching",
+          "Enrollment": "1274",
+          "Graduates": "72"
+      },
+      {
+          
+          
+          "PSCED_Name": "Technician Teacher Education",
+          "Enrollment": "941",
+          "Graduates": "139"
+      },
+      {
+          
+          
+          "PSCED_Name": "Tourism and Travel Management",
+          "Enrollment": "123",
+          "Graduates": "1"
+      }
+        ]
       }
     }
   ]

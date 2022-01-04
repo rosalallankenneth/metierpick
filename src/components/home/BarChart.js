@@ -1,42 +1,6 @@
 import React from "react";
 import { Bar } from "react-chartjs-2";
 
-const data = {
-  labels: [
-    "Linguistic",
-    "Logical-Mathematical",
-    "Spatial",
-    "Bodily-Kinesthetic",
-    "Musical",
-    "Interpersonal",
-    "Intrapersonal",
-    "Naturalist"
-  ],
-  datasets: [
-    {
-      label: "Rating Score",
-      data: [4.6, 5, 4.8, 3.8, 3.2, 4.8, 4.6, 3.5],
-      backgroundColor: [
-        "rgba(255, 99, 132, 0.2)",
-        "rgba(54, 162, 235, 0.2)",
-        "rgba(255, 206, 86, 0.2)",
-        "rgba(75, 192, 192, 0.2)",
-        "rgba(153, 102, 255, 0.2)",
-        "rgba(255, 159, 64, 0.2)"
-      ],
-      borderColor: [
-        "rgba(255, 99, 132, 1)",
-        "rgba(54, 162, 235, 1)",
-        "rgba(255, 206, 86, 1)",
-        "rgba(75, 192, 192, 1)",
-        "rgba(153, 102, 255, 1)",
-        "rgba(255, 159, 64, 1)"
-      ],
-      borderWidth: 1
-    }
-  ]
-};
-
 const options = {
   indexAxis: "y",
   // Elements options apply to all of the options unless overridden in a dataset
@@ -58,10 +22,72 @@ const options = {
   }
 };
 
-const HorizontalBarChart = () => (
-  <>
-    <Bar data={data} options={options} />
-  </>
-);
+const HorizontalBarChart = props => {
+  const { ratings } = props;
+
+  const data = {
+    labels: [
+      "Linguistic",
+      "Logical-Mathematical",
+      "Spatial",
+      "Bodily-Kinesthetic",
+      "Musical",
+      "Interpersonal",
+      "Intrapersonal",
+      "Naturalist"
+    ],
+    datasets: [
+      {
+        label: "Rating Score",
+        data:
+          ratings !== null
+            ? [
+                ratings.Linguistic,
+                ratings.Logical_Mathematical,
+                ratings.Spatial,
+                ratings.Bodily_Kinesthetic,
+                ratings.Musical,
+                ratings.Interpersonal,
+                ratings.Intrapersonal,
+                ratings.Naturalist
+              ]
+            : [5, 5, 5, 5, 5, 5, 5, 5],
+        backgroundColor:
+          ratings !== null
+            ? [
+                "rgba(238, 76, 40, 0.2)",
+                "rgba(190, 40, 238, 0.2)",
+                "rgba(25, 119, 233, 0.2)",
+                "rgba(21, 236, 191, 0.2)",
+                "rgba(231, 15, 136, 0.2)",
+                "rgba(209, 228, 20, 0.2)",
+                "rgba(247, 199, 21, 0.2)",
+                "rgba(32, 210, 4, 0.2)"
+              ]
+            : ["#ddd"],
+        borderColor:
+          ratings !== null
+            ? [
+                "rgba(238, 76, 40, 1)",
+                "rgba(190, 40, 238, 1)",
+                "rgba(25, 119, 233, 1)",
+                "rgba(21, 236, 191, 1)",
+                "rgba(231, 15, 136, 1)",
+                "rgba(209, 228, 20, 1)",
+                "rgba(247, 199, 21, 1)",
+                "rgba(32, 210, 4, 1)"
+              ]
+            : ["#333"],
+        borderWidth: 1
+      }
+    ]
+  };
+
+  return (
+    <>
+      <Bar data={data} options={options} />
+    </>
+  );
+};
 
 export default HorizontalBarChart;

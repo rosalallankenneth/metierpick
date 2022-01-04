@@ -37,7 +37,7 @@ const AccordionDescription = () => {
           <AboutMI />
         </AccordionDetails>
       </Accordion>
-      <Accordion>
+      {/* <Accordion>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
@@ -50,11 +50,10 @@ const AccordionDescription = () => {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
+            The Multiple Intelligence assessment is used by the decision support system to profile your most dominant attributes (a.k.a. intelligences)
           </Typography>
         </AccordionDetails>
-      </Accordion>
+      </Accordion> */}
     </>
   );
 };

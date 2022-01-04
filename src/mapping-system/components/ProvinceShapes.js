@@ -1,11 +1,27 @@
-import React from "react";
+import React, { useCallback, useRef, useEffect } from "react";
 import { GeoJSON } from "react-leaflet";
+import { useSelector } from "react-redux";
 
-const ProvinceShapes = ({ regionData }) => {
+function useStableCallback(callback) {
+  const callbackRef = useRef(callback);
+  callbackRef.current = callback;
+
+  const stableCallback = useCallback((...args) => {
+    return callbackRef.current(...args);
+  }, []);
+
+  return stableCallback;
+}
+
+const ProvinceShapes = props => {
+  const { regionData, highestEnrollees, handleOpenPopup, options } = props;
+  const pathSelect = useSelector(state => state.map.pathSelect);
+
+  useEffect(() => {}, [pathSelect]);
+
   const styles = {
     provShape: {
       fillColor: "green",
-      fillOpacity: 0.8,
       color: "#000",
       weight: 2
     }
@@ -18,16 +34,41 @@ const ProvinceShapes = ({ regionData }) => {
     });
   };
 
-  const handleClickPopup = (province, layer) => {
-    const provName = province.properties.PROVINCE;
-    // const stats = province.properties.statistics;
-    // console.log(stats);
-    //const provName = province.properties.enrolledData;
-    layer.bindPopup(provName);
-    layer.options.fillOpacity = Math.random();
+  const HandleClickPopup = (province, layer) => {
+    const stats = province.properties.statistics;
+
+    const stableDisplayStats = useStableCallback(() => {
+      const provName = province.properties.PROVINCE;
+      options.setProvince(provName);
+      options.setPath(pathSelect);
+      const enrollees = stats.find(i => i.PSCED_Name === pathSelect);
+
+      if (enrollees) {
+        options.setEnrollees(enrollees.Enrollment);
+        handleOpenPopup();
+      } else {
+        options.setEnrollees(0);
+        handleOpenPopup();
+      }
+    });
+
+    const setColor = () => {
+      const enrollees = stats.find(i => i.PSCED_Name === pathSelect);
+      if (enrollees && highestEnrollees) {
+        const current = parseInt(enrollees.Enrollment);
+        const highest = parseInt(highestEnrollees.Enrollment);
+        return current / highest;
+      } else {
+        return 0;
+      }
+    };
+
+    // layer.bindPopup(provName);
+    layer.options.fillOpacity = setColor();
 
     layer.on({
-      mouseOver: changeStyleOnHover
+      mouseOver: changeStyleOnHover,
+      click: stableDisplayStats
     });
   };
 
@@ -36,7 +77,7 @@ const ProvinceShapes = ({ regionData }) => {
       <GeoJSON
         style={styles.provShape}
         data={regionData}
-        onEachFeature={handleClickPopup}
+        onEachFeature={HandleClickPopup}
       />
     </>
   );

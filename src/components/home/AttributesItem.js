@@ -2,11 +2,21 @@ import React from "react";
 import { Grid, Typography, Box, ButtonBase } from "@material-ui/core";
 
 const AttributesItem = props => {
-  const { attr, classes, handleOpen, setModalTitle, setModalDesc } = props;
+  const {
+    attr,
+    classes,
+    handleOpen,
+    setModalTitle,
+    setModalDesc,
+    setModalIcon,
+    setModalWaysToLearn
+  } = props;
 
   const handleAttrClick = () => {
     setModalTitle(attr.name);
     setModalDesc(attr.description);
+    setModalIcon(attr.icon);
+    setModalWaysToLearn(attr.waysToLearn);
     handleOpen();
   };
 

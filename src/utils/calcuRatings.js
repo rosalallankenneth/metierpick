@@ -19,7 +19,7 @@ export const calcuRatings = results => {
   let interpersonalRate = 0;
   let intrapersonalRate = 0;
   let naturalistRate = 0;
-  const itemCountEachCat = 5;
+  const itemCountEachCat = 10;
 
   // accumulate all categories rating
   Object.keys(results).forEach(key => {

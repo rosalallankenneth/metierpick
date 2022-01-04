@@ -4,27 +4,27 @@ import Modal from "@material-ui/core/Modal";
 import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
 
-const useStyles = makeStyles(theme => ({
-  modal: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center"
-  },
-  paper: {
-    maxHeight: "90vh",
-    width: "90vw",
-    overflow: "auto",
-    backgroundColor: theme.palette.background.paper,
-    boxShadow: theme.shadows[5],
-    padding: theme.spacing(3),
-    [theme.breakpoints.up("sm")]: {
-      margin: theme.spacing(5)
-    }
-  }
-}));
-
 export default function TransitionsModal(props) {
-  const { open, handleClose, children } = props;
+  const { open, handleClose, fullScreen, children } = props;
+
+  const useStyles = makeStyles(theme => ({
+    modal: {
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center"
+    },
+    paper: {
+      maxHeight: fullScreen === undefined ? "90vh" : "100vh",
+      width: fullScreen === undefined ? "90vw" : "100vw",
+      overflow: "auto",
+      backgroundColor: theme.palette.background.paper,
+      boxShadow: theme.shadows[5],
+      padding: fullScreen === undefined ? theme.spacing(3) : 0,
+      [theme.breakpoints.up("sm")]: {
+        margin: fullScreen === undefined ? theme.spacing(5) : 0
+      }
+    }
+  }));
   const classes = useStyles();
 
   return (

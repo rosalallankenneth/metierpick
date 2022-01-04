@@ -1,32 +1,116 @@
-import React from "react";
-
-// material ui components
-import { Paper, Box, Grid, Typography } from "@material-ui/core";
-
-// custom components
+import React, { useState, useEffect } from "react";
+import { useSelector } from "react-redux";
+import { getMostRecentResults } from "../../firebase/assessment";
+import { formatResultsData } from "../../utils/formatResultsData";
+import { toDateTime } from "../../utils/toDateTime";
+import { Link } from "react-router-dom";
+import { Paper, Box, Grid, Typography, Button } from "@material-ui/core";
 import ContentTitleBar from "../global/ContentTitleBar";
 import AttributesContainer from "./AttributesContainer";
 import Map from "../../mapping-system/pages/Map";
 import BarChart from "./BarChart";
+import { initDecisionTree } from "../../utils/initDecisionTree";
+import { ratingToDT } from "../../utils/ratingToDT";
+import CareerPathSection from "../assessment/CareerPathSection";
+import MainMap from "../../mapping-system/pages/MainMap";
+
+const getRecentRatingsFromDB = async (
+  email,
+  setResults,
+  setPaths,
+  setLoading
+) => {
+  const results = await getMostRecentResults(email);
+  let ratingsData = {};
+  let paths = {};
+
+  if (results !== null) {
+    ratingsData = formatResultsData(results);
+    const topRatings = constructComicForDT(ratingsData.ratings);
+    const dtComic = ratingToDT(topRatings);
+    paths = initDecisionTree(dtComic);
+  } else {
+    ratingsData = null;
+    paths = null;
+  }
+
+  setResults(ratingsData);
+  setPaths(paths);
+  setLoading(false);
+};
+
+const constructComicForDT = ratings => {
+  // sort all ratings by highest value
+  const sortedRatings = Object.entries(ratings).sort((a, b) => b[1] - a[1]);
+  let topRatings = [];
+  let otherRatings = [];
+
+  // filter ratings based on the top (at least) 3 highest ratings
+  sortedRatings.forEach(rate => {
+    if (rate[1] >= sortedRatings[2][1]) {
+      topRatings = [...topRatings, rate];
+    } else {
+      otherRatings = [...otherRatings, rate];
+    }
+  });
+
+  return topRatings;
+};
 
 const HomeContent = () => {
+  const email = useSelector(state => state.auth.user.email);
+  const [graphLoading, setGraphLoading] = useState(true);
+  const [recentRatings, setRecentRatings] = useState(null);
+  const [paths, setPaths] = useState(null);
+
+  const [ifModalOpen, setIfModalOpen] = useState(false);
+  const handleModalClose = () => {
+    setIfModalOpen(false);
+  };
+
+  useEffect(() => {
+    getRecentRatingsFromDB(email, setRecentRatings, setPaths, setGraphLoading);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
     <>
       <ContentTitleBar title="Home" />
+      <MainMap open={ifModalOpen} handleClose={handleModalClose} />
       <Box mt={3}>
         <Paper>
           <Box>
             <Box p={3}>
-              <Typography variant="h6">Suitable Career Path</Typography>
+              <Typography variant="h6">Suitable Career Paths</Typography>
               <Box mt={1}>
-                <Typography variant="body2" align="justify">
-                  Based on your most recent assessment <i>(November 7, 2021)</i>
-                  .
-                </Typography>
+                {!graphLoading && recentRatings !== null ? (
+                  <Typography variant="body2" align="justify">
+                    Based on your most recent assessment (
+                    <i>{toDateTime(recentRatings.recordedAt.seconds).date}</i> )
+                  </Typography>
+                ) : (
+                  <Typography variant="body2" align="justify">
+                    Take your first assessment now to know your most suitable
+                    career paths.
+                  </Typography>
+                )}
+                .
+                <Box>
+                  {!graphLoading && recentRatings !== null ? (
+                    <CareerPathSection paths={paths} />
+                  ) : (
+                    <Button
+                      component={Link}
+                      to="/take-assessment"
+                      variant="contained"
+                      color="primary"
+                    >
+                      Take Assessment
+                    </Button>
+                  )}
+                </Box>
               </Box>
             </Box>
-
-            <Box mt={1}></Box>
           </Box>
         </Paper>
       </Box>
@@ -36,19 +120,31 @@ const HomeContent = () => {
           <Grid item lg={7} xs={12}>
             <Paper>
               <Box p={2} style={{ overflow: "scroll" }}>
-                <BarChart />
+                {!graphLoading && recentRatings !== null ? (
+                  <BarChart ratings={recentRatings.ratings} />
+                ) : (
+                  <BarChart ratings={null} />
+                )}
               </Box>
             </Paper>
           </Grid>
 
           <Grid item lg={5} xs={12}>
             <Paper style={{ height: "100%", minHeight: 300 }}>
-              <Box p={1} style={{ height: "10%" }}>
+              <Box p={1} style={{ height: 50 }}>
                 <Typography variant="caption" align="justify">
-                  Mapping of college programs by province.
+                  <Button
+                    onClick={() => setIfModalOpen(true)}
+                    color="primary"
+                    variant="outlined"
+                    fullWidth
+                    style={{ height: "100%" }}
+                  >
+                    View Mapping
+                  </Button>
                 </Typography>
               </Box>
-              <Box style={{ height: "90%" }}>
+              <Box style={{ height: "calc(100% - 50px)" }}>
                 <Map />
               </Box>
             </Paper>

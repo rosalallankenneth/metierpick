@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, Typography, Button } from "@material-ui/core";
+import { Box, Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import CareerPathInformation from "./CareerPathInformation";
 
@@ -13,7 +13,7 @@ const CareerPathSection = props => {
   const { paths } = props;
   const classes = useStyles();
   const [isVisible, setIsVisible] = useState(false);
-  const [pathName, setPathName] = useState(". . .");
+  const [pathName, setPathName] = useState("...");
 
   const handlePathBtnClick = path => {
     setPathName(path);
@@ -25,26 +25,14 @@ const CareerPathSection = props => {
 
   return (
     <>
-      <Typography variant="h6">Career Path Suggestions</Typography>
-      <Box mt={1} mb={2}>
-        <Typography variant="body2" align="justify">
-          These are your most suitable career path (college programs) based on
-          the results of your assessment.
-        </Typography>
-      </Box>
-      <CareerPathInformation
-        isVisible={isVisible}
-        pathName={pathName}
-        handlePathInfoClose={handlePathInfoClose}
-      />
-
-      <Box mt={3}>
+      <Box>
         <Box mt={1}>
           {paths._1.map(path => (
             <Button
               key={path}
               className={classes.pathBtn}
-              variant="outlined"
+              variant="contained"
+              color="secondary"
               onClick={() => handlePathBtnClick(path)}
             >
               <b>{path}</b>
@@ -52,6 +40,12 @@ const CareerPathSection = props => {
           ))}
         </Box>
       </Box>
+
+      <CareerPathInformation
+        isVisible={isVisible}
+        pathName={pathName}
+        handlePathInfoClose={handlePathInfoClose}
+      />
     </>
   );
 };

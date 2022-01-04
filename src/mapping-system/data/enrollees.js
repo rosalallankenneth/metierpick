@@ -64,7 +64,7 @@ export const enrolleesData =  [
         {
             "Region": "09 - Zamboanga Peninsula",
             "Province": "Zamboanga del Norte",
-            "PSCED_Name": "Agriculture ",
+            "PSCED_Name": "Agriculture",
             "Enrollment": "142",
             "Graduates": "63"
         },
@@ -623,1050 +623,1050 @@ export const enrolleesData =  [
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Accountancy",
             "Enrollment": "1260",
             "Graduates": "284"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Accounting Technology",
             "Enrollment": "129",
             "Graduates": "233"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Agri-Business",
             "Enrollment": "32",
             "Graduates": "38"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Agricultural Development",
             "Enrollment": "71",
             "Graduates": "10"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Agricultural Education",
             "Enrollment": "54",
             "Graduates": "13"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Agricultural Engineering",
             "Enrollment": "46",
             "Graduates": "26"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Agricultural Technology",
             "Enrollment": "596",
             "Graduates": "228"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
-            "PSCED_Name": "Agriculture ",
+            "Province": "Zamboanga del Sur",
+            "PSCED_Name": "Agriculture",
             "Enrollment": "942",
             "Graduates": "127"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Agro-Forestry",
             "Enrollment": "37",
             "Graduates": "21"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
-            "PSCED_Name": "Agronomy ",
+            "Province": "Zamboanga del Sur",
+            "PSCED_Name": "Agronomy",
             "Enrollment": "18",
             "Graduates": "2"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Animal Husbandry",
             "Enrollment": "0",
             "Graduates": "0"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Aquaculture",
             "Enrollment": "210",
             "Graduates": "50"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Arabic Education (teaching Arabic)",
             "Enrollment": "233",
             "Graduates": "47"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Architectural Drafting",
             "Enrollment": "100",
             "Graduates": "115"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Architecture",
             "Enrollment": "546",
             "Graduates": "36"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Art Education",
             "Enrollment": "18",
             "Graduates": "0"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Arts",
             "Enrollment": "50",
             "Graduates": "0"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Asian Studies/Asian Culture",
             "Enrollment": "91",
             "Graduates": "43"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Automotive Technology",
             "Enrollment": "398",
             "Graduates": "59"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Basic Engineering",
             "Enrollment": "44",
             "Graduates": "0"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Biology",
             "Enrollment": "437",
             "Graduates": "85"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Broadcast",
             "Enrollment": "157",
             "Graduates": "30"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Building Technology",
             "Enrollment": "60",
             "Graduates": "105"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Business Administration",
             "Enrollment": "2874",
             "Graduates": "742"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Business Administration/Management & Accountancy",
             "Enrollment": "92",
             "Graduates": "44"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Business Education",
             "Enrollment": "0",
             "Graduates": "0"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Business Entrepreneurship",
             "Enrollment": "310",
             "Graduates": "43"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Business Management",
             "Enrollment": "111",
             "Graduates": "6"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Chemistry",
             "Enrollment": "54",
             "Graduates": "36"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Civil Engineering",
             "Enrollment": "2184",
             "Graduates": "313"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Commerce",
             "Enrollment": "0",
             "Graduates": "0"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Commercial Science/Arts",
             "Enrollment": "0",
             "Graduates": "0"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Communication",
             "Enrollment": "31",
             "Graduates": "5"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Community Development",
             "Enrollment": "306",
             "Graduates": "156"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Community Health Development and Management",
             "Enrollment": "17",
             "Graduates": "0"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Computer Engineering",
             "Enrollment": "341",
             "Graduates": "92"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Computer Science",
             "Enrollment": "2174",
             "Graduates": "186"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Computer Secretarial",
             "Enrollment": "0",
             "Graduates": "0"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Computer Technology",
             "Enrollment": "422",
             "Graduates": "99"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Cooperative Management",
             "Enrollment": "26",
             "Graduates": "9"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Criminal Justice",
             "Enrollment": "41",
             "Graduates": "8"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Criminology",
             "Enrollment": "7394",
             "Graduates": "1267"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Criminology and Police Administration",
             "Enrollment": "36",
             "Graduates": "9"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Customs Administration",
             "Enrollment": "235",
             "Graduates": "45"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Development Communication",
             "Enrollment": "383",
             "Graduates": "32"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Development Management/Administration",
             "Enrollment": "41",
             "Graduates": "2"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Development Studies",
             "Enrollment": "0",
             "Graduates": "1"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Early Childhood Education",
             "Enrollment": "20",
             "Graduates": "0"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Economics",
             "Enrollment": "232",
             "Graduates": "37"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Education",
             "Enrollment": "5220",
             "Graduates": "470"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Electrical Engineering",
             "Enrollment": "479",
             "Graduates": "90"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Electrical Technology",
             "Enrollment": "357",
             "Graduates": "55"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Electronics and Communications Engineering",
             "Enrollment": "306",
             "Graduates": "68"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Electronics Engineering/Technology",
             "Enrollment": "381",
             "Graduates": "68"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Elementary Education",
             "Enrollment": "8910",
             "Graduates": "1783"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Engineering Education",
             "Enrollment": "8",
             "Graduates": "3"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "English",
             "Enrollment": "551",
             "Graduates": "121"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
-            "PSCED_Name": "Environmental and Sanitary Engineering ",
+            "Province": "Zamboanga del Sur",
+            "PSCED_Name": "Environmental and Sanitary Engineering",
             "Enrollment": "102",
             "Graduates": "0"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Environmental Planning/Management",
             "Enrollment": "80",
             "Graduates": "0"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Environmental Science",
             "Enrollment": "23",
             "Graduates": "13"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Fine Arts",
             "Enrollment": "186",
             "Graduates": "12"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Fisheries",
             "Enrollment": "192",
             "Graduates": "88"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Fisheries Technology",
             "Enrollment": "0",
             "Graduates": "0"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
-            "PSCED_Name": "Fishery Business Management ",
+            "Province": "Zamboanga del Sur",
+            "PSCED_Name": "Fishery Business Management",
             "Enrollment": "8",
             "Graduates": "0"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Food Processing",
             "Enrollment": "0",
             "Graduates": "8"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Food Service Administration",
             "Enrollment": "26",
             "Graduates": "0"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Food Technology",
             "Enrollment": "334",
             "Graduates": "87"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Forestry",
             "Enrollment": "315",
             "Graduates": "48"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "General Mathematics",
             "Enrollment": "128",
             "Graduates": "28"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "General Science",
             "Enrollment": "1",
             "Graduates": "0"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Geodetic Engineering",
             "Enrollment": "140",
             "Graduates": "20"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Government Accounting and Auditing",
             "Enrollment": "12",
             "Graduates": "0"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Guidance and Counselling",
             "Enrollment": "88",
             "Graduates": "19"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Health Professional Education",
             "Enrollment": "0",
             "Graduates": "0"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "History",
             "Enrollment": "188",
             "Graduates": "52"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Home Economics",
             "Enrollment": "33",
             "Graduates": "4"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Home Economics Education",
             "Enrollment": "62",
             "Graduates": "54"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Horticulture",
             "Enrollment": "0",
             "Graduates": "0"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Hotel and Restaurant Management",
             "Enrollment": "2736",
             "Graduates": "649"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Industrial Education",
             "Enrollment": "0",
             "Graduates": "0"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Industrial Engineering",
             "Enrollment": "142",
             "Graduates": "34"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Industrial Technology",
             "Enrollment": "2007",
             "Graduates": "400"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Information Management",
             "Enrollment": "339",
             "Graduates": "8"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Information Technology",
             "Enrollment": "3946",
             "Graduates": "730"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Interdisciplinary Studies",
             "Enrollment": "59",
             "Graduates": "14"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "International Studies",
             "Enrollment": "23",
             "Graduates": "15"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Islamic Studies",
             "Enrollment": "186",
             "Graduates": "57"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Journalism",
             "Enrollment": "143",
             "Graduates": "22"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Kindergarten Education",
             "Enrollment": "0",
             "Graduates": "0"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Language Education/Language Teaching",
             "Enrollment": "14",
             "Graduates": "0"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Laws",
             "Enrollment": "624",
             "Graduates": "110"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Legal Management",
             "Enrollment": "21",
             "Graduates": "10"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Library and Information Science",
             "Enrollment": "40",
             "Graduates": "18"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Library Science",
             "Enrollment": "4",
             "Graduates": "0"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Marine Bio-Diversity",
             "Enrollment": "7",
             "Graduates": "0"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Marine Biology",
             "Enrollment": "141",
             "Graduates": "13"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Marine Engineering/Technology",
             "Enrollment": "1806",
             "Graduates": "158"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Marine Transportation",
             "Enrollment": "944",
             "Graduates": "100"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Maritime Management",
             "Enrollment": "17",
             "Graduates": "0"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Mass Communication",
             "Enrollment": "50",
             "Graduates": "0"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Mathematical Science",
             "Enrollment": "0",
             "Graduates": "1"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Mechanical Engineering",
             "Enrollment": "474",
             "Graduates": "106"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Mechanical Technology",
             "Enrollment": "198",
             "Graduates": "37"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Medical Technology",
             "Enrollment": "922",
             "Graduates": "110"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Medicine",
             "Enrollment": "199",
             "Graduates": "50"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Midwifery",
             "Enrollment": "91",
             "Graduates": "44"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Nursing",
             "Enrollment": "2856",
             "Graduates": "653"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Nutrition and Dietetics",
             "Enrollment": "106",
             "Graduates": "59"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Office Administration/Management",
             "Enrollment": "204",
             "Graduates": "163"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Other Civil Security and Military",
             "Enrollment": "9",
             "Graduates": "2"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Other Education Science and Teacher Training",
             "Enrollment": "832",
             "Graduates": "45"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Other Engineering and Technology",
             "Enrollment": "92",
             "Graduates": "10"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Other IT-Related",
             "Enrollment": "176",
             "Graduates": "144"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Other Maritime",
             "Enrollment": "76",
             "Graduates": "5"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Pharmacy",
             "Enrollment": "747",
             "Graduates": "131"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Philosophy",
             "Enrollment": "43",
             "Graduates": "29"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Physical Education",
             "Enrollment": "1203",
             "Graduates": "106"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Physical Therapy",
             "Enrollment": "49",
             "Graduates": "20"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Physics",
             "Enrollment": "33",
             "Graduates": "15"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Pilipino/Filipino",
             "Enrollment": "158",
             "Graduates": "9"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Political Science",
             "Enrollment": "613",
             "Graduates": "116"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Psychology",
             "Enrollment": "434",
             "Graduates": "128"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Public Administration/Management",
             "Enrollment": "1462",
             "Graduates": "291"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Public Health/Medical Health",
             "Enrollment": "49",
             "Graduates": "0"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Radiologic Technology",
             "Enrollment": "978",
             "Graduates": "250"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Real Estate",
             "Enrollment": "14",
             "Graduates": "6"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Religious Education (Character/Value Education)",
             "Enrollment": "0",
             "Graduates": "0"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Respiratory/Pulmunary Therapy",
             "Enrollment": "707",
             "Graduates": "54"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Sanitary Engineering",
             "Enrollment": "120",
             "Graduates": "22"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Science Education (teaching Science)",
             "Enrollment": "24",
             "Graduates": "3"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Secondary Education with no specialization",
             "Enrollment": "7577",
             "Graduates": "1054"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Secretarial/Medical Secretarial/Clerical",
             "Enrollment": "1",
             "Graduates": "4"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Social Science",
             "Enrollment": "61",
             "Graduates": "25"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Social Studies",
             "Enrollment": "11",
             "Graduates": "3"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Social Work",
             "Enrollment": "1223",
             "Graduates": "241"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Sociology",
             "Enrollment": "0",
             "Graduates": "0"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Special Education",
             "Enrollment": "94",
             "Graduates": "5"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Sports Science (Sports Officiating/Coaching)",
             "Enrollment": "186",
             "Graduates": "7"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Statistics",
             "Enrollment": "58",
             "Graduates": "28"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Structural Engineering",
             "Enrollment": "40",
             "Graduates": "2"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Teaching",
             "Enrollment": "228",
             "Graduates": "17"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Technician Teacher Education",
             "Enrollment": "872",
             "Graduates": "327"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Technology Management",
             "Enrollment": "34",
             "Graduates": "4"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Technology/Engineering",
             "Enrollment": "693",
             "Graduates": "24"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Theology/Theological Studies",
             "Enrollment": "119",
             "Graduates": "42"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Tourism and Hotel & Restaurant Mgt.",
             "Enrollment": "0",
             "Graduates": "16"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Tourism and Travel Management",
             "Enrollment": "100",
             "Graduates": "54"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Trade Technology",
             "Enrollment": "81",
             "Graduates": "12"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Vocational/Technical Education",
             "Enrollment": "87",
             "Graduates": "0"
         },
         {
             "Region": "09 - Zamboanga Peninsula",
-            "Province": "Zamboanga del Sur ",
+            "Province": "Zamboanga del Sur",
             "PSCED_Name": "Water Resources Engineering",
             "Enrollment": "0",
             "Graduates": "0"
@@ -1688,7 +1688,7 @@ export const enrolleesData =  [
         {
             "Region": "09 - Zamboanga Peninsula",
             "Province": "Zamboanga Sibugay",
-            "PSCED_Name": "Agriculture ",
+            "PSCED_Name": "Agriculture",
             "Enrollment": "255",
             "Graduates": "112"
         },
@@ -1898,7 +1898,7 @@ export const enrolleesData =  [
         {
             "Region": "10 - Northern Mindanao",
             "Province": "Bukidnon",
-            "PSCED_Name": "Agricultural Economics ",
+            "PSCED_Name": "Agricultural Economics",
             "Enrollment": "12",
             "Graduates": "1"
         },
@@ -1933,14 +1933,14 @@ export const enrolleesData =  [
         {
             "Region": "10 - Northern Mindanao",
             "Province": "Bukidnon",
-            "PSCED_Name": "Agriculture ",
+            "PSCED_Name": "Agriculture",
             "Enrollment": "1944",
             "Graduates": "394"
         },
         {
             "Region": "10 - Northern Mindanao",
             "Province": "Bukidnon",
-            "PSCED_Name": "Agronomy ",
+            "PSCED_Name": "Agronomy",
             "Enrollment": "15",
             "Graduates": "0"
         },
@@ -2479,7 +2479,7 @@ export const enrolleesData =  [
         {
             "Region": "10 - Northern Mindanao",
             "Province": "Camiguin",
-            "PSCED_Name": "Agriculture ",
+            "PSCED_Name": "Agriculture",
             "Enrollment": "64",
             "Graduates": "80"
         },
@@ -2633,7 +2633,7 @@ export const enrolleesData =  [
         {
             "Region": "10 - Northern Mindanao",
             "Province": "Lanao Del Norte",
-            "PSCED_Name": "Agriculture ",
+            "PSCED_Name": "Agriculture",
             "Enrollment": "241",
             "Graduates": "114"
         },
@@ -2864,7 +2864,7 @@ export const enrolleesData =  [
         {
             "Region": "10 - Northern Mindanao",
             "Province": "Lanao Del Norte",
-            "PSCED_Name": "Environmental and Sanitary Engineering ",
+            "PSCED_Name": "Environmental and Sanitary Engineering",
             "Enrollment": "78",
             "Graduates": "73"
         },
@@ -3235,7 +3235,7 @@ export const enrolleesData =  [
         {
             "Region": "10 - Northern Mindanao",
             "Province": "Misamis Occidental",
-            "PSCED_Name": "Agriculture ",
+            "PSCED_Name": "Agriculture",
             "Enrollment": "384",
             "Graduates": "35"
         },
@@ -3669,7 +3669,7 @@ export const enrolleesData =  [
         {
             "Region": "10 - Northern Mindanao",
             "Province": "Misamis Oriental",
-            "PSCED_Name": "Agricultural Economics ",
+            "PSCED_Name": "Agricultural Economics",
             "Enrollment": "1",
             "Graduates": "0"
         },
@@ -3690,7 +3690,7 @@ export const enrolleesData =  [
         {
             "Region": "10 - Northern Mindanao",
             "Province": "Misamis Oriental",
-            "PSCED_Name": "Agriculture ",
+            "PSCED_Name": "Agriculture",
             "Enrollment": "1205",
             "Graduates": "188"
         },
@@ -3704,7 +3704,7 @@ export const enrolleesData =  [
         {
             "Region": "10 - Northern Mindanao",
             "Province": "Misamis Oriental",
-            "PSCED_Name": "Agronomy ",
+            "PSCED_Name": "Agronomy",
             "Enrollment": "2",
             "Graduates": "0"
         },
@@ -3998,7 +3998,7 @@ export const enrolleesData =  [
         {
             "Region": "10 - Northern Mindanao",
             "Province": "Misamis Oriental",
-            "PSCED_Name": "Environmental and Sanitary Engineering ",
+            "PSCED_Name": "Environmental and Sanitary Engineering",
             "Enrollment": "300",
             "Graduates": "29"
         },
@@ -4509,7 +4509,7 @@ export const enrolleesData =  [
         {
             "Region": "11 - Davao Region",
             "Province": "Compostela Valley",
-            "PSCED_Name": "Agriculture ",
+            "PSCED_Name": "Agriculture",
             "Enrollment": "0",
             "Graduates": "41"
         },
@@ -4670,7 +4670,7 @@ export const enrolleesData =  [
         {
             "Region": "11 - Davao Region",
             "Province": "Davao Del Norte",
-            "PSCED_Name": "Agriculture ",
+            "PSCED_Name": "Agriculture",
             "Enrollment": "413",
             "Graduates": "253"
         },
@@ -4824,7 +4824,7 @@ export const enrolleesData =  [
         {
             "Region": "11 - Davao Region",
             "Province": "Davao Del Norte",
-            "PSCED_Name": "Fishery Business Management ",
+            "PSCED_Name": "Fishery Business Management",
             "Enrollment": "35",
             "Graduates": "3"
         },
@@ -5104,7 +5104,7 @@ export const enrolleesData =  [
         {
             "Region": "11 - Davao Region",
             "Province": "Davao Del Sur",
-            "PSCED_Name": "Agricultural Economics ",
+            "PSCED_Name": "Agricultural Economics",
             "Enrollment": "83",
             "Graduates": "78"
         },
@@ -5132,7 +5132,7 @@ export const enrolleesData =  [
         {
             "Region": "11 - Davao Region",
             "Province": "Davao Del Sur",
-            "PSCED_Name": "Agriculture ",
+            "PSCED_Name": "Agriculture",
             "Enrollment": "710",
             "Graduates": "65"
         },
@@ -6175,7 +6175,7 @@ export const enrolleesData =  [
         {
             "Region": "11 - Davao Region",
             "Province": "Davao Del Sur",
-            "PSCED_Name": "Teaching Handicapped Children ",
+            "PSCED_Name": "Teaching Handicapped Children",
             "Enrollment": "0",
             "Graduates": "0"
         },
@@ -6266,7 +6266,7 @@ export const enrolleesData =  [
         {
             "Region": "11 - Davao Region",
             "Province": "Davao Occidental",
-            "PSCED_Name": "Agriculture ",
+            "PSCED_Name": "Agriculture",
             "Enrollment": "125",
             "Graduates": "0"
         },
@@ -6420,7 +6420,7 @@ export const enrolleesData =  [
         {
             "Region": "11 - Davao Region",
             "Province": "Davao Oriental",
-            "PSCED_Name": "Agriculture ",
+            "PSCED_Name": "Agriculture",
             "Enrollment": "95",
             "Graduates": "0"
         },
@@ -6630,7 +6630,7 @@ export const enrolleesData =  [
         {
             "Region": "12 - Soccsksargen",
             "Province": "North Cotabato",
-            "PSCED_Name": "Agricultural Economics ",
+            "PSCED_Name": "Agricultural Economics",
             "Enrollment": "216",
             "Graduates": "27"
         },
@@ -6658,14 +6658,14 @@ export const enrolleesData =  [
         {
             "Region": "12 - Soccsksargen",
             "Province": "North Cotabato",
-            "PSCED_Name": "Agriculture ",
+            "PSCED_Name": "Agriculture",
             "Enrollment": "2688",
             "Graduates": "549"
         },
         {
             "Region": "12 - Soccsksargen",
             "Province": "North Cotabato",
-            "PSCED_Name": "Agronomy ",
+            "PSCED_Name": "Agronomy",
             "Enrollment": "10",
             "Graduates": "2"
         },
@@ -7358,7 +7358,7 @@ export const enrolleesData =  [
         {
             "Region": "12 - Soccsksargen",
             "Province": "South Cotabato",
-            "PSCED_Name": "Agriculture ",
+            "PSCED_Name": "Agriculture",
             "Enrollment": "2546",
             "Graduates": "455"
         },
@@ -8065,7 +8065,7 @@ export const enrolleesData =  [
         {
             "Region": "12 - Soccsksargen",
             "Province": "Sultan Kudarat",
-            "PSCED_Name": "Agriculture ",
+            "PSCED_Name": "Agriculture",
             "Enrollment": "26",
             "Graduates": "22"
         },
@@ -8457,7 +8457,7 @@ export const enrolleesData =  [
         {
             "Region": "15 - Bangsamoro Autonomous Region in Muslim Mindanao",
             "Province": "Basilan",
-            "PSCED_Name": "Agriculture ",
+            "PSCED_Name": "Agriculture",
             "Enrollment": "68",
             "Graduates": "10"
         },
@@ -8716,7 +8716,7 @@ export const enrolleesData =  [
         {
             "Region": "15 - Bangsamoro Autonomous Region in Muslim Mindanao",
             "Province": "Lanao del Sur",
-            "PSCED_Name": "Agriculture ",
+            "PSCED_Name": "Agriculture",
             "Enrollment": "754",
             "Graduates": "67"
         },
@@ -9304,7 +9304,7 @@ export const enrolleesData =  [
         {
             "Region": "15 - Bangsamoro Autonomous Region in Muslim Mindanao",
             "Province": "Maguindanao",
-            "PSCED_Name": "Agriculture ",
+            "PSCED_Name": "Agriculture",
             "Enrollment": "683",
             "Graduates": "122"
         },
@@ -9822,7 +9822,7 @@ export const enrolleesData =  [
         {
             "Region": "15 - Bangsamoro Autonomous Region in Muslim Mindanao",
             "Province": "Sulu",
-            "PSCED_Name": "Agriculture ",
+            "PSCED_Name": "Agriculture",
             "Enrollment": "701",
             "Graduates": "73"
         },
@@ -10095,7 +10095,7 @@ export const enrolleesData =  [
         {
             "Region": "15 - Bangsamoro Autonomous Region in Muslim Mindanao",
             "Province": "Tawi-Tawi",
-            "PSCED_Name": "Agriculture ",
+            "PSCED_Name": "Agriculture",
             "Enrollment": "645",
             "Graduates": "38"
         },
@@ -10438,7 +10438,7 @@ export const enrolleesData =  [
         {
             "Region": "16 - Caraga",
             "Province": "Agusan Del Norte",
-            "PSCED_Name": "Agriculture ",
+            "PSCED_Name": "Agriculture",
             "Enrollment": "528",
             "Graduates": "33"
         },
@@ -11054,7 +11054,7 @@ export const enrolleesData =  [
         {
             "Region": "16 - Caraga",
             "Province": "Agusan Del Sur",
-            "PSCED_Name": "Agriculture ",
+            "PSCED_Name": "Agriculture",
             "Enrollment": "416",
             "Graduates": "108"
         },
@@ -11852,7 +11852,7 @@ export const enrolleesData =  [
         {
             "Region": "16 - Caraga",
             "Province": "Surigao Del Sur",
-            "PSCED_Name": "Agriculture ",
+            "PSCED_Name": "Agriculture",
             "Enrollment": "132",
             "Graduates": "48"
         },

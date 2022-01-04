@@ -1,4 +1,4 @@
-const programs = [
+export const programs = [
   { PSCED_Name: "Accountancy", description: "" },
   { PSCED_Name: "Accounting Technology", description: "" },
   { PSCED_Name: "Aeronautical Engineering", description: "" },

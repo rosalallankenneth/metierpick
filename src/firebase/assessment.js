@@ -5,12 +5,32 @@ import {
   query,
   where,
   orderBy,
+  limit,
   serverTimestamp
 } from "firebase/firestore";
 import { db } from "./firestore";
 import { v4 as uuidv4 } from "uuid";
 
-// get a specific assessment result
+// get most recent assessment result
+export const getMostRecentResults = async email => {
+  if (!email) return false;
+  const q = query(
+    collection(db, "userRatings"),
+    where("email", "==", email),
+    orderBy("recordedAt", "desc"),
+    limit(1)
+  );
+
+  const querySnapshot = await getDocs(q);
+  let resultItems = null;
+  querySnapshot.forEach(doc => {
+    resultItems = doc.data();
+  });
+
+  return resultItems;
+};
+
+// get all assessment result
 export const getRatingsResult = async resultsID => {
   if (!resultsID) return false;
   const q = query(
