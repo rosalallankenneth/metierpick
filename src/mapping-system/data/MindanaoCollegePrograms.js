@@ -43,7 +43,7 @@ const programs = [
       "Bachelor of Science in Agriculture major in Agricultural Development"
   },
   {
-    PSCED_Name: "Agricultural Economics ",
+    PSCED_Name: "Agricultural Economics",
     description:
       "The field of Production Economics and Farm Management provides the students with the theories and tools in analyzing problems pertaining to productivity and economic efficiency on agricultural production sector in relation to natural resource use, the environment, and agricultural policy and development.",
     fullTitle: "Bachelor of Science in Agriculture major in Economics"
@@ -91,7 +91,7 @@ const programs = [
     fullTitle: "Bachelor of Science in Agricultural Technology"
   },
   {
-    PSCED_Name: "Agriculture ",
+    PSCED_Name: "Agriculture",
     description:
       "The Bachelor of Science in Agriculture (BSA) is a four-year degree program designed to provide students with the technical knowledge in crop raising, agricultural chemicals, fertilizers, integrated pest management, seed conditioning and technology and other areas related to production and quality control in the food",
     fullTitle: "Bachelor of Science in Agriculture"
@@ -103,7 +103,7 @@ const programs = [
     fullTitle: "Bachelor of Science in Agroforestry"
   },
   {
-    PSCED_Name: "Agronomy ",
+    PSCED_Name: "Agronomy",
     description:
       "The program includes topics in plant science, animal science, landscape and environmental management. It aims to answer the problems related to agriculture involved in research, production, extension and entrepreneurship in every region of the Philippines.",
     fullTitle: "Bachelor of Science in Agriculture major in Agronomy"
@@ -710,7 +710,7 @@ const programs = [
     fullTitle: "Bachelor of Science in Environmental Science"
   },
   {
-    PSCED_Name: "Environmental and Sanitary Engineering ",
+    PSCED_Name: "Environmental and Sanitary Engineering",
     description:
       "The Environmental and Sanitary Engineering program combines the discipline of civil engineering and the principles of ecology, chemistry and microbiology covering the applications of engineering to promote hygiene, sanitation and public health, and to protect and conserve the environment.",
     fullTitle: "Bachelor of Science in Sanitary Engineering"
@@ -759,7 +759,7 @@ const programs = [
     fullTitle: "Bachelor of Science in Fisheries and Aquatic Resources "
   },
   {
-    PSCED_Name: "Fishery Business Management ",
+    PSCED_Name: "Fishery Business Management",
     description:
       "Bachelor's degree programs in wildlife and fisheries management provide students with the skills needed to preserve fish habitats, manage harvesting and conserve species. Students study marine ecosystems and fish biology as well as breeding techniques.",
     fullTitle: "Bachelor of Science in Fisheries and Aquatic Resources"
@@ -911,7 +911,7 @@ const programs = [
   {
     PSCED_Name: "Hospital Administration",
     description:
-      " Hospital Administration are individuals or groups of people who act as the central point of control within hospitals. These individuals may be previous or current clinicians, or individuals with other healthcare backgrounds. ",
+      " Hospital Administration are individuals or groups of people who act as the central point of control within hospitals. These individuals may be previous or current clinicians, or individuals with other healthcare backgrounds.",
     fullTitle: "Bachelor of Science in Healthcare Administration"
   },
   {
@@ -1200,7 +1200,7 @@ const programs = [
   {
     PSCED_Name: "Music Education",
     description:
-      "Music education is a field of study associated with the teaching and learning of music. It touches on all domains of learning, including the psychomotor domain, the cognitive domain, and, in particular and significant ways, the affective domain, including music appreciation and sensitivity. ",
+      "Music education is a field of study associated with the teaching and learning of music. It touches on all domains of learning, including the psychomotor domain, the cognitive domain, and, in particular and significant ways, the affective domain, including music appreciation and sensitivity.",
     fullTitle: "Bachelor of Music Education"
   },
   {

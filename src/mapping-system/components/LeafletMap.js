@@ -36,6 +36,7 @@ const LeafletMap = props => {
 
   const [openPopup, setOpenPopup] = React.useState(false);
   const [province, setProvince] = React.useState("");
+  const [region, setRegion] = React.useState("");
   const [path, setPath] = React.useState("");
   const [enrollees, setEnrollees] = React.useState(0);
   const handleOpenPopup = () => {
@@ -53,6 +54,7 @@ const LeafletMap = props => {
         path={path}
         enrollees={enrollees}
         province={province}
+        region={region}
       />
       <MapContainer
         center={centerLoc}
@@ -75,7 +77,7 @@ const LeafletMap = props => {
             regionData={data}
             highestEnrollees={highestEnrollees}
             handleOpenPopup={handleOpenPopup}
-            options={{ setProvince, setPath, setEnrollees }}
+            options={{ setProvince, setPath, setEnrollees, setRegion }}
           />
         ))}
       </MapContainer>

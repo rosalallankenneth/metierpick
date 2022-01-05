@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Box,
   Button,
@@ -18,6 +18,11 @@ import { makeStyles } from "@material-ui/styles";
 import { useSelector, useDispatch } from "react-redux";
 import { setPathSelect } from "../../redux/actions/mapActions";
 import CareerPathList from "../data/MindanaoCollegePrograms";
+import AboutPopup from "../components/AboutPopup";
+
+import DialogActions from "@material-ui/core/DialogActions";
+import DialogContent from "@material-ui/core/DialogContent";
+import DialogTitle from "@material-ui/core/DialogTitle";
 
 const useStyles = makeStyles(theme => ({
   mapHeader: {
@@ -58,6 +63,11 @@ const useStyles = makeStyles(theme => ({
     [theme.breakpoints.down("sm")]: {
       display: "none"
     }
+  },
+  footerBtn: {
+    cursor: "pointer",
+    width: 40,
+    height: 40
   }
   // footerBtnContainerSmall: {
   //   display: "none",
@@ -71,15 +81,28 @@ const useStyles = makeStyles(theme => ({
 
 const MainMap = props => {
   const { open, handleClose } = props;
+  const [openAbout, setOpenAbout] = useState(false);
+  const [openStats, setOpenStats] = useState(false);
   const dispatch = useDispatch();
   const pathSelect = useSelector(state => state.map.pathSelect);
+  const classes = useStyles();
 
   useEffect(() => {
     dispatch(setPathSelect("Accountancy"));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const classes = useStyles();
+  const handleCloseInfo = () => {
+    setOpenAbout(false);
+    setOpenStats(false);
+  };
+  const handleOpenAbout = () => {
+    setOpenAbout(true);
+  };
+
+  const handleOpenStats = () => {
+    setOpenStats(true);
+  };
 
   return (
     <>
@@ -122,9 +145,13 @@ const MainMap = props => {
             </Grid>
             <Grid item md={6} className={classes.footerBtnContainer}>
               <Typography align="right">
-                <ListRoundedIcon style={{ width: 40, height: 40 }} />
+                <ListRoundedIcon
+                  className={classes.footerBtn}
+                  onClick={() => handleOpenStats()}
+                />
                 <InfoRoundedIcon
-                  style={{ width: 40, height: 40, marginLeft: 10 }}
+                  className={classes.footerBtn}
+                  onClick={() => handleOpenAbout()}
                 />
               </Typography>
             </Grid>
@@ -136,6 +163,73 @@ const MainMap = props => {
           </Box> */}
         </Box>
       </InformationModal>
+
+      <AboutPopup open={openAbout} handleClose={handleCloseInfo}>
+        <DialogTitle>About Mapping System</DialogTitle>
+        <DialogContent style={{ marginTop: "-10px" }}>
+          <Typography variant="subtitle2" align="justify">
+            The mapping system is one of the primary features of Metierpick DSS.
+            This functionality provides dynamic mapping and visualization of
+            college enrollees distribution per province in Mindanao, given the
+            specified college program or discipline. The data in use is acquired
+            from the Philippines' Commission on Higher Education (CHED) online
+            statistics that is available{" "}
+            <a
+              href="https://ched.gov.ph/statistics/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              here
+            </a>
+            .
+          </Typography>
+          <Box mt={2}>
+            <Typography variant="subtitle1" align="justify">
+              Notes
+            </Typography>
+          </Box>
+          <Box px={2} mt={1}>
+            <Typography variant="subtitle2" align="justify">
+              1. The data used for the enrollees statistics is presented as
+              compiled by the OPRKM-Knowledge Management Division based on the
+              submission of higher education institutions as of October 08,
+              2020. This data includes pre-baccalaureaute to doctoral programs.
+            </Typography>
+            <Typography variant="subtitle2" align="justify">
+              2. Data may be updated at any point in time without prior
+              notification to the end-user.
+            </Typography>
+          </Box>
+          <Typography
+            variant="subtitle1"
+            align="center"
+            color="primary"
+          ></Typography>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleCloseInfo}>Close</Button>
+        </DialogActions>
+      </AboutPopup>
+
+      <AboutPopup open={openStats} handleClose={handleCloseInfo}>
+        <DialogTitle>Statistics</DialogTitle>
+        <Box px={3}>
+          <DialogContent style={{ marginTop: "-10px" }}>
+            <Typography variant="h3" align="center"></Typography>
+            <Box mt={2}>
+              <Typography variant="subtitle2" align="justify"></Typography>
+            </Box>
+            <Typography
+              variant="subtitle1"
+              align="center"
+              color="primary"
+            ></Typography>
+          </DialogContent>
+        </Box>
+        <DialogActions>
+          <Button onClick={handleCloseInfo}>Close</Button>
+        </DialogActions>
+      </AboutPopup>
     </>
   );
 };

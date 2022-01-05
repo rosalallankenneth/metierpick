@@ -39,9 +39,13 @@ const ProvinceShapes = props => {
 
     const stableDisplayStats = useStableCallback(() => {
       const provName = province.properties.PROVINCE;
+      const region = province.properties.REGION;
       options.setProvince(provName);
+      options.setRegion(region);
       options.setPath(pathSelect);
-      const enrollees = stats.find(i => i.PSCED_Name === pathSelect);
+      const enrollees = stats.find(
+        i => i.PSCED_Name.trim() === pathSelect.trim()
+      );
 
       if (enrollees) {
         options.setEnrollees(enrollees.Enrollment);

@@ -9,7 +9,7 @@ const ICON_NA = require("../assets/mi-logos/icon8-naturalist.png").default;
 
 const categories = {
   Linguistic: [
-    "The capacity to use words effectively, whether orally (e.g., as a storyteller, orator, or politician) or in writing (e.g., as a poet, playwright, editor, or journalist). This intelligence includes the ability to manipulate the syntax or structure of language, the phonology or sounds of language, the semantics or meanings of language, and the pragmatic dimensions or practical uses of language. Some of these uses include rhetoric (using language to convince others to take a specific course of action), mnemonics (using language to remember information), explanation (using language to inform), and metalanguage (using language to talk about itself).",
+    "The ability to successfully employ words, whether vocally (as a storyteller, orator, or politician) or through writing (as a poet, playwright, editor, or journalist). The ability to manipulate the syntax or structure of language, the phonology or sounds of language, the semantics or meanings of language, and the pragmatic dimensions or practical uses of language are all part of this intelligence. Rhetoric (using language to persuade others to pursue a particular course of action), mnemonics (using language to recall knowledge), explanation (using language to inform), and metalanguage are just a few examples (using language to talk about itself).",
     ICON_LI,
     {
       think: "in words",
@@ -19,7 +19,7 @@ const categories = {
     }
   ],
   Logical_Mathematical: [
-    " The capacity to use numbers effectively (e.g., as a mathematician, tax accountant, or statistician) and to reason well (e.g., as a scientist, computer programmer, or logician). This intelligence includes sensitivity to logical patterns and relationships, statements and propositions (if-then, cause-effect), functions, and other related abstractions. The kinds of processes used in the service of logical-mathematical intelligence include categorization, classification, inference, generalization, calculation, and hypothesis testing.",
+    "The ability to reason clearly and successfully with numbers (e.g., as a mathematician, tax accountant, or statistician) (e.g., as a scientist, computer programmer, or logician). Sensitivity to logical patterns and correlations, assertions and propositions (if-then, cause-effect), functions, and other related abstractions are all part of this intelligence. The kinds of processes used in the service of logical-mathematical intelligence include categorization, classification, inference, generalization, calculation, and hypothesis testing.",
     ICON_LO,
     {
       think: "by reasoning",
@@ -30,7 +30,7 @@ const categories = {
     }
   ],
   Spatial: [
-    "The ability to perceive the visual-spatial world accurately (e.g., as a hunter, scout, or guide) and to perform transformations upon those perceptions (e.g., as an interior decorator, architect, artist, or inventor). This intelligence involves sensitivity to color, line, shape, form, space, and the relationships that exist between these elements. It includes the capacity to visualize, to graphically represent visual or spatial ideas, and to orient oneself appropriately in a spatial matrix.",
+    "Ability to accurately sense the visual-spatial world (e.g., as a hunter, scout, or guide) and to transform those perceptions (e.g., as an interior decorator, architect, artist, or inventor). This intelligence involves sensitivity to color, line, shape, form, space, and the relationships that exist between these elements. It entails the ability to envision, visually describe visual or spatial thoughts, and appropriately orient oneself in a spatial matrix.",
     ICON_SP,
     {
       think: "in images and pictures",
@@ -40,7 +40,7 @@ const categories = {
     }
   ],
   Bodily_Kinesthetic: [
-    "Expertise in using one’s whole body to express ideas and feelings (e.g., as an actor, a mime, an athlete, or a dancer) and facility in using one’s hands to produce or transform things (e.g., as a craftsperson, sculptor, mechanic, or surgeon. This intelligence includes specific physical skills such as coordination, balance, dexterity, strength, flexibility, and speed, as well as proprioceptive, tactile, and haptic capacities.",
+    "Expertise in utilizing one's complete body to communicate ideas and feelings (e.g., as an actor, a mime, an athlete, or a dancer) and the abilities of a craftsperson, sculptor, mechanic, or surgeon, proficiency in using one's hands to manufacture or transform things (e.g., as an actor, a mime, an athlete, or a dancer). This intelligence includes specific physical skills such as coordination, balance, dexterity, strength, flexibility, and speed, as well as proprioceptive, tactile, and haptic capacities.",
     ICON_BO,
     {
       think: "through somatic sensations",
@@ -50,7 +50,7 @@ const categories = {
     }
   ],
   Musical: [
-    "The capacity to perceive (e.g., as a music aficionado), discriminate (e.g., as a music critic), transform (e.g., as a composer), and express (e.g., as a performer) musical forms. This intelligence includes sensitivity to the rhythm, pitch or melody, and timbre or tone color of a musical piece. One can have a figural or “top-down” understanding of music (global, intuitive), a formal or “bottom-up” understanding (analytic, technical), or both.",
+    'The ability to perceive (e.g., as a music aficionado), discriminate (e.g., as a music critic), transform (e.g., as a composer), and convey (e.g., as a performer) musical forms. This intelligence comprises sensitivity to a musical piece\'s rhythm, pitch or melody, and timbre or tone color. Music can be understood in figurative or "top-down" ways (global, intuitive), formal or "bottom-up" ways (analytic, technical), or both ways.',
     ICON_MU,
     {
       think: "via rhythms and melodies",
@@ -60,7 +60,7 @@ const categories = {
     }
   ],
   Interpersonal: [
-    "The ability to perceive and make distinctions in the moods, intentions, motivations, and feelings of other people. This can include sensitivity to facial expressions, voice, and gestures; the capacity for discriminating among many different kinds of interpersonal cues; and the ability to respond effectively to those cues in some pragmatic way (e.g., to influence a group of people to follow a certain line of action).",
+    "The ability to detect and distinguish differences in other people's moods, intents, motivations, and sentiments. This can include sensitivity to facial expressions, voice, and gestures; the ability to distinguish amongst a variety of interpersonal cues; and the ability to respond to those clues effectively in some pragmatic way (e.g., to influence a group of people to follow a certain line of action).",
     ICON_IE,
     {
       think: "by bouncing ideas off other people",
@@ -70,7 +70,7 @@ const categories = {
     }
   ],
   Intrapersonal: [
-    "Self-knowledge and the ability to act adaptively on the basis of that knowledge. This intelligence includes having an accurate picture of oneself (one’s strengths and limitations); awareness of inner moods, intentions, motivations, temperaments, and desires; and the capacity for self-discipline, self-understanding, and self-esteem.",
+    "Self-awareness and the ability to act adaptively based on that awareness. This intelligence comprises knowing one's own strengths and limitations, as well as being aware of one's inner moods, intentions, motives, temperaments, and wants, as well as the ability to self-discipline, self-understand, and self-esteem.",
     ICON_IA,
     {
       think: "in relation to their needs, feelings, and goals",
@@ -79,7 +79,7 @@ const categories = {
     }
   ],
   Naturalist: [
-    "Expertise in the recognition and classification of the numerous species—the flora and fauna—of an individual’s environment. This also includes sensitivity to other natural phenomena (e.g., cloud formations, mountains, etc.) and, in the case of those growing up in an urban environment, the capacity to discriminate among inanimate objects such as cars, sneakers, and CD covers.",
+    "Expertise in recognizing and classifying the diverse species—flora and fauna—that make up an individual's surroundings. This includes sensitivity to various natural phenomena (e.g., cloud formations, mountains, etc.) as well as the ability to distinguish between inanimate items such as vehicles, sneakers, and CD covers in the case of people growing up in an urban setting.",
     ICON_NA,
     {
       think: "through nature and natural forms",
