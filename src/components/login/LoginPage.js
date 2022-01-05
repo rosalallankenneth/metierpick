@@ -13,9 +13,9 @@ import { makeStyles } from "@material-ui/core/styles";
 import CircularProgress from "@material-ui/core/CircularProgress";
 
 import MetierpickLogo from "../../assets/logo-v2.png";
-import Map from "../../mapping-system/pages/Map";
 import AlertError from "../global/AlertError";
 import Copyright from "../global/Copyright";
+import LoginCover from "../../assets/cover-login.jpg";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -46,6 +46,14 @@ const useStyles = makeStyles(theme => ({
   },
   submit: {
     margin: theme.spacing(3, 0, 2)
+  },
+  cover: {
+    width: "100%",
+    height: "100%",
+    backgroundImage: `url(${LoginCover})`,
+    objectFit: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover"
   }
 }));
 
@@ -88,7 +96,7 @@ export default function SignInSide(props) {
       <Grid container component="main" className={classes.root}>
         <CssBaseline />
         <Grid item xs={false} sm={4} md={7} className={classes.image}>
-          <Map />
+          <Box className={classes.cover}></Box>
         </Grid>
         <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
           <div className={classes.paper}>

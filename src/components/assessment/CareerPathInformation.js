@@ -6,11 +6,18 @@ import {
   Paper,
   Grid,
   ButtonBase,
-  TextField
+  TextField,
+  TextareaAutosize
 } from "@material-ui/core";
 
 const CareerPathInformation = props => {
-  const { isVisible, pathName, handlePathInfoClose } = props;
+  const {
+    isVisible,
+    pathName,
+    pathTitle,
+    pathDescription,
+    handlePathInfoClose
+  } = props;
 
   return (
     <>
@@ -42,7 +49,7 @@ const CareerPathInformation = props => {
                 InputProps={{ readOnly: true }}
               />
               <TextField
-                value=""
+                value={pathTitle}
                 fullWidth
                 margin="normal"
                 name="Full_Title"
@@ -51,15 +58,19 @@ const CareerPathInformation = props => {
                 variant="outlined"
                 InputProps={{ readOnly: true }}
               />
-              <TextField
-                value=""
-                fullWidth
-                margin="normal"
-                name="Description"
-                label="Description"
-                type="text"
-                variant="outlined"
-                InputProps={{ readOnly: true }}
+              <Typography variant="caption">Description</Typography>
+              <TextareaAutosize
+                aria-label="empty textarea"
+                placeholder="Description"
+                value={pathDescription}
+                style={{
+                  width: "100%",
+                  padding: 10,
+                  background: "transparent",
+                  fontSize: 16,
+                  font: "inherit"
+                }}
+                contentEditable={false}
               />
             </Box>
 

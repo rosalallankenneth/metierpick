@@ -31,8 +31,10 @@ const AssessmentInstructions = () => {
           </ListItem>
           <ListItem>
             <Typography align="justify">
-              2. The items are taken from Dr. Armstrong’s book about{" "}
-              <b>Multiple Intelligence theory</b> (see sections below for more
+              2. The items are taken from a survey instrument called the{" "}
+              <b>MIDAS</b> (Multiple Intelligences Developmental Assessment
+              Scales) based on Howard Gardner's theory of{" "}
+              <b>Multiple Intelligence</b> (see sections below for more
               information).
             </Typography>
           </ListItem>
