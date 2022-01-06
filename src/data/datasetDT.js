@@ -3,495 +3,1668 @@ export const datasetDT = [
     attr_1: "LO",
     attr_2: "IE",
     attr_3: "IA",
-    path:
-      '{"_1":["Accountancy","Accounting Technology","Applied Science","Applied Social Research","Banking and Finance","Government Accounting and Auditing","Human Resource Development and Planning","Personnel and Human Resources Management"],"_2":["Business Administration","Business Administration/Management & Accountancy","Business Economics","Business Education","Business Entrepreneurship","Business Management","Commerce","Commercial Science/Arts","Cooperative Management","Curriculum and Instruction","Customs Administration","Development Economics","Development Management/Administration","Economics","Economics Education","Entrepreneurial Management","Hospital Administration","Management","Medicine","Midwifery","Nursing","Office Administration/Management","Organizational Development and Planning","Other Medical and Allied","Pharmacy","Public Health/Medical Health","Secretarial Science","Secretarial/Medical Secretarial/Clerical"],"_3":["Clinical Psychology","Community Development","Community Health","Community Health Development and Management","Counseling Psychology","Criminal Justice","Development Studies","Guidance and Counselling","Health Professional Education","Health Science Education","Industrial Psychology","Other Social and Behavioral Science","Participatory Development","Psychology","Social Development","Social Science","Social Science Education","Social Services","Social Studies","Social Work","Sociology"]}'
+    path: "Accountancy"
+  },
+  {
+    attr_1: "LO",
+    attr_2: "IE",
+    attr_3: "IA",
+    path: "Accounting Technology"
   },
   {
     attr_1: "LO",
     attr_2: "SP",
     attr_3: "BO",
-    path:
-      '{"_1":["Aeronautical Engineering","Aircraft Maintenance Technology","Aviation Electronics/Electrical Engineering","Ceramics Engineering","Electrical Engineering","Electrical Technology","Electronics Engineering/Technology","Electronics and Communications Engineering","Industrial Engineering","Mechanical Engineering","Mechanical Technology"],"_2":["Architectural Drafting","Architectural Science/Technology","Architecture","Marine Transportation","Materials Science and Engineering","Mining Engineering","Other Maritime","Transport Engineering"],"_3":["Automotive Technology","Home Technology","Interior Design","Metallurgical Engineering"]}'
+    path: "Aeronautical Engineering"
   },
   {
     attr_1: "NA",
     attr_2: "IE",
     attr_3: "LO",
-    path:
-      '{"_1":["Agri-Business","Agri-Business Management/Administration","Agricultural Economics ","Agricultural Management"],"_2":[],"_3":["Agricultural Science","Agricultural Technology","Agricultural Technology Education","Animal Technology","Biology","Biology Education","Environmental and Sanitary Engineering ","Farming System","General Science","General Science Education","Rural Development","Science","Science Education (teaching Science)"]}'
+    path: "Agri-Business"
+  },
+  {
+    attr_1: "NA",
+    attr_2: "IE",
+    attr_3: "LO",
+    path: "Agri-Business Management/Administration"
   },
   {
     attr_1: "LO",
     attr_2: "NA",
     attr_3: "SP",
-    path:
-      '{"_1":["Agricultural Chemistry","Agricultural Engineering"],"_2":["Agronomy ","Veterinary Medicine","Veterinary Technology"],"_3":["Anthropology","Food Processing","Food Science","Food Science and Technology","Food Technology","Geodetic Engineering","Geology","Natural Science","Plant Breeding","Plant Pathology","Sanitary Engineering","Soil Science","Water Resources Engineering","Zoology"]}'
+    path: "Agricultural Chemistry"
   },
   {
     attr_1: "NA",
     attr_2: "SP",
     attr_3: "IE",
-    path:
-      '{"_1":["Agricultural Development","Agricultural Extension","Agriculture ","Agro-Forestry","Crop Protection","Crop Science","Entomology","Other Agriculture, Forestry, Fisheries"],"_2":[],"_3":["Environmental Planning/Management","Environmental Science","Fisheries","Fishery Business Management ","Marine Bio-Diversity","Marine Biology","Nutrition and Dietetics"]}'
+    path: "Agricultural Development"
+  },
+  {
+    attr_1: "NA",
+    attr_2: "IE",
+    attr_3: "LO",
+    path: "Agricultural Economics "
   },
   {
     attr_1: "NA",
     attr_2: "IE",
     attr_3: "IA",
-    path: '{"_1":["Agricultural Education"],"_2":[],"_3":[]}'
+    path: "Agricultural Education"
+  },
+  {
+    attr_1: "LO",
+    attr_2: "NA",
+    attr_3: "SP",
+    path: "Agricultural Engineering"
+  },
+  {
+    attr_1: "NA",
+    attr_2: "SP",
+    attr_3: "IE",
+    path: "Agricultural Extension"
+  },
+  {
+    attr_1: "NA",
+    attr_2: "IE",
+    attr_3: "LO",
+    path: "Agricultural Management"
   },
   {
     attr_1: "NA",
     attr_2: "LO",
     attr_3: "IE",
-    path:
-      '{"_1":["Agricultural Science","Agricultural Technology","Agricultural Technology Education","Animal Technology","Biology","Biology Education","Farming System"],"_2":["Environmental and Sanitary Engineering ","Science","Science Education (teaching Science)"],"_3":["Agri-Business","Agri-Business Management/Administration","Agricultural Economics ","Agricultural Management","General Science","General Science Education","Rural Development"]}'
+    path: "Agricultural Science"
+  },
+  {
+    attr_1: "NA",
+    attr_2: "LO",
+    attr_3: "IE",
+    path: "Agricultural Technology"
+  },
+  {
+    attr_1: "NA",
+    attr_2: "LO",
+    attr_3: "IE",
+    path: "Agricultural Technology Education"
+  },
+  {
+    attr_1: "NA",
+    attr_2: "SP",
+    attr_3: "IE",
+    path: "Agriculture "
+  },
+  {
+    attr_1: "NA",
+    attr_2: "SP",
+    attr_3: "IE",
+    path: "Agro-Forestry"
   },
   {
     attr_1: "NA",
     attr_2: "LO",
     attr_3: "SP",
-    path:
-      '{"_1":["Agronomy ","Veterinary Medicine","Veterinary Technology"],"_2":["Agricultural Chemistry","Agricultural Engineering"],"_3":["Anthropology","Food Processing","Food Science","Food Science and Technology","Food Technology","Geodetic Engineering","Geology","Natural Science","Plant Breeding","Plant Pathology","Sanitary Engineering","Soil Science","Water Resources Engineering","Zoology"]}'
+    path: "Agronomy "
+  },
+  {
+    attr_1: "LO",
+    attr_2: "SP",
+    attr_3: "BO",
+    path: "Aircraft Maintenance Technology"
   },
   {
     attr_1: "LO",
     attr_2: "SP",
     attr_3: "IE",
-    path:
-      '{"_1":["Airline Business Administration/Management","Applied Mathematics","Applied Physics","Basic Engineering","Business Data Processing","Chemical Engineering","Chemical Engineering Technology","Chemical Technology","Chemistry","Chemistry Education","Civil Engineering","Computer Applications","Computer Engineering","Computer Management","Computer Science","Computer Secretarial","Computer Technology","Energy Engineering","Engineering Education","Engineering Technology","General Mathematics","Industrial Technology","Information Technology","Mathematical Science","Mathematics Teaching","Other Engineering and Technology","Other IT-Related","Physics","Physics Teaching","Statistics","Technology/Engineering"],"_2":["Building Technology","Construction Technology","Marine Engineering/Technology","Structural Engineering","Urban and Regional Planning"],"_3":["Food Service Administration","Medical Technology","Radiologic Technology","Real Estate","Technology Management","Trade Technology"]}'
+    path: "Airline Business Administration/Management"
   },
   {
     attr_1: "NA",
     attr_2: "BO",
     attr_3: "IE",
-    path: '{"_1":["Animal Husbandry","Animal Science"],"_2":[],"_3":[]}'
+    path: "Animal Husbandry"
+  },
+  {
+    attr_1: "NA",
+    attr_2: "BO",
+    attr_3: "IE",
+    path: "Animal Science"
+  },
+  {
+    attr_1: "NA",
+    attr_2: "LO",
+    attr_3: "IE",
+    path: "Animal Technology"
   },
   {
     attr_1: "NA",
     attr_2: "SP",
     attr_3: "LO",
-    path:
-      '{"_1":["Anthropology","Natural Science","Plant Breeding","Plant Pathology","Zoology"],"_2":["Geodetic Engineering","Geology","Sanitary Engineering","Soil Science"],"_3":["Agricultural Chemistry","Agricultural Engineering","Agronomy ","Food Processing","Food Science","Food Science and Technology","Food Technology","Veterinary Medicine","Veterinary Technology","Water Resources Engineering"]}'
+    path: "Anthropology"
+  },
+  {
+    attr_1: "LO",
+    attr_2: "SP",
+    attr_3: "IE",
+    path: "Applied Mathematics"
+  },
+  {
+    attr_1: "LO",
+    attr_2: "SP",
+    attr_3: "IE",
+    path: "Applied Physics"
+  },
+  {
+    attr_1: "LO",
+    attr_2: "IE",
+    attr_3: "IA",
+    path: "Applied Science"
+  },
+  {
+    attr_1: "LO",
+    attr_2: "IE",
+    attr_3: "IA",
+    path: "Applied Social Research"
   },
   {
     attr_1: "LO",
     attr_2: "SP",
     attr_3: "IA",
-    path: '{"_1":["Applied Statistics"],"_2":[],"_3":[]}'
+    path: "Applied Statistics"
   },
   {
     attr_1: "NA",
     attr_2: "BO",
     attr_3: "SP",
-    path:
-      '{"_1":["Aquaculture","Fish Processing Technology","Fisheries Technology","Fishing Technology","Forest Ranger","Forest Technology"],"_2":[],"_3":["Forestry","Horticulture"]}'
+    path: "Aquaculture"
   },
   {
     attr_1: "LI",
     attr_2: "IE",
     attr_3: "IA",
-    path:
-      '{"_1":["Arabic Education (teaching Arabic)","English","English Education","English Literature","Journalism","Language Education/Language Teaching","Language and Literature","Linguistics","Literature","Philippine Literature","Pilipino/Filipino"],"_2":["Asian Studies/Asian Culture","Broadcast","Communication","International Relations","International Studies","Kindergarten Education","Legal Management","Local Government & Regional Development","Mass Communication","Tourism","Tourism and Hotel & Restaurant Mgt.","Tourism and Travel Management"],"_3":["Christian Education","Divinity","Islamic Studies","Jurisprudence","Laws","Pastoral Ministry","Philosophy","Religious Education (Character/Value Education)","Religious Formation","Teaching Handicapped Children ","Theology/Theological Studies"]}'
+    path: "Arabic Education (teaching Arabic)"
   },
   {
     attr_1: "SP",
     attr_2: "LO",
     attr_3: "BO",
-    path:
-      '{"_1":["Architectural Drafting","Architectural Science/Technology","Architecture","Marine Transportation","Materials Science and Engineering","Mining Engineering","Other Maritime","Transport Engineering"],"_2":["Aeronautical Engineering","Aircraft Maintenance Technology","Aviation Electronics/Electrical Engineering","Ceramics Engineering","Electrical Engineering","Electrical Technology","Electronics Engineering/Technology","Electronics and Communications Engineering","Industrial Engineering","Mechanical Engineering","Mechanical Technology"],"_3":["Automotive Technology","Home Technology","Interior Design","Metallurgical Engineering"]}'
+    path: "Architectural Drafting"
+  },
+  {
+    attr_1: "SP",
+    attr_2: "LO",
+    attr_3: "BO",
+    path: "Architectural Science/Technology"
+  },
+  {
+    attr_1: "SP",
+    attr_2: "LO",
+    attr_3: "BO",
+    path: "Architecture"
   },
   {
     attr_1: "SP",
     attr_2: "MU",
     attr_3: "BO",
-    path:
-      '{"_1":["Art Education","Arts","Other Fine and Applied Arts"],"_2":[],"_3":["Creative and Performing Arts"]}'
+    path: "Art Education"
+  },
+  {
+    attr_1: "SP",
+    attr_2: "MU",
+    attr_3: "BO",
+    path: "Arts"
   },
   {
     attr_1: "SP",
     attr_2: "IA",
     attr_3: "MU",
-    path: '{"_1":["Arts (Classical/Philosophy)"],"_2":[],"_3":[]}'
+    path: "Arts (Classical/Philosophy)"
   },
   {
     attr_1: "IE",
     attr_2: "LI",
     attr_3: "IA",
-    path:
-      '{"_1":["Asian Studies/Asian Culture","Broadcast","Communication","International Relations","International Studies","Kindergarten Education","Legal Management","Local Government & Regional Development","Mass Communication","Tourism","Tourism and Hotel & Restaurant Mgt.","Tourism and Travel Management"],"_2":["Arabic Education (teaching Arabic)","English","English Education","English Literature","Journalism","Language Education/Language Teaching","Language and Literature","Linguistics","Literature","Philippine Literature","Pilipino/Filipino"],"_3":["Christian Education","Divinity","Islamic Studies","Jurisprudence","Laws","Pastoral Ministry","Philosophy","Religious Education (Character/Value Education)","Religious Formation","Teaching Handicapped Children ","Theology/Theological Studies"]}'
+    path: "Asian Studies/Asian Culture"
   },
   {
     attr_1: "SP",
     attr_2: "BO",
     attr_3: "LO",
-    path:
-      '{"_1":["Automotive Technology","Interior Design"],"_2":["Home Technology"],"_3":["Aeronautical Engineering","Aircraft Maintenance Technology","Architectural Drafting","Architectural Science/Technology","Architecture","Aviation Electronics/Electrical Engineering","Ceramics Engineering","Electrical Engineering","Electrical Technology","Electronics Engineering/Technology","Electronics and Communications Engineering","Industrial Engineering","Marine Transportation","Materials Science and Engineering","Mechanical Engineering","Mechanical Technology","Metallurgical Engineering","Mining Engineering","Other Maritime","Transport Engineering"]}'
+    path: "Automotive Technology"
+  },
+  {
+    attr_1: "LO",
+    attr_2: "SP",
+    attr_3: "BO",
+    path: "Aviation Electronics/Electrical Engineering"
+  },
+  {
+    attr_1: "LO",
+    attr_2: "IE",
+    attr_3: "IA",
+    path: "Banking and Finance"
+  },
+  {
+    attr_1: "LO",
+    attr_2: "SP",
+    attr_3: "IE",
+    path: "Basic Engineering"
+  },
+  {
+    attr_1: "NA",
+    attr_2: "LO",
+    attr_3: "IE",
+    path: "Biology"
+  },
+  {
+    attr_1: "NA",
+    attr_2: "LO",
+    attr_3: "IE",
+    path: "Biology Education"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LI",
+    attr_3: "IA",
+    path: "Broadcast"
   },
   {
     attr_1: "SP",
     attr_2: "LO",
     attr_3: "IE",
-    path:
-      '{"_1":["Building Technology","Construction Technology","Marine Engineering/Technology","Structural Engineering","Urban and Regional Planning"],"_2":["Airline Business Administration/Management","Applied Mathematics","Applied Physics","Basic Engineering","Business Data Processing","Chemical Engineering","Chemical Engineering Technology","Chemical Technology","Chemistry","Chemistry Education","Civil Engineering","Computer Applications","Computer Engineering","Computer Management","Computer Science","Computer Secretarial","Computer Technology","Energy Engineering","Engineering Education","Engineering Technology","General Mathematics","Industrial Technology","Information Technology","Mathematical Science","Mathematics Teaching","Other Engineering and Technology","Other IT-Related","Physics","Physics Teaching","Statistics","Technology/Engineering"],"_3":["Food Service Administration","Medical Technology","Radiologic Technology","Real Estate","Technology Management","Trade Technology"]}'
+    path: "Building Technology"
   },
   {
     attr_1: "IE",
     attr_2: "LO",
     attr_3: "IA",
-    path:
-      '{"_1":["Business Administration","Business Administration/Management & Accountancy","Business Economics","Business Education","Business Entrepreneurship","Business Management","Commerce","Commercial Science/Arts","Cooperative Management","Curriculum and Instruction","Customs Administration","Development Economics","Development Management/Administration","Economics","Economics Education","Entrepreneurial Management","Hospital Administration","Management","Medicine","Midwifery","Nursing","Office Administration/Management","Organizational Development and Planning","Other Medical and Allied","Pharmacy","Public Health/Medical Health","Secretarial Science","Secretarial/Medical Secretarial/Clerical"],"_2":["Accountancy","Accounting Technology","Applied Science","Applied Social Research","Banking and Finance","Government Accounting and Auditing","Human Resource Development and Planning","Personnel and Human Resources Management"],"_3":["Clinical Psychology","Community Development","Community Health","Community Health Development and Management","Counseling Psychology","Criminal Justice","Development Studies","Guidance and Counselling","Health Professional Education","Health Science Education","Industrial Psychology","Other Social and Behavioral Science","Participatory Development","Psychology","Social Development","Social Science","Social Science Education","Social Services","Social Studies","Social Work","Sociology"]}'
+    path: "Business Administration"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LO",
+    attr_3: "IA",
+    path: "Business Administration/Management & Accountancy"
+  },
+  {
+    attr_1: "LO",
+    attr_2: "SP",
+    attr_3: "IE",
+    path: "Business Data Processing"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LO",
+    attr_3: "IA",
+    path: "Business Economics"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LO",
+    attr_3: "IA",
+    path: "Business Education"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LO",
+    attr_3: "IA",
+    path: "Business Entrepreneurship"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LO",
+    attr_3: "IA",
+    path: "Business Management"
+  },
+  {
+    attr_1: "LO",
+    attr_2: "SP",
+    attr_3: "BO",
+    path: "Ceramics Engineering"
+  },
+  {
+    attr_1: "LO",
+    attr_2: "SP",
+    attr_3: "IE",
+    path: "Chemical Engineering"
+  },
+  {
+    attr_1: "LO",
+    attr_2: "SP",
+    attr_3: "IE",
+    path: "Chemical Engineering Technology"
+  },
+  {
+    attr_1: "LO",
+    attr_2: "SP",
+    attr_3: "IE",
+    path: "Chemical Technology"
+  },
+  {
+    attr_1: "LO",
+    attr_2: "SP",
+    attr_3: "IE",
+    path: "Chemistry"
+  },
+  {
+    attr_1: "LO",
+    attr_2: "SP",
+    attr_3: "IE",
+    path: "Chemistry Education"
   },
   {
     attr_1: "IE",
     attr_2: "LI",
     attr_3: "MU",
-    path:
-      '{"_1":["Childhood Education","Early Childhood Education"],"_2":[],"_3":["Music","Music Education","Philippine Studies/Arts"]}'
+    path: "Childhood Education"
   },
   {
     attr_1: "IA",
     attr_2: "LI",
     attr_3: "IE",
-    path:
-      '{"_1":["Christian Education","Islamic Studies","Jurisprudence","Pastoral Ministry","Religious Education (Character/Value Education)","Religious Formation","Theology/Theological Studies"],"_2":["Laws"],"_3":["Arabic Education (teaching Arabic)","Asian Studies/Asian Culture","Broadcast","Communication","Divinity","English","English Education","English Literature","International Relations","International Studies","Journalism","Kindergarten Education","Language Education/Language Teaching","Language and Literature","Legal Management","Linguistics","Literature","Local Government & Regional Development","Mass Communication","Philippine Literature","Philosophy","Pilipino/Filipino","Teaching Handicapped Children ","Tourism","Tourism and Hotel & Restaurant Mgt.","Tourism and Travel Management"]}'
+    path: "Christian Education"
+  },
+  {
+    attr_1: "LO",
+    attr_2: "SP",
+    attr_3: "IE",
+    path: "Civil Engineering"
   },
   {
     attr_1: "IE",
     attr_2: "IA",
     attr_3: "LO",
-    path:
-      '{"_1":["Clinical Psychology","Community Development","Community Health","Community Health Development and Management","Counseling Psychology","Development Studies","Guidance and Counselling","Health Professional Education","Health Science Education","Industrial Psychology","Other Social and Behavioral Science","Participatory Development","Psychology","Social Development","Social Science","Social Science Education","Social Services","Social Studies","Social Work","Sociology"],"_2":["Criminal Justice"],"_3":["Accountancy","Accounting Technology","Applied Science","Applied Social Research","Banking and Finance","Business Administration","Business Administration/Management & Accountancy","Business Economics","Business Education","Business Entrepreneurship","Business Management","Commerce","Commercial Science/Arts","Cooperative Management","Curriculum and Instruction","Customs Administration","Development Economics","Development Management/Administration","Economics","Economics Education","Entrepreneurial Management","Government Accounting and Auditing","Hospital Administration","Human Resource Development and Planning","Management","Medicine","Midwifery","Nursing","Office Administration/Management","Organizational Development and Planning","Other Medical and Allied","Personnel and Human Resources Management","Pharmacy","Public Health/Medical Health","Secretarial Science","Secretarial/Medical Secretarial/Clerical"]}'
+    path: "Clinical Psychology"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LO",
+    attr_3: "IA",
+    path: "Commerce"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LO",
+    attr_3: "IA",
+    path: "Commercial Science/Arts"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LI",
+    attr_3: "IA",
+    path: "Communication"
   },
   {
     attr_1: "SP",
     attr_2: "IE",
     attr_3: "MU",
-    path: '{"_1":["Communication Arts (Pilipino, English)"],"_2":[],"_3":[]}'
+    path: "Communication Arts (Pilipino, English)"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "IA",
+    attr_3: "LO",
+    path: "Community Development"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "IA",
+    attr_3: "LO",
+    path: "Community Health"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "IA",
+    attr_3: "LO",
+    path: "Community Health Development and Management"
+  },
+  {
+    attr_1: "LO",
+    attr_2: "SP",
+    attr_3: "IE",
+    path: "Computer Applications"
+  },
+  {
+    attr_1: "LO",
+    attr_2: "SP",
+    attr_3: "IE",
+    path: "Computer Engineering"
+  },
+  {
+    attr_1: "LO",
+    attr_2: "SP",
+    attr_3: "IE",
+    path: "Computer Management"
+  },
+  {
+    attr_1: "LO",
+    attr_2: "SP",
+    attr_3: "IE",
+    path: "Computer Science"
+  },
+  {
+    attr_1: "LO",
+    attr_2: "SP",
+    attr_3: "IE",
+    path: "Computer Secretarial"
+  },
+  {
+    attr_1: "LO",
+    attr_2: "SP",
+    attr_3: "IE",
+    path: "Computer Technology"
+  },
+  {
+    attr_1: "SP",
+    attr_2: "LO",
+    attr_3: "IE",
+    path: "Construction Technology"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LO",
+    attr_3: "IA",
+    path: "Cooperative Management"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "IA",
+    attr_3: "LO",
+    path: "Counseling Psychology"
   },
   {
     attr_1: "BO",
     attr_2: "MU",
     attr_3: "SP",
-    path:
-      '{"_1":["Creative and Performing Arts"],"_2":[],"_3":["Art Education","Arts","Other Fine and Applied Arts"]}'
+    path: "Creative and Performing Arts"
   },
   {
     attr_1: "IA",
     attr_2: "IE",
     attr_3: "LO",
-    path:
-      '{"_1":["Criminal Justice"],"_2":["Clinical Psychology","Community Development","Community Health","Community Health Development and Management","Counseling Psychology","Development Studies","Guidance and Counselling","Health Professional Education","Health Science Education","Industrial Psychology","Other Social and Behavioral Science","Participatory Development","Psychology","Social Development","Social Science","Social Science Education","Social Services","Social Studies","Social Work","Sociology"],"_3":["Accountancy","Accounting Technology","Applied Science","Applied Social Research","Banking and Finance","Business Administration","Business Administration/Management & Accountancy","Business Economics","Business Education","Business Entrepreneurship","Business Management","Commerce","Commercial Science/Arts","Cooperative Management","Curriculum and Instruction","Customs Administration","Development Economics","Development Management/Administration","Economics","Economics Education","Entrepreneurial Management","Government Accounting and Auditing","Hospital Administration","Human Resource Development and Planning","Management","Medicine","Midwifery","Nursing","Office Administration/Management","Organizational Development and Planning","Other Medical and Allied","Personnel and Human Resources Management","Pharmacy","Public Health/Medical Health","Secretarial Science","Secretarial/Medical Secretarial/Clerical"]}'
+    path: "Criminal Justice"
   },
   {
     attr_1: "IA",
     attr_2: "BO",
     attr_3: "SP",
-    path:
-      '{"_1":["Criminology","Other Civil Security and Military"],"_2":["Home Economics"],"_3":["Fine Arts","Garment Technology"]}'
+    path: "Criminology"
   },
   {
     attr_1: "IA",
     attr_2: "BO",
     attr_3: "IE",
-    path:
-      '{"_1":["Criminology and Police Administration"],"_2":[],"_3":["Occupational Therapy/Health","Physical Therapy"]}'
+    path: "Criminology and Police Administration"
+  },
+  {
+    attr_1: "NA",
+    attr_2: "SP",
+    attr_3: "IE",
+    path: "Crop Protection"
+  },
+  {
+    attr_1: "NA",
+    attr_2: "SP",
+    attr_3: "IE",
+    path: "Crop Science"
   },
   {
     attr_1: "IE",
     attr_2: "IA",
     attr_3: "MU",
-    path: '{"_1":["Culture Heritage Studies"],"_2":[],"_3":[]}'
+    path: "Culture Heritage Studies"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LO",
+    attr_3: "IA",
+    path: "Curriculum and Instruction"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LO",
+    attr_3: "IA",
+    path: "Customs Administration"
   },
   {
     attr_1: "SP",
     attr_2: "IE",
     attr_3: "IA",
-    path:
-      '{"_1":["Dental Medicine","Maritime Management","Optometry"],"_2":["Institutional Development Management"],"_3":["Interdisciplinary Studies"]}'
+    path: "Dental Medicine"
   },
   {
     attr_1: "IE",
     attr_2: "LI",
     attr_3: "LO",
-    path:
-      '{"_1":["Development Communication","Education","Educational Administration and Supervision","Educational Administration/Management","Elementary Education","Extension Education","Marketing","Other Education Science and Teacher Training","Other Education not elsewhere coded (NEC)","Public Administration/Management","Secondary Education with no specialization","Special Education","Teaching"],"_2":["History"],"_3":["Educational Technology","Information Management","Technology Communications Management"]}'
+    path: "Development Communication"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LO",
+    attr_3: "IA",
+    path: "Development Economics"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LO",
+    attr_3: "IA",
+    path: "Development Management/Administration"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "IA",
+    attr_3: "LO",
+    path: "Development Studies"
   },
   {
     attr_1: "IA",
     attr_2: "IE",
     attr_3: "LI",
-    path:
-      '{"_1":["Divinity","Philosophy"],"_2":["Teaching Handicapped Children "],"_3":["Arabic Education (teaching Arabic)","Asian Studies/Asian Culture","Broadcast","Christian Education","Communication","English","English Education","English Literature","International Relations","International Studies","Islamic Studies","Journalism","Jurisprudence","Kindergarten Education","Language Education/Language Teaching","Language and Literature","Laws","Legal Management","Linguistics","Literature","Local Government & Regional Development","Mass Communication","Pastoral Ministry","Philippine Literature","Pilipino/Filipino","Religious Education (Character/Value Education)","Religious Formation","Theology/Theological Studies","Tourism","Tourism and Hotel & Restaurant Mgt.","Tourism and Travel Management"]}'
+    path: "Divinity"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LI",
+    attr_3: "MU",
+    path: "Early Childhood Education"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LO",
+    attr_3: "IA",
+    path: "Economics"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LO",
+    attr_3: "IA",
+    path: "Economics Education"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LI",
+    attr_3: "LO",
+    path: "Education"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LI",
+    attr_3: "LO",
+    path: "Educational Administration and Supervision"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LI",
+    attr_3: "LO",
+    path: "Educational Administration/Management"
   },
   {
     attr_1: "IE",
     attr_2: "LO",
     attr_3: "LI",
-    path:
-      '{"_1":["Educational Technology","Technology Communications Management"],"_2":["Information Management"],"_3":["Development Communication","Education","Educational Administration and Supervision","Educational Administration/Management","Elementary Education","Extension Education","History","Marketing","Other Education Science and Teacher Training","Other Education not elsewhere coded (NEC)","Public Administration/Management","Secondary Education with no specialization","Special Education","Teaching"]}'
+    path: "Educational Technology"
+  },
+  {
+    attr_1: "LO",
+    attr_2: "SP",
+    attr_3: "BO",
+    path: "Electrical Engineering"
+  },
+  {
+    attr_1: "LO",
+    attr_2: "SP",
+    attr_3: "BO",
+    path: "Electrical Technology"
+  },
+  {
+    attr_1: "LO",
+    attr_2: "SP",
+    attr_3: "BO",
+    path: "Electronics Engineering/Technology"
+  },
+  {
+    attr_1: "LO",
+    attr_2: "SP",
+    attr_3: "BO",
+    path: "Electronics and Communications Engineering"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LI",
+    attr_3: "LO",
+    path: "Elementary Education"
+  },
+  {
+    attr_1: "LO",
+    attr_2: "SP",
+    attr_3: "IE",
+    path: "Energy Engineering"
+  },
+  {
+    attr_1: "LO",
+    attr_2: "SP",
+    attr_3: "IE",
+    path: "Engineering Education"
+  },
+  {
+    attr_1: "LO",
+    attr_2: "SP",
+    attr_3: "IE",
+    path: "Engineering Technology"
+  },
+  {
+    attr_1: "LI",
+    attr_2: "IE",
+    attr_3: "IA",
+    path: "English"
+  },
+  {
+    attr_1: "LI",
+    attr_2: "IE",
+    attr_3: "IA",
+    path: "English Education"
+  },
+  {
+    attr_1: "LI",
+    attr_2: "IE",
+    attr_3: "IA",
+    path: "English Literature"
+  },
+  {
+    attr_1: "NA",
+    attr_2: "SP",
+    attr_3: "IE",
+    path: "Entomology"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LO",
+    attr_3: "IA",
+    path: "Entrepreneurial Management"
   },
   {
     attr_1: "NA",
     attr_2: "IE",
     attr_3: "SP",
-    path:
-      '{"_1":["Environmental Planning/Management","Environmental Science","Fisheries","Fishery Business Management ","Marine Bio-Diversity","Marine Biology"],"_2":["Nutrition and Dietetics"],"_3":["Agricultural Development","Agricultural Extension","Agriculture ","Agro-Forestry","Crop Protection","Crop Science","Entomology","Other Agriculture, Forestry, Fisheries"]}'
+    path: "Environmental Planning/Management"
+  },
+  {
+    attr_1: "NA",
+    attr_2: "IE",
+    attr_3: "SP",
+    path: "Environmental Science"
   },
   {
     attr_1: "LO",
     attr_2: "NA",
     attr_3: "IE",
-    path:
-      '{"_1":["Environmental and Sanitary Engineering ","Science","Science Education (teaching Science)"],"_2":["Agricultural Science","Agricultural Technology","Agricultural Technology Education","Animal Technology","Biology","Biology Education","Farming System"],"_3":["Agri-Business","Agri-Business Management/Administration","Agricultural Economics ","Agricultural Management","General Science","General Science Education","Rural Development"]}'
+    path: "Environmental and Sanitary Engineering "
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LI",
+    attr_3: "LO",
+    path: "Extension Education"
+  },
+  {
+    attr_1: "NA",
+    attr_2: "LO",
+    attr_3: "IE",
+    path: "Farming System"
   },
   {
     attr_1: "LI",
     attr_2: "IE",
     attr_3: "LA",
-    path:
-      '{"_1":["Filipino Education"],"_2":["Political Economy","Political Science"],"_3":[]}'
+    path: "Filipino Education"
   },
   {
     attr_1: "SP",
     attr_2: "BO",
     attr_3: "IA",
-    path:
-      '{"_1":["Fine Arts","Garment Technology"],"_2":[],"_3":["Criminology","Home Economics","Other Civil Security and Military"]}'
+    path: "Fine Arts"
+  },
+  {
+    attr_1: "NA",
+    attr_2: "BO",
+    attr_3: "SP",
+    path: "Fish Processing Technology"
+  },
+  {
+    attr_1: "NA",
+    attr_2: "IE",
+    attr_3: "SP",
+    path: "Fisheries"
+  },
+  {
+    attr_1: "NA",
+    attr_2: "BO",
+    attr_3: "SP",
+    path: "Fisheries Technology"
+  },
+  {
+    attr_1: "NA",
+    attr_2: "IE",
+    attr_3: "SP",
+    path: "Fishery Business Management "
+  },
+  {
+    attr_1: "NA",
+    attr_2: "BO",
+    attr_3: "SP",
+    path: "Fishing Technology"
   },
   {
     attr_1: "SP",
     attr_2: "LO",
     attr_3: "NA",
-    path:
-      '{"_1":["Food Processing","Food Science","Food Science and Technology","Food Technology","Water Resources Engineering"],"_2":[],"_3":["Agricultural Chemistry","Agricultural Engineering","Agronomy ","Anthropology","Geodetic Engineering","Geology","Natural Science","Plant Breeding","Plant Pathology","Sanitary Engineering","Soil Science","Veterinary Medicine","Veterinary Technology","Zoology"]}'
+    path: "Food Processing"
+  },
+  {
+    attr_1: "SP",
+    attr_2: "LO",
+    attr_3: "NA",
+    path: "Food Science"
+  },
+  {
+    attr_1: "SP",
+    attr_2: "LO",
+    attr_3: "NA",
+    path: "Food Science and Technology"
   },
   {
     attr_1: "IE",
     attr_2: "SP",
     attr_3: "LO",
-    path:
-      '{"_1":["Food Service Administration","Real Estate"],"_2":["Medical Technology","Radiologic Technology"],"_3":["Airline Business Administration/Management","Applied Mathematics","Applied Physics","Basic Engineering","Building Technology","Business Data Processing","Chemical Engineering","Chemical Engineering Technology","Chemical Technology","Chemistry","Chemistry Education","Civil Engineering","Computer Applications","Computer Engineering","Computer Management","Computer Science","Computer Secretarial","Computer Technology","Construction Technology","Energy Engineering","Engineering Education","Engineering Technology","General Mathematics","Industrial Technology","Information Technology","Marine Engineering/Technology","Mathematical Science","Mathematics Teaching","Other Engineering and Technology","Other IT-Related","Physics","Physics Teaching","Statistics","Structural Engineering","Technology Management","Technology/Engineering","Trade Technology","Urban and Regional Planning"]}'
+    path: "Food Service Administration"
+  },
+  {
+    attr_1: "SP",
+    attr_2: "LO",
+    attr_3: "NA",
+    path: "Food Technology"
+  },
+  {
+    attr_1: "NA",
+    attr_2: "BO",
+    attr_3: "SP",
+    path: "Forest Ranger"
+  },
+  {
+    attr_1: "NA",
+    attr_2: "BO",
+    attr_3: "SP",
+    path: "Forest Technology"
   },
   {
     attr_1: "NA",
     attr_2: "SP",
     attr_3: "BO",
-    path:
-      '{"_1":["Forestry","Horticulture"],"_2":[],"_3":["Aquaculture","Fish Processing Technology","Fisheries Technology","Fishing Technology","Forest Ranger","Forest Technology"]}'
+    path: "Forestry"
+  },
+  {
+    attr_1: "SP",
+    attr_2: "BO",
+    attr_3: "IA",
+    path: "Garment Technology"
+  },
+  {
+    attr_1: "LO",
+    attr_2: "SP",
+    attr_3: "IE",
+    path: "General Mathematics"
   },
   {
     attr_1: "LO",
     attr_2: "IE",
     attr_3: "NA",
-    path:
-      '{"_1":["General Science","General Science Education"],"_2":["Rural Development"],"_3":["Agri-Business","Agri-Business Management/Administration","Agricultural Economics ","Agricultural Management","Agricultural Science","Agricultural Technology","Agricultural Technology Education","Animal Technology","Biology","Biology Education","Environmental and Sanitary Engineering ","Farming System","Science","Science Education (teaching Science)"]}'
+    path: "General Science"
+  },
+  {
+    attr_1: "LO",
+    attr_2: "IE",
+    attr_3: "NA",
+    path: "General Science Education"
   },
   {
     attr_1: "SP",
     attr_2: "NA",
     attr_3: "LO",
-    path:
-      '{"_1":["Geodetic Engineering","Geology","Sanitary Engineering","Soil Science"],"_2":["Anthropology","Natural Science","Plant Breeding","Plant Pathology","Zoology"],"_3":["Agricultural Chemistry","Agricultural Engineering","Agronomy ","Food Processing","Food Science","Food Science and Technology","Food Technology","Veterinary Medicine","Veterinary Technology","Water Resources Engineering"]}'
+    path: "Geodetic Engineering"
+  },
+  {
+    attr_1: "SP",
+    attr_2: "NA",
+    attr_3: "LO",
+    path: "Geology"
+  },
+  {
+    attr_1: "LO",
+    attr_2: "IE",
+    attr_3: "IA",
+    path: "Government Accounting and Auditing"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "IA",
+    attr_3: "LO",
+    path: "Guidance and Counselling"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "IA",
+    attr_3: "LO",
+    path: "Health Professional Education"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "IA",
+    attr_3: "LO",
+    path: "Health Science Education"
   },
   {
     attr_1: "LI",
     attr_2: "IE",
     attr_3: "LO",
-    path:
-      '{"_1":["History"],"_2":["Development Communication","Education","Educational Administration and Supervision","Educational Administration/Management","Elementary Education","Extension Education","Marketing","Other Education Science and Teacher Training","Other Education not elsewhere coded (NEC)","Public Administration/Management","Secondary Education with no specialization","Special Education","Teaching"],"_3":["Educational Technology","Information Management","Technology Communications Management"]}'
+    path: "History"
   },
   {
     attr_1: "BO",
     attr_2: "IA",
     attr_3: "SP",
-    path:
-      '{"_1":["Home Economics"],"_2":["Criminology","Other Civil Security and Military"],"_3":["Fine Arts","Garment Technology"]}'
+    path: "Home Economics"
   },
   {
     attr_1: "BO",
     attr_2: "IE",
     attr_3: "SP",
-    path:
-      '{"_1":["Home Economics Education","Industrial Education","Physical Education","Sports Science (Sports Officiating/Coaching)"],"_2":[],"_3":["Pre-Dental","Technician Teacher Education","Vocational/Technical Education"]}'
+    path: "Home Economics Education"
   },
   {
     attr_1: "BO",
     attr_2: "SP",
     attr_3: "LO",
-    path:
-      '{"_1":["Home Technology"],"_2":["Automotive Technology","Interior Design"],"_3":["Aeronautical Engineering","Aircraft Maintenance Technology","Architectural Drafting","Architectural Science/Technology","Architecture","Aviation Electronics/Electrical Engineering","Ceramics Engineering","Electrical Engineering","Electrical Technology","Electronics Engineering/Technology","Electronics and Communications Engineering","Industrial Engineering","Marine Transportation","Materials Science and Engineering","Mechanical Engineering","Mechanical Technology","Metallurgical Engineering","Mining Engineering","Other Maritime","Transport Engineering"]}'
+    path: "Home Technology"
+  },
+  {
+    attr_1: "NA",
+    attr_2: "SP",
+    attr_3: "BO",
+    path: "Horticulture"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LO",
+    attr_3: "IA",
+    path: "Hospital Administration"
   },
   {
     attr_1: "IE",
     attr_2: "LI",
     attr_3: "BO",
-    path: '{"_1":["Hotel and Restaurant Management"],"_2":[],"_3":[]}'
+    path: "Hotel and Restaurant Management"
+  },
+  {
+    attr_1: "LO",
+    attr_2: "IE",
+    attr_3: "IA",
+    path: "Human Resource Development and Planning"
+  },
+  {
+    attr_1: "BO",
+    attr_2: "IE",
+    attr_3: "SP",
+    path: "Industrial Education"
+  },
+  {
+    attr_1: "LO",
+    attr_2: "SP",
+    attr_3: "BO",
+    path: "Industrial Engineering"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "IA",
+    attr_3: "LO",
+    path: "Industrial Psychology"
+  },
+  {
+    attr_1: "LO",
+    attr_2: "SP",
+    attr_3: "IE",
+    path: "Industrial Technology"
   },
   {
     attr_1: "LO",
     attr_2: "IE",
     attr_3: "LI",
-    path:
-      '{"_1":["Information Management"],"_2":["Educational Technology","Technology Communications Management"],"_3":["Development Communication","Education","Educational Administration and Supervision","Educational Administration/Management","Elementary Education","Extension Education","History","Marketing","Other Education Science and Teacher Training","Other Education not elsewhere coded (NEC)","Public Administration/Management","Secondary Education with no specialization","Special Education","Teaching"]}'
+    path: "Information Management"
+  },
+  {
+    attr_1: "LO",
+    attr_2: "SP",
+    attr_3: "IE",
+    path: "Information Technology"
   },
   {
     attr_1: "IE",
     attr_2: "SP",
     attr_3: "IA",
-    path:
-      '{"_1":["Institutional Development Management"],"_2":["Dental Medicine","Maritime Management","Optometry"],"_3":["Interdisciplinary Studies"]}'
+    path: "Institutional Development Management"
   },
   {
     attr_1: "IA",
     attr_2: "IE",
     attr_3: "SP",
-    path:
-      '{"_1":["Interdisciplinary Studies"],"_2":[],"_3":["Dental Medicine","Institutional Development Management","Maritime Management","Optometry"]}'
+    path: "Interdisciplinary Studies"
+  },
+  {
+    attr_1: "SP",
+    attr_2: "BO",
+    attr_3: "LO",
+    path: "Interior Design"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LI",
+    attr_3: "IA",
+    path: "International Relations"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LI",
+    attr_3: "IA",
+    path: "International Studies"
+  },
+  {
+    attr_1: "IA",
+    attr_2: "LI",
+    attr_3: "IE",
+    path: "Islamic Studies"
+  },
+  {
+    attr_1: "LI",
+    attr_2: "IE",
+    attr_3: "IA",
+    path: "Journalism"
+  },
+  {
+    attr_1: "IA",
+    attr_2: "LI",
+    attr_3: "IE",
+    path: "Jurisprudence"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LI",
+    attr_3: "IA",
+    path: "Kindergarten Education"
+  },
+  {
+    attr_1: "LI",
+    attr_2: "IE",
+    attr_3: "IA",
+    path: "Language Education/Language Teaching"
+  },
+  {
+    attr_1: "LI",
+    attr_2: "IE",
+    attr_3: "IA",
+    path: "Language and Literature"
   },
   {
     attr_1: "LI",
     attr_2: "IA",
     attr_3: "IE",
-    path:
-      '{"_1":["Laws"],"_2":["Christian Education","Islamic Studies","Jurisprudence","Pastoral Ministry","Religious Education (Character/Value Education)","Religious Formation","Theology/Theological Studies"],"_3":["Arabic Education (teaching Arabic)","Asian Studies/Asian Culture","Broadcast","Communication","Divinity","English","English Education","English Literature","International Relations","International Studies","Journalism","Kindergarten Education","Language Education/Language Teaching","Language and Literature","Legal Management","Linguistics","Literature","Local Government & Regional Development","Mass Communication","Philippine Literature","Philosophy","Pilipino/Filipino","Teaching Handicapped Children ","Tourism","Tourism and Hotel & Restaurant Mgt.","Tourism and Travel Management"]}'
+    path: "Laws"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LI",
+    attr_3: "IA",
+    path: "Legal Management"
   },
   {
     attr_1: "SP",
     attr_2: "LI",
     attr_3: "IA",
-    path: '{"_1":["Liberal Arts-Liacom"],"_2":[],"_3":[]}'
+    path: "Liberal Arts-Liacom"
   },
   {
     attr_1: "LI",
     attr_2: "IE",
     attr_3: "SP",
-    path:
-      '{"_1":["Library Science","Library and Information Science"],"_2":[],"_3":[]}'
+    path: "Library Science"
+  },
+  {
+    attr_1: "LI",
+    attr_2: "IE",
+    attr_3: "SP",
+    path: "Library and Information Science"
+  },
+  {
+    attr_1: "LI",
+    attr_2: "IE",
+    attr_3: "IA",
+    path: "Linguistics"
+  },
+  {
+    attr_1: "LI",
+    attr_2: "IE",
+    attr_3: "IA",
+    path: "Literature"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LI",
+    attr_3: "IA",
+    path: "Local Government & Regional Development"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LO",
+    attr_3: "IA",
+    path: "Management"
   },
   {
     attr_1: "LO",
     attr_2: "BO",
     attr_3: "IE",
-    path:
-      '{"_1":["Manufacturing/Production Engineering"],"_2":[],"_3":["Respiratory/Pulmunary Therapy"]}'
+    path: "Manufacturing/Production Engineering"
+  },
+  {
+    attr_1: "NA",
+    attr_2: "IE",
+    attr_3: "SP",
+    path: "Marine Bio-Diversity"
+  },
+  {
+    attr_1: "NA",
+    attr_2: "IE",
+    attr_3: "SP",
+    path: "Marine Biology"
+  },
+  {
+    attr_1: "SP",
+    attr_2: "LO",
+    attr_3: "IE",
+    path: "Marine Engineering/Technology"
+  },
+  {
+    attr_1: "SP",
+    attr_2: "LO",
+    attr_3: "BO",
+    path: "Marine Transportation"
+  },
+  {
+    attr_1: "SP",
+    attr_2: "IE",
+    attr_3: "IA",
+    path: "Maritime Management"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LI",
+    attr_3: "LO",
+    path: "Marketing"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LI",
+    attr_3: "IA",
+    path: "Mass Communication"
+  },
+  {
+    attr_1: "SP",
+    attr_2: "LO",
+    attr_3: "BO",
+    path: "Materials Science and Engineering"
+  },
+  {
+    attr_1: "LO",
+    attr_2: "SP",
+    attr_3: "IE",
+    path: "Mathematical Science"
+  },
+  {
+    attr_1: "LO",
+    attr_2: "SP",
+    attr_3: "IE",
+    path: "Mathematics Teaching"
+  },
+  {
+    attr_1: "LO",
+    attr_2: "SP",
+    attr_3: "BO",
+    path: "Mechanical Engineering"
+  },
+  {
+    attr_1: "LO",
+    attr_2: "SP",
+    attr_3: "BO",
+    path: "Mechanical Technology"
   },
   {
     attr_1: "SP",
     attr_2: "IE",
     attr_3: "LO",
-    path:
-      '{"_1":["Medical Technology","Radiologic Technology"],"_2":["Food Service Administration","Real Estate"],"_3":["Airline Business Administration/Management","Applied Mathematics","Applied Physics","Basic Engineering","Building Technology","Business Data Processing","Chemical Engineering","Chemical Engineering Technology","Chemical Technology","Chemistry","Chemistry Education","Civil Engineering","Computer Applications","Computer Engineering","Computer Management","Computer Science","Computer Secretarial","Computer Technology","Construction Technology","Energy Engineering","Engineering Education","Engineering Technology","General Mathematics","Industrial Technology","Information Technology","Marine Engineering/Technology","Mathematical Science","Mathematics Teaching","Other Engineering and Technology","Other IT-Related","Physics","Physics Teaching","Statistics","Structural Engineering","Technology Management","Technology/Engineering","Trade Technology","Urban and Regional Planning"]}'
+    path: "Medical Technology"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LO",
+    attr_3: "IA",
+    path: "Medicine"
   },
   {
     attr_1: "LO",
     attr_2: "BO",
     attr_3: "SP",
-    path:
-      '{"_1":["Metallurgical Engineering"],"_2":[],"_3":["Aeronautical Engineering","Aircraft Maintenance Technology","Architectural Drafting","Architectural Science/Technology","Architecture","Automotive Technology","Aviation Electronics/Electrical Engineering","Ceramics Engineering","Electrical Engineering","Electrical Technology","Electronics Engineering/Technology","Electronics and Communications Engineering","Home Technology","Industrial Engineering","Interior Design","Marine Transportation","Materials Science and Engineering","Mechanical Engineering","Mechanical Technology","Mining Engineering","Other Maritime","Transport Engineering"]}'
+    path: "Metallurgical Engineering"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LO",
+    attr_3: "IA",
+    path: "Midwifery"
+  },
+  {
+    attr_1: "SP",
+    attr_2: "LO",
+    attr_3: "BO",
+    path: "Mining Engineering"
   },
   {
     attr_1: "MU",
     attr_2: "IE",
     attr_3: "LI",
-    path:
-      '{"_1":["Music","Music Education"],"_2":[],"_3":["Childhood Education","Early Childhood Education","Philippine Studies/Arts"]}'
+    path: "Music"
+  },
+  {
+    attr_1: "MU",
+    attr_2: "IE",
+    attr_3: "LI",
+    path: "Music Education"
+  },
+  {
+    attr_1: "NA",
+    attr_2: "SP",
+    attr_3: "LO",
+    path: "Natural Science"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LO",
+    attr_3: "IA",
+    path: "Nursing"
   },
   {
     attr_1: "IE",
     attr_2: "NA",
     attr_3: "SP",
-    path:
-      '{"_1":["Nutrition and Dietetics"],"_2":["Environmental Planning/Management","Environmental Science","Fisheries","Fishery Business Management ","Marine Bio-Diversity","Marine Biology"],"_3":["Agricultural Development","Agricultural Extension","Agriculture ","Agro-Forestry","Crop Protection","Crop Science","Entomology","Other Agriculture, Forestry, Fisheries"]}'
+    path: "Nutrition and Dietetics"
   },
   {
     attr_1: "IE",
     attr_2: "IA",
     attr_3: "BO",
-    path:
-      '{"_1":["Occupational Therapy/Health"],"_2":[],"_3":["Criminology and Police Administration","Physical Therapy"]}'
+    path: "Occupational Therapy/Health"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LO",
+    attr_3: "IA",
+    path: "Office Administration/Management"
+  },
+  {
+    attr_1: "SP",
+    attr_2: "IE",
+    attr_3: "IA",
+    path: "Optometry"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LO",
+    attr_3: "IA",
+    path: "Organizational Development and Planning"
+  },
+  {
+    attr_1: "NA",
+    attr_2: "SP",
+    attr_3: "IE",
+    path: "Other Agriculture, Forestry, Fisheries"
+  },
+  {
+    attr_1: "IA",
+    attr_2: "BO",
+    attr_3: "SP",
+    path: "Other Civil Security and Military"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LI",
+    attr_3: "LO",
+    path: "Other Education Science and Teacher Training"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LI",
+    attr_3: "LO",
+    path: "Other Education not elsewhere coded (NEC)"
+  },
+  {
+    attr_1: "LO",
+    attr_2: "SP",
+    attr_3: "IE",
+    path: "Other Engineering and Technology"
+  },
+  {
+    attr_1: "SP",
+    attr_2: "MU",
+    attr_3: "BO",
+    path: "Other Fine and Applied Arts"
+  },
+  {
+    attr_1: "LO",
+    attr_2: "SP",
+    attr_3: "IE",
+    path: "Other IT-Related"
+  },
+  {
+    attr_1: "SP",
+    attr_2: "LO",
+    attr_3: "BO",
+    path: "Other Maritime"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LO",
+    attr_3: "IA",
+    path: "Other Medical and Allied"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "IA",
+    attr_3: "LO",
+    path: "Other Social and Behavioral Science"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "IA",
+    attr_3: "LO",
+    path: "Participatory Development"
+  },
+  {
+    attr_1: "IA",
+    attr_2: "LI",
+    attr_3: "IE",
+    path: "Pastoral Ministry"
+  },
+  {
+    attr_1: "LO",
+    attr_2: "IE",
+    attr_3: "IA",
+    path: "Personnel and Human Resources Management"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LO",
+    attr_3: "IA",
+    path: "Pharmacy"
+  },
+  {
+    attr_1: "LI",
+    attr_2: "IE",
+    attr_3: "IA",
+    path: "Philippine Literature"
   },
   {
     attr_1: "MU",
     attr_2: "LI",
     attr_3: "IE",
-    path:
-      '{"_1":["Philippine Studies/Arts"],"_2":[],"_3":["Childhood Education","Early Childhood Education","Music","Music Education"]}'
+    path: "Philippine Studies/Arts"
+  },
+  {
+    attr_1: "IA",
+    attr_2: "IE",
+    attr_3: "LI",
+    path: "Philosophy"
+  },
+  {
+    attr_1: "BO",
+    attr_2: "IE",
+    attr_3: "SP",
+    path: "Physical Education"
   },
   {
     attr_1: "IE",
     attr_2: "BO",
     attr_3: "IA",
-    path:
-      '{"_1":["Physical Therapy"],"_2":[],"_3":["Criminology and Police Administration","Occupational Therapy/Health"]}'
+    path: "Physical Therapy"
+  },
+  {
+    attr_1: "LO",
+    attr_2: "SP",
+    attr_3: "IE",
+    path: "Physics"
+  },
+  {
+    attr_1: "LO",
+    attr_2: "SP",
+    attr_3: "IE",
+    path: "Physics Teaching"
+  },
+  {
+    attr_1: "LI",
+    attr_2: "IE",
+    attr_3: "IA",
+    path: "Pilipino/Filipino"
+  },
+  {
+    attr_1: "NA",
+    attr_2: "SP",
+    attr_3: "LO",
+    path: "Plant Breeding"
+  },
+  {
+    attr_1: "NA",
+    attr_2: "SP",
+    attr_3: "LO",
+    path: "Plant Pathology"
   },
   {
     attr_1: "IE",
     attr_2: "LI",
     attr_3: "LA",
-    path:
-      '{"_1":["Political Economy","Political Science"],"_2":["Filipino Education"],"_3":[]}'
+    path: "Political Economy"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LI",
+    attr_3: "LA",
+    path: "Political Science"
   },
   {
     attr_1: "SP",
     attr_2: "BO",
     attr_3: "IE",
-    path:
-      '{"_1":["Pre-Dental"],"_2":["Vocational/Technical Education"],"_3":["Home Economics Education","Industrial Education","Physical Education","Sports Science (Sports Officiating/Coaching)","Technician Teacher Education"]}'
+    path: "Pre-Dental"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "IA",
+    attr_3: "LO",
+    path: "Psychology"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LI",
+    attr_3: "LO",
+    path: "Public Administration/Management"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LO",
+    attr_3: "IA",
+    path: "Public Health/Medical Health"
+  },
+  {
+    attr_1: "SP",
+    attr_2: "IE",
+    attr_3: "LO",
+    path: "Radiologic Technology"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "SP",
+    attr_3: "LO",
+    path: "Real Estate"
+  },
+  {
+    attr_1: "IA",
+    attr_2: "LI",
+    attr_3: "IE",
+    path: "Religious Education (Character/Value Education)"
+  },
+  {
+    attr_1: "IA",
+    attr_2: "LI",
+    attr_3: "IE",
+    path: "Religious Formation"
   },
   {
     attr_1: "LO",
     attr_2: "LI",
     attr_3: "IA",
-    path: '{"_1":["Research and Evaluation"],"_2":[],"_3":[]}'
+    path: "Research and Evaluation"
   },
   {
     attr_1: "IE",
     attr_2: "BO",
     attr_3: "LO",
-    path:
-      '{"_1":["Respiratory/Pulmunary Therapy"],"_2":[],"_3":["Manufacturing/Production Engineering"]}'
+    path: "Respiratory/Pulmunary Therapy"
   },
   {
     attr_1: "IE",
     attr_2: "LO",
     attr_3: "NA",
-    path:
-      '{"_1":["Rural Development"],"_2":["General Science","General Science Education"],"_3":["Agri-Business","Agri-Business Management/Administration","Agricultural Economics ","Agricultural Management","Agricultural Science","Agricultural Technology","Agricultural Technology Education","Animal Technology","Biology","Biology Education","Environmental and Sanitary Engineering ","Farming System","Science","Science Education (teaching Science)"]}'
+    path: "Rural Development"
+  },
+  {
+    attr_1: "SP",
+    attr_2: "NA",
+    attr_3: "LO",
+    path: "Sanitary Engineering"
+  },
+  {
+    attr_1: "LO",
+    attr_2: "NA",
+    attr_3: "IE",
+    path: "Science"
+  },
+  {
+    attr_1: "LO",
+    attr_2: "NA",
+    attr_3: "IE",
+    path: "Science Education (teaching Science)"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LI",
+    attr_3: "LO",
+    path: "Secondary Education with no specialization"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LO",
+    attr_3: "IA",
+    path: "Secretarial Science"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LO",
+    attr_3: "IA",
+    path: "Secretarial/Medical Secretarial/Clerical"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "IA",
+    attr_3: "LO",
+    path: "Social Development"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "IA",
+    attr_3: "LO",
+    path: "Social Science"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "IA",
+    attr_3: "LO",
+    path: "Social Science Education"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "IA",
+    attr_3: "LO",
+    path: "Social Services"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "IA",
+    attr_3: "LO",
+    path: "Social Studies"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "IA",
+    attr_3: "LO",
+    path: "Social Work"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "IA",
+    attr_3: "LO",
+    path: "Sociology"
+  },
+  {
+    attr_1: "SP",
+    attr_2: "NA",
+    attr_3: "LO",
+    path: "Soil Science"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LI",
+    attr_3: "LO",
+    path: "Special Education"
+  },
+  {
+    attr_1: "BO",
+    attr_2: "IE",
+    attr_3: "SP",
+    path: "Sports Science (Sports Officiating/Coaching)"
+  },
+  {
+    attr_1: "LO",
+    attr_2: "SP",
+    attr_3: "IE",
+    path: "Statistics"
+  },
+  {
+    attr_1: "SP",
+    attr_2: "LO",
+    attr_3: "IE",
+    path: "Structural Engineering"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LI",
+    attr_3: "LO",
+    path: "Teaching"
   },
   {
     attr_1: "IE",
     attr_2: "IA",
     attr_3: "LI",
-    path:
-      '{"_1":["Teaching Handicapped Children "],"_2":["Divinity","Philosophy"],"_3":["Arabic Education (teaching Arabic)","Asian Studies/Asian Culture","Broadcast","Christian Education","Communication","English","English Education","English Literature","International Relations","International Studies","Islamic Studies","Journalism","Jurisprudence","Kindergarten Education","Language Education/Language Teaching","Language and Literature","Laws","Legal Management","Linguistics","Literature","Local Government & Regional Development","Mass Communication","Pastoral Ministry","Philippine Literature","Pilipino/Filipino","Religious Education (Character/Value Education)","Religious Formation","Theology/Theological Studies","Tourism","Tourism and Hotel & Restaurant Mgt.","Tourism and Travel Management"]}'
+    path: "Teaching Handicapped Children "
   },
   {
     attr_1: "SP",
     attr_2: "IE",
     attr_3: "BO",
-    path:
-      '{"_1":["Technician Teacher Education"],"_2":[],"_3":["Home Economics Education","Industrial Education","Physical Education","Pre-Dental","Sports Science (Sports Officiating/Coaching)","Vocational/Technical Education"]}'
+    path: "Technician Teacher Education"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LO",
+    attr_3: "LI",
+    path: "Technology Communications Management"
   },
   {
     attr_1: "IE",
     attr_2: "LO",
     attr_3: "SP",
-    path:
-      '{"_1":["Technology Management"],"_2":["Trade Technology"],"_3":["Airline Business Administration/Management","Applied Mathematics","Applied Physics","Basic Engineering","Building Technology","Business Data Processing","Chemical Engineering","Chemical Engineering Technology","Chemical Technology","Chemistry","Chemistry Education","Civil Engineering","Computer Applications","Computer Engineering","Computer Management","Computer Science","Computer Secretarial","Computer Technology","Construction Technology","Energy Engineering","Engineering Education","Engineering Technology","Food Service Administration","General Mathematics","Industrial Technology","Information Technology","Marine Engineering/Technology","Mathematical Science","Mathematics Teaching","Medical Technology","Other Engineering and Technology","Other IT-Related","Physics","Physics Teaching","Radiologic Technology","Real Estate","Statistics","Structural Engineering","Technology/Engineering","Urban and Regional Planning"]}'
+    path: "Technology Management"
+  },
+  {
+    attr_1: "LO",
+    attr_2: "SP",
+    attr_3: "IE",
+    path: "Technology/Engineering"
+  },
+  {
+    attr_1: "IA",
+    attr_2: "LI",
+    attr_3: "IE",
+    path: "Theology/Theological Studies"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LI",
+    attr_3: "IA",
+    path: "Tourism"
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LI",
+    attr_3: "IA",
+    path: "Tourism and Hotel & Restaurant Mgt."
+  },
+  {
+    attr_1: "IE",
+    attr_2: "LI",
+    attr_3: "IA",
+    path: "Tourism and Travel Management"
   },
   {
     attr_1: "LO",
     attr_2: "IE",
     attr_3: "SP",
-    path:
-      '{"_1":["Trade Technology"],"_2":["Technology Management"],"_3":["Airline Business Administration/Management","Applied Mathematics","Applied Physics","Basic Engineering","Building Technology","Business Data Processing","Chemical Engineering","Chemical Engineering Technology","Chemical Technology","Chemistry","Chemistry Education","Civil Engineering","Computer Applications","Computer Engineering","Computer Management","Computer Science","Computer Secretarial","Computer Technology","Construction Technology","Energy Engineering","Engineering Education","Engineering Technology","Food Service Administration","General Mathematics","Industrial Technology","Information Technology","Marine Engineering/Technology","Mathematical Science","Mathematics Teaching","Medical Technology","Other Engineering and Technology","Other IT-Related","Physics","Physics Teaching","Radiologic Technology","Real Estate","Statistics","Structural Engineering","Technology/Engineering","Urban and Regional Planning"]}'
+    path: "Trade Technology"
+  },
+  {
+    attr_1: "SP",
+    attr_2: "LO",
+    attr_3: "BO",
+    path: "Transport Engineering"
+  },
+  {
+    attr_1: "SP",
+    attr_2: "LO",
+    attr_3: "IE",
+    path: "Urban and Regional Planning"
+  },
+  {
+    attr_1: "NA",
+    attr_2: "LO",
+    attr_3: "SP",
+    path: "Veterinary Medicine"
+  },
+  {
+    attr_1: "NA",
+    attr_2: "LO",
+    attr_3: "SP",
+    path: "Veterinary Technology"
   },
   {
     attr_1: "BO",
     attr_2: "SP",
     attr_3: "IE",
-    path:
-      '{"_1":["Vocational/Technical Education"],"_2":["Pre-Dental"],"_3":["Home Economics Education","Industrial Education","Physical Education","Sports Science (Sports Officiating/Coaching)","Technician Teacher Education"]}'
+    path: "Vocational/Technical Education"
+  },
+  {
+    attr_1: "SP",
+    attr_2: "LO",
+    attr_3: "NA",
+    path: "Water Resources Engineering"
+  },
+  {
+    attr_1: "NA",
+    attr_2: "SP",
+    attr_3: "LO",
+    path: "Zoology"
   }
 ];

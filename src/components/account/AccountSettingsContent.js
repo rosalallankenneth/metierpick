@@ -7,7 +7,7 @@ import { Paper, Typography, Box } from "@material-ui/core";
 import ContentTitleBar from "../global/ContentTitleBar";
 import BasicInformationForm from "./BasicInformationForm";
 import EmailForm from "./EmailForm";
-import ChangePasswordForm from "./ChangePasswordForm";
+// import ChangePasswordForm from "./ChangePasswordForm";
 
 const AccountContent = () => {
   return (
@@ -30,14 +30,14 @@ const AccountContent = () => {
           </Paper>
         </Box>
 
-        <Box mt={3}>
+        {/* <Box mt={3}>
           <Paper>
             <Box p={3}>
               <Typography variant="h6">Change Password</Typography>
               <ChangePasswordForm />
             </Box>
           </Paper>
-        </Box>
+        </Box> */}
       </Box>
     </>
   );

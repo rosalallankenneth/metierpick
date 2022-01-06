@@ -6,18 +6,24 @@ import {
   Paper,
   Grid,
   ButtonBase,
-  TextField,
-  TextareaAutosize
+  Button
 } from "@material-ui/core";
 
 const CareerPathInformation = props => {
   const {
     isVisible,
     pathName,
-    pathTitle,
+    // pathTitle,
     pathDescription,
-    handlePathInfoClose
+    handlePathInfoClose,
+    setFullListMap,
+    setIfModalOpen
   } = props;
+
+  const viewMapInPath = () => {
+    setFullListMap(false);
+    setIfModalOpen(true);
+  };
 
   return (
     <>
@@ -25,7 +31,7 @@ const CareerPathInformation = props => {
         <Paper
           style={{
             display: isVisible ? "flex" : "none",
-            background: "#EEFFEE"
+            background: "#eeefff"
           }}
         >
           <Box p={2} style={{ width: "100%" }}>
@@ -39,40 +45,33 @@ const CareerPathInformation = props => {
             </Grid>
 
             <Box mt={2}>
-              <TextField
-                value={pathName}
-                fullWidth
-                name="PSCED_Name"
-                label="PSCED Name"
-                type="text"
-                variant="outlined"
-                InputProps={{ readOnly: true }}
-              />
-              <TextField
-                value={pathTitle}
-                fullWidth
-                margin="normal"
-                name="Full_Title"
-                label="Full Title"
-                type="text"
-                variant="outlined"
-                InputProps={{ readOnly: true }}
-              />
-              <Typography variant="caption">Description</Typography>
-              <TextareaAutosize
-                aria-label="empty textarea"
-                placeholder="Description"
-                value={pathDescription}
-                style={{
-                  width: "100%",
-                  padding: 10,
-                  background: "transparent",
-                  fontSize: 16,
-                  font: "inherit"
-                }}
-                contentEditable={false}
-              />
+              <Box p={1} mb={2} style={{ background: "#fff" }}>
+                <Typography variant="caption">
+                  <strong>PSCED Name</strong>
+                </Typography>
+                <Typography variant="subtitle1">{pathName}</Typography>
+              </Box>
+              {/* <Box p={1} mb={2} style={{ background: "#fff" }}>
+                <Typography variant="caption">Full Title</Typography>
+                <Typography variant="subtitle1">{pathTitle}</Typography>
+              </Box> */}
+              <Box p={1} mb={2} style={{ background: "#fff" }}>
+                <Typography variant="caption">
+                  <strong>Description</strong>
+                </Typography>
+                <Typography variant="subtitle1" align="justify">
+                  {pathDescription}
+                </Typography>
+              </Box>
             </Box>
+            <Button
+              variant="contained"
+              fullWidth
+              color="primary"
+              onClick={viewMapInPath}
+            >
+              View Mapping for {pathName}
+            </Button>
 
             <Box mt={2}>
               <Typography variant="caption">

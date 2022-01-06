@@ -18,7 +18,8 @@ const getRecentRatingsFromDB = async (
   email,
   setResults,
   setPaths,
-  setLoading
+  setLoading,
+  setPathsForMap
 ) => {
   const results = await getMostRecentResults(email);
   let ratingsData = {};
@@ -34,8 +35,11 @@ const getRecentRatingsFromDB = async (
     paths = null;
   }
 
+  const pathsForMap = Object.keys(paths).map(path => path);
+
   setResults(ratingsData);
   setPaths(paths);
+  setPathsForMap(pathsForMap);
   setLoading(false);
 };
 
@@ -62,6 +66,8 @@ const HomeContent = () => {
   const [graphLoading, setGraphLoading] = useState(true);
   const [recentRatings, setRecentRatings] = useState(null);
   const [paths, setPaths] = useState(null);
+  const [pathsForMap, setPathsForMap] = useState([]);
+  const [fullListMap, setFullListMap] = useState(true);
 
   const [ifModalOpen, setIfModalOpen] = useState(false);
   const handleModalClose = () => {
@@ -69,14 +75,29 @@ const HomeContent = () => {
   };
 
   useEffect(() => {
-    getRecentRatingsFromDB(email, setRecentRatings, setPaths, setGraphLoading);
+    getRecentRatingsFromDB(
+      email,
+      setRecentRatings,
+      setPaths,
+      setGraphLoading,
+      setPathsForMap
+    );
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  // const pathList = Object.keys(paths).map(path => path);
+  // console.log(pathList);
 
   return (
     <>
       <ContentTitleBar title="Home" />
-      <MainMap open={ifModalOpen} handleClose={handleModalClose} />
+      <MainMap
+        open={ifModalOpen}
+        handleClose={handleModalClose}
+        pathList={pathsForMap}
+        fullListMap={fullListMap}
+      />
+
       <Box mt={3}>
         <Paper>
           <Box>
@@ -85,7 +106,8 @@ const HomeContent = () => {
               <Box mt={1}>
                 {!graphLoading && recentRatings !== null ? (
                   <Typography variant="body2" align="justify">
-                    Based on your most recent assessment (
+                    These are your most suitable career paths (college programs)
+                    based on your most recent assessment (
                     <i>{toDateTime(recentRatings.recordedAt.seconds).date}</i> )
                   </Typography>
                 ) : (
@@ -97,7 +119,11 @@ const HomeContent = () => {
                 .
                 <Box>
                   {!graphLoading && recentRatings !== null ? (
-                    <CareerPathSection paths={paths} />
+                    <CareerPathSection
+                      paths={paths}
+                      setFullListMap={setFullListMap}
+                      setIfModalOpen={setIfModalOpen}
+                    />
                   ) : (
                     <Button
                       component={Link}
@@ -134,7 +160,10 @@ const HomeContent = () => {
               <Box p={1} style={{ height: 50 }}>
                 <Typography variant="caption" align="justify">
                   <Button
-                    onClick={() => setIfModalOpen(true)}
+                    onClick={() => {
+                      setFullListMap(true);
+                      setIfModalOpen(true);
+                    }}
                     color="primary"
                     variant="outlined"
                     fullWidth

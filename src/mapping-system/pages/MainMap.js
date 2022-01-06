@@ -13,7 +13,7 @@ import LeafletMap from "../components/LeafletMap";
 import InformationModal from "../../components/global/InformationModal";
 import CloseRoundedIcon from "@material-ui/icons/CloseRounded";
 import InfoRoundedIcon from "@material-ui/icons/InfoRounded";
-import ListRoundedIcon from "@material-ui/icons/Assessment";
+// import ListRoundedIcon from "@material-ui/icons/Assessment";
 import { makeStyles } from "@material-ui/styles";
 import { useSelector, useDispatch } from "react-redux";
 import { setPathSelect } from "../../redux/actions/mapActions";
@@ -51,7 +51,10 @@ const useStyles = makeStyles(theme => ({
     width: "100%",
     position: "absolute",
     left: 0,
-    bottom: 0
+    bottom: 0,
+    [theme.breakpoints.down(`sm`)]: {
+      height: 160
+    }
   },
   footerFormControl: {
     backgroundColor: "#fff",
@@ -59,8 +62,15 @@ const useStyles = makeStyles(theme => ({
       backgroundColor: "#fff"
     }
   },
+  footerBtnConMobile: {
+    display: "flex",
+    [theme.breakpoints.up(`md`)]: {
+      display: "none"
+    }
+  },
   footerBtnContainer: {
-    [theme.breakpoints.down("sm")]: {
+    display: "flex",
+    [theme.breakpoints.down(`sm`)]: {
       display: "none"
     }
   },
@@ -69,18 +79,10 @@ const useStyles = makeStyles(theme => ({
     width: 40,
     height: 40
   }
-  // footerBtnContainerSmall: {
-  //   display: "none",
-  //   [theme.breakpoints.down("sm")]: {
-  //     display: "absolute",
-  //     bottom: 100,
-  //     right: 0
-  //   }
-  // }
 }));
 
 const MainMap = props => {
-  const { open, handleClose } = props;
+  const { open, handleClose, pathList, fullListMap } = props;
   const [openAbout, setOpenAbout] = useState(false);
   const [openStats, setOpenStats] = useState(false);
   const dispatch = useDispatch();
@@ -100,9 +102,9 @@ const MainMap = props => {
     setOpenAbout(true);
   };
 
-  const handleOpenStats = () => {
-    setOpenStats(true);
-  };
+  // const handleOpenStats = () => {
+  //   setOpenStats(true);
+  // };
 
   return (
     <>
@@ -114,10 +116,23 @@ const MainMap = props => {
           </Button>
         </Box>
         <Box className={classes.mapContainer}>
-          <LeafletMap pathSelect={pathSelect} />
+          <LeafletMap pathSelect={pathSelect} ifModalOpen={open} />
         </Box>
         <Box className={classes.mapFooter} px={2}>
           <Grid container>
+            <Grid item xs={12} md={6} className={classes.footerBtnConMobile}>
+              <Typography align="right" style={{ width: "100%" }}>
+                {/* <ListRoundedIcon
+                  className={classes.footerBtn}
+                  onClick={() => handleOpenStats()}
+                /> */}
+                <InfoRoundedIcon
+                  className={classes.footerBtn}
+                  onClick={() => handleOpenAbout()}
+                />
+              </Typography>
+            </Grid>
+
             <Grid item xs={12} md={6}>
               <FormControl
                 fullWidth
@@ -135,20 +150,27 @@ const MainMap = props => {
                   className={classes.footerFormControl}
                   onChange={e => dispatch(setPathSelect(e.target.value))}
                 >
-                  {CareerPathList.map(path => (
-                    <MenuItem key={path.PSCED_Name} value={path.PSCED_Name}>
-                      {path.PSCED_Name}
-                    </MenuItem>
-                  ))}
+                  {!fullListMap
+                    ? pathList.map(path => (
+                        <MenuItem key={path} value={path}>
+                          {path}
+                        </MenuItem>
+                      ))
+                    : CareerPathList.map(path => (
+                        <MenuItem key={path.PSCED_Name} value={path.PSCED_Name}>
+                          {path.PSCED_Name}
+                        </MenuItem>
+                      ))}
                 </Select>
               </FormControl>
             </Grid>
+
             <Grid item md={6} className={classes.footerBtnContainer}>
-              <Typography align="right">
-                <ListRoundedIcon
+              <Typography align="right" style={{ width: "100%" }}>
+                {/* <ListRoundedIcon
                   className={classes.footerBtn}
                   onClick={() => handleOpenStats()}
-                />
+                /> */}
                 <InfoRoundedIcon
                   className={classes.footerBtn}
                   onClick={() => handleOpenAbout()}
@@ -156,11 +178,6 @@ const MainMap = props => {
               </Typography>
             </Grid>
           </Grid>
-          {/* <Box className={classes.footerBtnContainerSmall}>
-            <Typography align="right">
-              <InfoRoundedIcon style={{ width: 40, height: 40 }} />
-            </Typography>
-          </Box> */}
         </Box>
       </InformationModal>
 

@@ -6,15 +6,18 @@ import { dt } from "./decisionTree";
 const config = {
   trainingSet: datasetDT,
   categoryAttr: "path"
-  //ignoredAttributes: ["attr_2", "attr_3"]
 };
 
 // Building Decision Tree
-const decisionTree = new dt.DecisionTree(config);
+// const decisionTree = new dt.DecisionTree(config);
+// Building Random Forest
+var numberOfTrees = 3;
+var randomForest = new dt.RandomForest(config, numberOfTrees);
 
 export const initDecisionTree = comic => {
   // Testing Decision
-  const decisionTreePrediction = decisionTree.predict(comic);
+  // const decisionTreePrediction = decisionTree.predict(comic);
+  const rfPrediction = randomForest.predict(comic);
 
-  return JSON.parse(decisionTreePrediction);
+  return rfPrediction;
 };

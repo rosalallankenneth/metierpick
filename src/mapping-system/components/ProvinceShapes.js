@@ -56,7 +56,7 @@ const ProvinceShapes = props => {
       }
     });
 
-    const setColor = () => {
+    const setColor = useStableCallback(() => {
       const enrollees = stats.find(i => i.PSCED_Name === pathSelect);
       if (enrollees && highestEnrollees) {
         const current = parseInt(enrollees.Enrollment);
@@ -65,7 +65,7 @@ const ProvinceShapes = props => {
       } else {
         return 0;
       }
-    };
+    });
 
     // layer.bindPopup(provName);
     layer.options.fillOpacity = setColor();

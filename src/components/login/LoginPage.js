@@ -16,6 +16,7 @@ import MetierpickLogo from "../../assets/logo-v2.png";
 import AlertError from "../global/AlertError";
 import Copyright from "../global/Copyright";
 import LoginCover from "../../assets/cover-login.jpg";
+import { Typography } from "@material-ui/core";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -54,6 +55,10 @@ const useStyles = makeStyles(theme => ({
     objectFit: "cover",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover"
+  },
+  aboutDescription: {
+    background: "rgba(255,255,255, .8)",
+    backdropFilter: "blur(5px)"
   }
 }));
 
@@ -95,10 +100,31 @@ export default function SignInSide(props) {
       )}
       <Grid container component="main" className={classes.root}>
         <CssBaseline />
-        <Grid item xs={false} sm={4} md={7} className={classes.image}>
-          <Box className={classes.cover}></Box>
+        <Grid item xs={false} md={7} className={classes.image}>
+          <Box className={classes.cover}>
+            <Box p={3}>
+              <Paper className={classes.aboutDescription}>
+                <Box p={3}>
+                  <Typography variant="body1" align="justify">
+                    <b>Metierpick</b> is a Decision Support System (DSS)
+                    designed to help students in discovering their dominant
+                    attributes (e.g., Language, Mathematics, or Visualization)
+                    and use this as a factor in suggesting the most suitable
+                    career path for the students to support their career
+                    decision-making. The system also includes a dynamic mapping
+                    system that displays the distribution of enrollees of
+                    different college programs based on the inputs given by the
+                    students. This helps students in evaluating which is the
+                    most accessible or encouraging programs to enroll in among
+                    the suggested career paths by presenting their number of
+                    enrollees in specific locations of the map.
+                  </Typography>
+                </Box>
+              </Paper>
+            </Box>
+          </Box>
         </Grid>
-        <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
+        <Grid item xs={12} md={5} component={Paper} elevation={6} square>
           <div className={classes.paper}>
             <Box mb={3}>
               <img src={MetierpickLogo} alt="Metierpick-logo" />
@@ -112,7 +138,6 @@ export default function SignInSide(props) {
                 label="Email Address"
                 name="email"
                 autoComplete="email"
-                autoFocus
                 inputRef={emailRef}
               />
               <TextField
@@ -138,9 +163,9 @@ export default function SignInSide(props) {
               </Button>
               <Grid container>
                 <Grid item xs>
-                  <Link href="#" variant="body2">
+                  {/* <Link href="#" variant="body2">
                     Forgot password?
-                  </Link>
+                  </Link> */}
                 </Grid>
                 <Grid item>
                   <Link component={LinkRoute} to="/signup" variant="body2">

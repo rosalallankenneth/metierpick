@@ -17,3 +17,9 @@
   background-color: rgb(38, 40, 48);
   background-position: center;
 }
+@media only screen and (max-width: 450px) {
+  span.sv-rating__max-text,
+  span.sv-rating__min-text {
+    display: none;
+  }
+}

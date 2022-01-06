@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import { Redirect } from "react-router-dom";
 
@@ -12,16 +12,29 @@ import OtherRatingSection from "./RatingSectionSecondary";
 import { initDecisionTree } from "../../utils/initDecisionTree";
 import { ratingToDT } from "../../utils/ratingToDT";
 import CareerPathSection from "./CareerPathSection";
+import MainMap from "../../mapping-system/pages/MainMap";
+
+// import { toDateTime } from "../../utils/toDateTime";
 
 const ResultsPage = () => {
   const resultsData = useSelector(state => state.assessment.assessmentResults);
+  const [ifModalOpen, setIfModalOpen] = useState(false);
+  const [fullListMap, setFullListMap] = useState(false);
+
+  const handleModalClose = () => {
+    setIfModalOpen(false);
+  };
 
   // when results data is empty, go back to assessment page
   if (resultsData === null || resultsData === undefined) {
     return <Redirect to="/assessment-history" />;
   }
 
-  const { ratings } = resultsData;
+  const {
+    ratings
+    // recordedAt
+  } = resultsData;
+
   // sort all ratings by highest value
   const sortedRatings = Object.entries(ratings).sort((a, b) => b[1] - a[1]);
   let topRatings = [];
@@ -38,12 +51,29 @@ const ResultsPage = () => {
 
   const dtComic = ratingToDT(topRatings);
   const paths = initDecisionTree(dtComic);
+  const pathsForMap = Object.keys(paths).map(path => path);
 
   return (
     <>
       <Box mb={3}>
         <ContentTitleBar title="Assessment Results" />
       </Box>
+      <MainMap
+        open={ifModalOpen}
+        handleClose={handleModalClose}
+        pathList={pathsForMap}
+        fullListMap={fullListMap}
+      />
+
+      {/* <Box mb={2}>
+        <Paper>
+          <Box px={3} py={1}>
+            <Typography variant="caption">
+              Taken on {toDateTime(recordedAt.seconds).date}
+            </Typography>
+          </Box>
+        </Paper>
+      </Box> */}
 
       <Box mb={3}>
         <Paper>
@@ -56,7 +86,11 @@ const ResultsPage = () => {
               </Typography>
             </Box>
             <Box mt={3}>
-              <CareerPathSection paths={paths} />
+              <CareerPathSection
+                paths={paths}
+                setFullListMap={setFullListMap}
+                setIfModalOpen={setIfModalOpen}
+              />
             </Box>
           </Box>
         </Paper>

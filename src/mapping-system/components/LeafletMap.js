@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "leaflet/dist/leaflet.css";
 import { region9GeoData } from "../data/region9Geo";
 import { region10GeoData } from "../data/region10Geo";
@@ -23,7 +23,7 @@ const geoData = [
 ];
 
 const LeafletMap = props => {
-  const { pathSelect } = props;
+  const { pathSelect, ifModalOpen } = props;
   const pathEnrollees = enrolleesData.filter(p => p.PSCED_Name === pathSelect);
   const sortedEnrollees = pathEnrollees.sort((a, b) =>
     parseInt(a.Enrollment) > parseInt(b.Enrollment)
@@ -39,12 +39,20 @@ const LeafletMap = props => {
   const [region, setRegion] = React.useState("");
   const [path, setPath] = React.useState("");
   const [enrollees, setEnrollees] = React.useState(0);
+  const [mapKey, setMapKey] = React.useState(Math.random());
+
   const handleOpenPopup = () => {
-    setOpenPopup(true);
+    if (ifModalOpen) {
+      setOpenPopup(true);
+    }
   };
   const handleClosePopup = () => {
     setOpenPopup(false);
   };
+
+  useEffect(() => {
+    setMapKey(Math.random());
+  }, [pathSelect]);
 
   return (
     <>
@@ -57,6 +65,7 @@ const LeafletMap = props => {
         region={region}
       />
       <MapContainer
+        key={mapKey}
         center={centerLoc}
         zoom={8}
         style={{ width: "100%", height: "100%" }}
