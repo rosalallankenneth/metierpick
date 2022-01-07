@@ -11,7 +11,7 @@ const config = {
 // Building Decision Tree
 // const decisionTree = new dt.DecisionTree(config);
 // Building Random Forest
-var numberOfTrees = 3;
+var numberOfTrees = 10;
 var randomForest = new dt.RandomForest(config, numberOfTrees);
 
 export const initDecisionTree = comic => {

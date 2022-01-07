@@ -13,6 +13,7 @@ import { initDecisionTree } from "../../utils/initDecisionTree";
 import { ratingToDT } from "../../utils/ratingToDT";
 import CareerPathSection from "../assessment/CareerPathSection";
 import MainMap from "../../mapping-system/pages/MainMap";
+import { datasetDT } from "../../data/datasetDT";
 
 const getRecentRatingsFromDB = async (
   email,
@@ -23,22 +24,51 @@ const getRecentRatingsFromDB = async (
 ) => {
   const results = await getMostRecentResults(email);
   let ratingsData = {};
-  let paths = {};
+  let pathsForMap = [];
 
   if (results !== null) {
     ratingsData = formatResultsData(results);
     const topRatings = constructComicForDT(ratingsData.ratings);
     const dtComic = ratingToDT(topRatings);
-    paths = initDecisionTree(dtComic);
+
+    const dataFilter = datasetDT.filter(d => {
+      const found1 =
+        dtComic.attr_1 === d.attr_1 ||
+        dtComic.attr_2 === d.attr_1 ||
+        dtComic.attr_3 === d.attr_1;
+      const found2 =
+        dtComic.attr_1 === d.attr_2 ||
+        dtComic.attr_2 === d.attr_2 ||
+        dtComic.attr_3 === d.attr_2;
+      const found3 =
+        dtComic.attr_1 === d.attr_3 ||
+        dtComic.attr_2 === d.attr_3 ||
+        dtComic.attr_3 === d.attr_3;
+      if (found1 && found2 && found3) {
+        return true;
+      } else {
+        return false;
+      }
+    });
+
+    const paths = initDecisionTree(dtComic);
+    const pathsKeys = Object.keys(paths).map(path => path);
+
+    pathsForMap = [pathsKeys[0], pathsKeys[1], pathsKeys[2]];
+    const pathsFilter = pathsKeys.filter(p => {
+      let found = dataFilter.some(d => d.path === p);
+      return found;
+    });
+    if (pathsFilter.length >= 3) {
+      pathsForMap = [pathsFilter[0], pathsFilter[1], pathsFilter[2]];
+    }
   } else {
     ratingsData = null;
-    paths = null;
+    pathsForMap = null;
   }
 
-  const pathsForMap = Object.keys(paths).map(path => path);
-
   setResults(ratingsData);
-  setPaths(paths);
+  setPaths(pathsForMap);
   setPathsForMap(pathsForMap);
   setLoading(false);
 };

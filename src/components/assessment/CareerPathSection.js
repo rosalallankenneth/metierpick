@@ -38,7 +38,7 @@ const CareerPathSection = props => {
       <Box>
         <Box mt={1}>
           <Grid container spacing={2}>
-            {Object.keys(paths).map(path => (
+            {paths.map(path => (
               <Grid key={path} item xs={12} md={4} sm={6}>
                 <Button
                   key={path}
