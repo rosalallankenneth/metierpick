@@ -13,7 +13,13 @@ export const updateBasicInfo = async data => {
   const userRef = doc(db, "users", uid);
 
   // update current user in firebase auth
-  await updateDoc(userRef, data);
+  return updateDoc(userRef, data)
+    .then(() => {
+      return true;
+    })
+    .catch(() => {
+      return false;
+    });
 };
 
 // get user data upon sign in

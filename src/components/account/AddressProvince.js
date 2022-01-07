@@ -20,6 +20,7 @@ const AddressProvince = props => {
             value={provinceSelect}
             onChange={handleChangeProvince}
             label="Province"
+            defaultValue={provinceSelect}
           >
             {provinceList.map(province => {
               return (

@@ -20,6 +20,7 @@ const AddressCity = props => {
             value={brgySelect}
             onChange={handleChangeBrgy}
             label="Barangay"
+            defaultValue={brgySelect}
           >
             {brgyList.map(brgy => {
               return (

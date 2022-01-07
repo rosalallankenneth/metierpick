@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { getCurrentUserDocument } from "../../firebase/firestore";
+import CircularProgress from "@material-ui/core/CircularProgress";
 
 // material ui imports
 import { Box, TextField, Grid, Button } from "@material-ui/core";
@@ -12,34 +13,65 @@ import { setUserInfo } from "../../redux/actions/authActions";
 // custom components
 import AddressForm from "./AddressForm";
 import AlertError from "../global/AlertError";
+import AlertSuccess from "../global/AlertSuccess";
 import { updateBasicInfo } from "../../firebase/account";
+
+const UserInfoToState = async (
+  dispatch,
+  email,
+  setLastName,
+  setFirstName,
+  setRegionSelect,
+  setProvinceSelect,
+  setCitySelect,
+  setBrgySelect
+) => {
+  const userInfo = await getCurrentUserDocument(email);
+  setLastName(
+    userInfo.lastname.charAt(0).toUpperCase() + userInfo.lastname.slice(1)
+  );
+  setFirstName(
+    userInfo.firstname.charAt(0).toUpperCase() + userInfo.firstname.slice(1)
+  );
+  if (userInfo.region) {
+    setRegionSelect(userInfo.region);
+    setProvinceSelect(userInfo.province);
+    setCitySelect(userInfo.city);
+    setBrgySelect(userInfo.barangay);
+  }
+  dispatch(setUserInfo(userInfo));
+};
 
 const BasicInformationForm = () => {
   const dispatch = useDispatch();
 
   // get user data from redux state
   const { email } = useSelector(state => state.auth.user);
-  const { lastname, firstname } = useSelector(state => state.auth.userInfo);
-  const [lastName, setLastName] = useState(lastname);
-  const [firstName, setFirstName] = useState(firstname);
-
-  // get user data from firestore
-  // then dispatch to redux state
-  useEffect(() => {
-    (async () => {
-      dispatch(setUserInfo(await getCurrentUserDocument(email)));
-    })();
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
-
-  // local state for selection of address
+  const [lastName, setLastName] = useState("");
+  const [firstName, setFirstName] = useState("");
   const [regionSelect, setRegionSelect] = useState("");
   const [provinceSelect, setProvinceSelect] = useState("");
   const [citySelect, setCitySelect] = useState("");
   const [brgySelect, setBrgySelect] = useState("");
-
+  const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
 
-  const onClickSaveChanges = () => {
+  useEffect(() => {
+    UserInfoToState(
+      dispatch,
+      email,
+      setLastName,
+      setFirstName,
+      setRegionSelect,
+      setProvinceSelect,
+      setCitySelect,
+      setBrgySelect
+    );
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
+  const onClickSaveChanges = async () => {
+    setIsLoading(true);
     if (
       lastName === "" ||
       firstName === "" ||
@@ -49,10 +81,11 @@ const BasicInformationForm = () => {
       brgySelect === ""
     ) {
       setError("Please fill up all the required fields.");
+      setIsLoading(false);
       return;
     }
 
-    updateBasicInfo({
+    const submitUpdate = await updateBasicInfo({
       email,
       lastname: lastName,
       firstname: firstName,
@@ -61,28 +94,25 @@ const BasicInformationForm = () => {
       city: citySelect,
       barangay: brgySelect
     });
-  };
 
-  const auth = useSelector(state => state.auth.user);
-  console.log(auth);
+    if (submitUpdate) {
+      setSuccess("Your information was updated successfully.");
+    } else {
+      setError("Unable to update your data. Please try again later.");
+    }
+
+    setIsLoading(false);
+  };
 
   return (
     <Box mt={3}>
       {error && <AlertError onClose={() => setError("")} message={error} />}
+      {success && (
+        <AlertSuccess onClose={() => setSuccess("")} message={success} />
+      )}
 
       <form noValidate autoComplete="off">
         <Grid container direction="row" spacing={2}>
-          <Grid item sm={6} xs={12}>
-            <TextField
-              label="Last Name"
-              value={lastName}
-              fullWidth
-              spellCheck={false}
-              variant="outlined"
-              onChange={e => setLastName(e.target.value)}
-            />
-          </Grid>
-
           <Grid item sm={6} xs={12}>
             <TextField
               label="First Name"
@@ -91,6 +121,17 @@ const BasicInformationForm = () => {
               spellCheck={false}
               variant="outlined"
               onChange={e => setFirstName(e.target.value)}
+            />
+          </Grid>
+
+          <Grid item sm={6} xs={12}>
+            <TextField
+              label="Last Name"
+              value={lastName}
+              fullWidth
+              spellCheck={false}
+              variant="outlined"
+              onChange={e => setLastName(e.target.value)}
             />
           </Grid>
 
@@ -111,8 +152,10 @@ const BasicInformationForm = () => {
             variant="contained"
             color="primary"
             onClick={onClickSaveChanges}
+            disabled={isLoading}
+            style={{ width: 150 }}
           >
-            Save Changes
+            {!isLoading ? "Save Changes" : <CircularProgress size={20} />}
           </Button>
         </Box>
       </form>

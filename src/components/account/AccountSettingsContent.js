@@ -23,7 +23,7 @@ const AccountContent = () => {
         </Paper>
 
         <Box mt={3}>
-          <Paper>
+          <Paper style={{ background: "#eeefff" }}>
             <Box p={3}>
               <EmailForm />
             </Box>

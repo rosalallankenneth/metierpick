@@ -14,8 +14,7 @@ import { ratingToDT } from "../../utils/ratingToDT";
 import CareerPathSection from "./CareerPathSection";
 import MainMap from "../../mapping-system/pages/MainMap";
 import { datasetDT } from "../../data/datasetDT";
-
-// import { toDateTime } from "../../utils/toDateTime";
+import { toDateTime } from "../../utils/toDateTime";
 
 const ResultsPage = () => {
   const resultsData = useSelector(state => state.assessment.assessmentResults);
@@ -31,10 +30,7 @@ const ResultsPage = () => {
     return <Redirect to="/assessment-history" />;
   }
 
-  const {
-    ratings
-    // recordedAt
-  } = resultsData;
+  const { ratings, recordedAt } = resultsData;
 
   // sort all ratings by highest value
   const sortedRatings = Object.entries(ratings).sort((a, b) => b[1] - a[1]);
@@ -94,16 +90,6 @@ const ResultsPage = () => {
         fullListMap={fullListMap}
       />
 
-      {/* <Box mb={2}>
-        <Paper>
-          <Box px={3} py={1}>
-            <Typography variant="caption">
-              Taken on {toDateTime(recordedAt.seconds).date}
-            </Typography>
-          </Box>
-        </Paper>
-      </Box> */}
-
       <Box mb={3}>
         <Paper>
           <Box p={3}>
@@ -111,7 +97,8 @@ const ResultsPage = () => {
             <Box mt={1} mb={2}>
               <Typography variant="body2" align="justify">
                 These are your most suitable career path (college programs)
-                based on the results of your assessment.
+                based on the results of your assessment taken on{" "}
+                {toDateTime(recordedAt.seconds).date}.
               </Typography>
             </Box>
             <Box mt={3}>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 // material ui imports
 import { Box, Grid, Typography } from "@material-ui/core";
@@ -42,31 +42,41 @@ const AddressForm = props => {
   const [cityList, setCityList] = useState([]);
   const [brgyList, setBrgyList] = useState([]);
 
+  useEffect(() => {
+    if (regionSelect && provinceSelect && citySelect && brgySelect) {
+      (async () => {
+        setProvinceList(await getProvinces(regionSelect));
+        setCityList(await getCities(provinceSelect));
+        setBrgyList(await getBarangays(citySelect));
+      })();
+    }
+  }, [regionSelect, provinceSelect, citySelect, brgySelect]); // eslint-disable-line react-hooks/exhaustive-deps
+
   // handles select region change
   // triggers render of select province list
   const handleChangeRegion = async e => {
+    setProvinceList(await getProvinces(e.target.value));
     setProvinceSelect("");
     setCitySelect("");
     setBrgySelect("");
     setRegionSelect(e.target.value);
-    setProvinceList(await getProvinces(e.target.value));
   };
 
   // handles select province change
   // triggers render of select city list
   const handleChangeProvince = async e => {
+    setCityList(await getCities(e.target.value));
     setCitySelect("");
     setBrgySelect("");
     setProvinceSelect(e.target.value);
-    setCityList(await getCities(e.target.value));
   };
 
   // handles select city change
   // triggers render of select barangay list
   const handleChangeCity = async e => {
+    setBrgyList(await getBarangays(e.target.value));
     setBrgySelect("");
     setCitySelect(e.target.value);
-    setBrgyList(await getBarangays(e.target.value));
   };
 
   // handles select brgy change
@@ -92,6 +102,7 @@ const AddressForm = props => {
             value={regionSelect}
             onChange={handleChangeRegion}
             label="Region"
+            defaultValue=""
           >
             {regions.map(region => {
               return (
@@ -105,8 +116,9 @@ const AddressForm = props => {
       </Grid>
 
       {// render province selector if region is set
-      regionSelect ? (
+      provinceList.length > 0 ? (
         <AddressProvince
+          key={provinceList}
           classes={classes}
           provinceSelect={provinceSelect}
           handleChangeProvince={handleChangeProvince}
@@ -115,8 +127,9 @@ const AddressForm = props => {
       ) : null}
 
       {// render city selector if province is set
-      provinceSelect ? (
+      cityList.length > 0 ? (
         <AddressCity
+          key={cityList}
           classes={classes}
           citySelect={citySelect}
           handleChangeCity={handleChangeCity}
@@ -125,8 +138,9 @@ const AddressForm = props => {
       ) : null}
 
       {// render brgy selector if city is set
-      citySelect ? (
+      brgyList.length > 0 ? (
         <AddressBrgy
+          key={brgyList}
           classes={classes}
           brgySelect={brgySelect}
           handleChangeBrgy={handleChangeBrgy}

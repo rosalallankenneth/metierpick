@@ -3,6 +3,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
 import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
+import CloseIcon from "@material-ui/icons/CloseRounded";
+import { ButtonBase } from "@material-ui/core";
 
 export default function TransitionsModal(props) {
   const { open, handleClose, fullScreen, children } = props;
@@ -41,7 +43,12 @@ export default function TransitionsModal(props) {
       }}
     >
       <Fade in={open}>
-        <div className={classes.paper}>{children}</div>
+        <div className={classes.paper}>
+          <ButtonBase onClick={handleClose}>
+            <CloseIcon />
+          </ButtonBase>
+          {children}
+        </div>
       </Fade>
     </Modal>
   );

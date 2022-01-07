@@ -4,7 +4,14 @@ import { getMostRecentResults } from "../../firebase/assessment";
 import { formatResultsData } from "../../utils/formatResultsData";
 import { toDateTime } from "../../utils/toDateTime";
 import { Link } from "react-router-dom";
-import { Paper, Box, Grid, Typography, Button } from "@material-ui/core";
+import {
+  Paper,
+  Box,
+  Grid,
+  Typography,
+  Button,
+  makeStyles
+} from "@material-ui/core";
 import ContentTitleBar from "../global/ContentTitleBar";
 import AttributesContainer from "./AttributesContainer";
 import Map from "../../mapping-system/pages/Map";
@@ -14,6 +21,9 @@ import { ratingToDT } from "../../utils/ratingToDT";
 import CareerPathSection from "../assessment/CareerPathSection";
 import MainMap from "../../mapping-system/pages/MainMap";
 import { datasetDT } from "../../data/datasetDT";
+import { getCurrentUserDocument } from "../../firebase/firestore";
+import { useDispatch } from "react-redux";
+import { setUserInfo } from "../../redux/actions/authActions";
 
 const getRecentRatingsFromDB = async (
   email,
@@ -91,8 +101,34 @@ const constructComicForDT = ratings => {
   return topRatings;
 };
 
+const UserInfoToState = async (dispatch, email, setLastName, setFirstName) => {
+  const userInfo = await getCurrentUserDocument(email);
+  setLastName(
+    userInfo.lastname.charAt(0).toUpperCase() + userInfo.lastname.slice(1)
+  );
+  setFirstName(
+    userInfo.firstname.charAt(0).toUpperCase() + userInfo.firstname.slice(1)
+  );
+  dispatch(setUserInfo(userInfo));
+};
+
+const useStyles = makeStyles(theme => ({
+  graphContainer: {
+    display: "block",
+    overflow: "scroll",
+    [theme.breakpoints.down("sm")]: {
+      display: "none"
+    }
+  }
+}));
+
 const HomeContent = () => {
+  const classes = useStyles();
+
+  const dispatch = useDispatch();
   const email = useSelector(state => state.auth.user.email);
+  const [lastName, setLastName] = useState("");
+  const [firstName, setFirstName] = useState("");
   const [graphLoading, setGraphLoading] = useState(true);
   const [recentRatings, setRecentRatings] = useState(null);
   const [paths, setPaths] = useState(null);
@@ -105,6 +141,7 @@ const HomeContent = () => {
   };
 
   useEffect(() => {
+    UserInfoToState(dispatch, email, setLastName, setFirstName);
     getRecentRatingsFromDB(
       email,
       setRecentRatings,
@@ -136,8 +173,9 @@ const HomeContent = () => {
               <Box mt={1}>
                 {!graphLoading && recentRatings !== null ? (
                   <Typography variant="body2" align="justify">
-                    These are your most suitable career paths (college programs)
-                    based on your most recent assessment (
+                    {firstName} {lastName}, these are your most suitable career
+                    paths (college programs) based on your most recent
+                    assessment (
                     <i>{toDateTime(recentRatings.recordedAt.seconds).date}</i> )
                   </Typography>
                 ) : (
@@ -175,7 +213,7 @@ const HomeContent = () => {
         <Grid container spacing={2}>
           <Grid item lg={7} xs={12}>
             <Paper>
-              <Box p={2} style={{ overflow: "scroll" }}>
+              <Box p={2} className={classes.graphContainer}>
                 {!graphLoading && recentRatings !== null ? (
                   <BarChart ratings={recentRatings.ratings} />
                 ) : (

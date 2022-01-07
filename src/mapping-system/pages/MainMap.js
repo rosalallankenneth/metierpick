@@ -188,9 +188,12 @@ const MainMap = props => {
             The mapping system is one of the primary features of Metierpick DSS.
             This functionality provides dynamic mapping and visualization of
             college enrollees distribution per province in Mindanao, given the
-            specified college program or discipline. The data in use is acquired
-            from the Philippines' Commission on Higher Education (CHED) online
-            statistics that is available{" "}
+            specified college program or discipline. The opacity of the green
+            color for each province that can be seen in the map matches with the
+            data, wherein the darker the province's color, the higher its
+            enrollees count for the specified college program. The data in use
+            is acquired from the Philippines' Commission on Higher Education
+            (CHED) online statistics that is available{" "}
             <a
               href="https://ched.gov.ph/statistics/"
               target="_blank"

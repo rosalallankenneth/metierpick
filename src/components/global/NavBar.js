@@ -8,7 +8,7 @@ import AccountIcon from "@material-ui/icons/AccountCircle";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
-import { ButtonBase } from "@material-ui/core";
+import { ButtonBase, Box } from "@material-ui/core";
 
 // react router imports
 import { Link } from "react-router-dom";
@@ -29,7 +29,17 @@ const useStyles = makeStyles(theme => ({
     }
   },
   title: {
-    margin: "0"
+    margin: "0",
+    [theme.breakpoints.down("sm")]: {
+      display: "none"
+    }
+  },
+  mobileLogo: {
+    margin: "0",
+    display: "none",
+    [theme.breakpoints.down("sm")]: {
+      display: "inline"
+    }
   },
   accountIcon: {
     marginLeft: "auto",
@@ -53,9 +63,14 @@ export default function NavBar({ handleDrawerToggle }) {
         >
           <MenuIcon />
         </IconButton>
-        <Typography variant="h6" noWrap className={classes.title}>
-          Career DSS
-        </Typography>
+        <Box>
+          <Typography variant="h6" noWrap className={classes.mobileLogo}>
+            Metierpick
+          </Typography>
+          <Typography variant="h6" noWrap className={classes.title}>
+            Career Decision Support System
+          </Typography>
+        </Box>
         <ButtonBase
           className={classes.accountIcon}
           component={Link}

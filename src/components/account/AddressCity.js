@@ -20,6 +20,7 @@ const AddressCity = props => {
             value={citySelect}
             onChange={handleChangeCity}
             label="City / Municipality"
+            defaultValue={citySelect}
           >
             {cityList.map(city => {
               return (

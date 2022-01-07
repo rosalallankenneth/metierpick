@@ -24,10 +24,13 @@ import { useLocation } from "react-router-dom";
 
 // custom components
 import AlertError from "../global/AlertError";
+import { Typography, Box } from "@material-ui/core";
+import { useSelector } from "react-redux";
 
 export default function MenuDrawer(props) {
   const currentRoute = useLocation().pathname;
   const { handleDrawerToggle, logout } = props;
+  const { email } = useSelector(state => state.auth.user);
 
   const [isError, setIsError] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
@@ -61,7 +64,7 @@ export default function MenuDrawer(props) {
         </ListItem>
       </List>
       <Divider />
-      <List>
+      <List style={{ padding: 0 }}>
         <ListItem
           button
           component={Link}
@@ -132,6 +135,24 @@ export default function MenuDrawer(props) {
             <LogoutIcon />
           </ListItemIcon>
           <ListItemText primary="Logout" />
+        </ListItem>
+
+        <Divider />
+        <ListItem style={{ paddingTop: 10 }}>
+          <Box py={1} px={2} style={{ background: "#eeefff", width: "100%" }}>
+            <ListItemText>
+              <Typography
+                variant="caption"
+                align="left"
+                style={{ fontWeight: 700 }}
+              >
+                Logged in as
+              </Typography>
+              <Typography variant="subtitle2" align="left" noWrap>
+                {email}
+              </Typography>
+            </ListItemText>
+          </Box>
         </ListItem>
       </List>
     </div>

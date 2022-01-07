@@ -24,14 +24,14 @@ export const createUserDocument = async (email, data) => {
   const { lastname, firstname } = data;
 
   try {
-    const docRef = await addDoc(collection(db, "users"), {
+    await addDoc(collection(db, "users"), {
       email,
       lastname,
       firstname
     });
-    console.log("Document written with ID: ", docRef.id);
+    return true;
   } catch (e) {
-    console.error("Error adding document: ", e);
+    return e;
   }
 };
 

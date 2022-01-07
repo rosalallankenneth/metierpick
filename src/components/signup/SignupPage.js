@@ -56,24 +56,35 @@ export default function SignupPage(props) {
   // event handler for submit signup
   const handleSubmit = async e => {
     e.preventDefault();
+    setIsLoading(true);
+    setIsError(false);
 
     if (passwordRef.current.value !== passwordConfirmRef.current.value) {
+      setIsLoading(false);
       setErrorMessage("Passwords do not match.");
       setIsError(true);
       return;
     }
-    try {
-      setIsLoading(true);
-      setIsError(false);
-      await signup(emailRef.current.value, passwordRef.current.value, {
+    const submitSignup = await signup(
+      emailRef.current.value,
+      passwordRef.current.value,
+      {
         firstname: firstNameRef.current.value,
         lastname: lastNameRef.current.value
-      });
-    } catch {
-      setIsLoading(false);
-      setErrorMessage("Signup unsuccessful.");
-      setIsError(true);
+      }
+    );
+    if (submitSignup !== true) {
+      if (submitSignup.code === "auth/email-already-in-use") {
+        setErrorMessage("This email is already in use. Please try another.");
+        setIsError(true);
+      } else if (submitSignup.code === "auth/weak-password") {
+        setErrorMessage(
+          "You have entered a weak password. It must be composed of at least six characters."
+        );
+        setIsError(true);
+      }
     }
+    setIsLoading(false);
   };
 
   const handleCloseAlertError = () => {

@@ -77,15 +77,27 @@ export default function SignInSide(props) {
   // event handler for submit login
   const handleSubmit = async e => {
     e.preventDefault();
-    try {
-      setIsLoading(true);
-      setIsError(false);
-      await login(emailRef.current.value, passwordRef.current.value);
-    } catch {
-      setIsLoading(false);
-      setErrorMessage("Login unsuccessful.");
-      setIsError(true);
+    setIsLoading(true);
+    setIsError(false);
+    const submitLogin = await login(
+      emailRef.current.value,
+      passwordRef.current.value
+    );
+    if (submitLogin !== true) {
+      if (submitLogin.code === "auth/too-many-requests") {
+        setErrorMessage(
+          "This device is blocked for recent unusual login activities. Trying again after some delay would unblock it."
+        );
+        setIsError(true);
+      } else if (submitLogin.code === "auth/wrong-password") {
+        setErrorMessage("Incorrect password. Please try again.");
+        setIsError(true);
+      } else if (submitLogin.code === "auth/user-not-found") {
+        setErrorMessage("User email is not registered.");
+        setIsError(true);
+      }
     }
+    setIsLoading(false);
   };
 
   const handleCloseAlertError = () => {
