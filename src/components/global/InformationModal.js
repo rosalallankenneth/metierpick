@@ -7,7 +7,7 @@ import CloseIcon from "@material-ui/icons/CloseRounded";
 import { ButtonBase } from "@material-ui/core";
 
 export default function TransitionsModal(props) {
-  const { open, handleClose, fullScreen, children } = props;
+  const { open, handleClose, fullScreen, children, ifMap } = props;
 
   const useStyles = makeStyles(theme => ({
     modal: {
@@ -44,9 +44,11 @@ export default function TransitionsModal(props) {
     >
       <Fade in={open}>
         <div className={classes.paper}>
-          <ButtonBase onClick={handleClose}>
-            <CloseIcon />
-          </ButtonBase>
+          {!ifMap && (
+            <ButtonBase onClick={handleClose}>
+              <CloseIcon />
+            </ButtonBase>
+          )}
           {children}
         </div>
       </Fade>

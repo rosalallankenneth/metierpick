@@ -108,7 +108,12 @@ const MainMap = props => {
 
   return (
     <>
-      <InformationModal open={open} handleClose={handleClose} fullScreen={true}>
+      <InformationModal
+        open={open}
+        handleClose={handleClose}
+        fullScreen={true}
+        ifMap={true}
+      >
         <Box className={classes.mapHeader} pl={3}>
           <Typography className={classes.headerText}>Mapping System</Typography>
           <Button onClick={() => handleClose()} className={classes.closeMapBtn}>
