@@ -45,7 +45,7 @@ export const datasetDT = [
     attr_1: "NA",
     attr_2: "IE",
     attr_3: "LO",
-    path: "Agricultural Economics "
+    path: "Agricultural Economics"
   },
   {
     attr_1: "NA",
@@ -93,7 +93,7 @@ export const datasetDT = [
     attr_1: "NA",
     attr_2: "SP",
     attr_3: "IE",
-    path: "Agriculture "
+    path: "Agriculture"
   },
   {
     attr_1: "NA",
@@ -105,7 +105,7 @@ export const datasetDT = [
     attr_1: "NA",
     attr_2: "LO",
     attr_3: "SP",
-    path: "Agronomy "
+    path: "Agronomy"
   },
   {
     attr_1: "LO",
