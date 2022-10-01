@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/metierpick/static/css/main.59787fbb.chunk.css",
+    "main.js": "/metierpick/static/js/main.62b685b8.chunk.js",
+    "main.js.map": "/metierpick/static/js/main.62b685b8.chunk.js.map",
+    "runtime-main.js": "/metierpick/static/js/runtime-main.3b464729.js",
+    "runtime-main.js.map": "/metierpick/static/js/runtime-main.3b464729.js.map",
+    "static/css/2.2cc0d865.chunk.css": "/metierpick/static/css/2.2cc0d865.chunk.css",
+    "static/js/2.02ac3402.chunk.js": "/metierpick/static/js/2.02ac3402.chunk.js",
+    "static/js/2.02ac3402.chunk.js.map": "/metierpick/static/js/2.02ac3402.chunk.js.map",
+    "static/js/3.b490318c.chunk.js": "/metierpick/static/js/3.b490318c.chunk.js",
+    "static/js/3.b490318c.chunk.js.map": "/metierpick/static/js/3.b490318c.chunk.js.map",
+    "index.html": "/metierpick/index.html",
+    "static/css/2.2cc0d865.chunk.css.map": "/metierpick/static/css/2.2cc0d865.chunk.css.map",
+    "static/css/main.59787fbb.chunk.css.map": "/metierpick/static/css/main.59787fbb.chunk.css.map",
+    "static/js/2.02ac3402.chunk.js.LICENSE.txt": "/metierpick/static/js/2.02ac3402.chunk.js.LICENSE.txt",
+    "static/media/bcg-img-attr.9c7e6a76.jpg": "/metierpick/static/media/bcg-img-attr.9c7e6a76.jpg",
+    "static/media/cover-about.0cd32ad4.jpg": "/metierpick/static/media/cover-about.0cd32ad4.jpg",
+    "static/media/cover-login.e9a545ee.jpg": "/metierpick/static/media/cover-login.e9a545ee.jpg",
+    "static/media/icon1-linguistic.png": "/metierpick/static/media/icon1-linguistic.05dec459.png",
+    "static/media/icon2-logical.png": "/metierpick/static/media/icon2-logical.bc3e3539.png",
+    "static/media/icon3-spatial.png": "/metierpick/static/media/icon3-spatial.7348684d.png",
+    "static/media/icon4-bodily.png": "/metierpick/static/media/icon4-bodily.d0c6c71e.png",
+    "static/media/icon5-musical.png": "/metierpick/static/media/icon5-musical.880b90cc.png",
+    "static/media/icon6-interpersonal.png": "/metierpick/static/media/icon6-interpersonal.cfe00d5d.png",
+    "static/media/icon7-intrapersonal.png": "/metierpick/static/media/icon7-intrapersonal.f8bdfbd6.png",
+    "static/media/icon8-naturalist.png": "/metierpick/static/media/icon8-naturalist.4907095f.png",
+    "static/media/splashscreen-icon.c7c6d0ed.gif": "/metierpick/static/media/splashscreen-icon.c7c6d0ed.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3b464729.js",
+    "static/css/2.2cc0d865.chunk.css",
+    "static/js/2.02ac3402.chunk.js",
+    "static/css/main.59787fbb.chunk.css",
+    "static/js/main.62b685b8.chunk.js"
+  ]
+}

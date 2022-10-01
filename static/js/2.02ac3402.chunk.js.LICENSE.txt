@@ -1,0 +1,894 @@
+/*
+object-assign
+(c) Sindre Sorhus
+@license MIT
+*/
+
+/* @preserve
+ * Leaflet 1.7.1, a JS library for interactive maps. http://leafletjs.com
+ * (c) 2010-2019 Vladimir Agafonkin, (c) 2010-2011 CloudMade
+ */
+
+/*!
+         * Signature Pad v2.3.2
+         * https://github.com/szimek/signature_pad
+         *
+         * Copyright 2017 Szymon Nowak
+         * Released under the MIT license
+         *
+         * The main idea and some parts of the code (e.g. drawing variable width Bézier curve) are taken from:
+         * http://corner.squareup.com/2012/07/smoother-signatures.html
+         *
+         * Implementation of interpolation using cubic Bézier curves is taken from:
+         * http://benknowscode.wordpress.com/2012/09/14/path-interpolation-using-cubic-bezier-and-control-point-estimation-in-javascript
+         *
+         * Algorithm for approximated length of a Bézier curve is taken from:
+         * http://www.lemoda.net/maths/bezier-length/index.html
+         *
+         */
+
+/*!
+ * Chart.js v3.6.0
+ * https://www.chartjs.org
+ * (c) 2021 Chart.js Contributors
+ * Released under the MIT License
+ */
+
+/*!
+ * surveyjs - Survey JavaScript library v1.8.64
+ * Copyright (c) 2015-2021 Devsoft Baltic OÜ  - http://surveyjs.io/
+ * License: MIT (http://www.opensource.org/licenses/mit-license.php)
+ */
+
+/*! *****************************************************************************
+Copyright (c) Microsoft Corporation.
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+***************************************************************************** */
+
+/*! *****************************************************************************
+Copyright (c) Microsoft Corporation. All rights reserved.
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use
+this file except in compliance with the License. You may obtain a copy of the
+License at http://www.apache.org/licenses/LICENSE-2.0
+
+THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED
+WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE,
+MERCHANTABLITY OR NON-INFRINGEMENT.
+
+See the Apache Version 2.0 License for specific language governing permissions
+and limitations under the License.
+***************************************************************************** */
+
+/*! ../../../element-factory */
+
+/*! ../../../reactquestion_element */
+
+/*! ../../base */
+
+/*! ../../calculatedValue */
+
+/*! ../../choicesRestful */
+
+/*! ../../conditionProcessValue */
+
+/*! ../../conditions */
+
+/*! ../../conditionsParser */
+
+/*! ../../defaultCss/cssstandard */
+
+/*! ../../defaultTitle */
+
+/*! ../../dragdrop/choices */
+
+/*! ../../dragdrop/survey-elements */
+
+/*! ../../dxSurveyService */
+
+/*! ../../element-factory */
+
+/*! ../../error */
+
+/*! ../../expressionItems */
+
+/*! ../../expressions/expressions */
+
+/*! ../../flowpanel */
+
+/*! ../../functionsfactory */
+
+/*! ../../helpers */
+
+/*! ../../itemvalue */
+
+/*! ../../jsonobject */
+
+/*! ../../list */
+
+/*! ../../localizablestring */
+
+/*! ../../localization/arabic */
+
+/*! ../../localization/basque */
+
+/*! ../../localization/bulgarian */
+
+/*! ../../localization/catalan */
+
+/*! ../../localization/croatian */
+
+/*! ../../localization/czech */
+
+/*! ../../localization/danish */
+
+/*! ../../localization/dutch */
+
+/*! ../../localization/english */
+
+/*! ../../localization/estonian */
+
+/*! ../../localization/finnish */
+
+/*! ../../localization/french */
+
+/*! ../../localization/georgian */
+
+/*! ../../localization/german */
+
+/*! ../../localization/greek */
+
+/*! ../../localization/hebrew */
+
+/*! ../../localization/hindi */
+
+/*! ../../localization/hungarian */
+
+/*! ../../localization/icelandic */
+
+/*! ../../localization/indonesian */
+
+/*! ../../localization/italian */
+
+/*! ../../localization/japanese */
+
+/*! ../../localization/kazakh */
+
+/*! ../../localization/korean */
+
+/*! ../../localization/latvian */
+
+/*! ../../localization/lithuanian */
+
+/*! ../../localization/macedonian */
+
+/*! ../../localization/norwegian */
+
+/*! ../../localization/persian */
+
+/*! ../../localization/polish */
+
+/*! ../../localization/portuguese */
+
+/*! ../../localization/portuguese-br */
+
+/*! ../../localization/romanian */
+
+/*! ../../localization/russian */
+
+/*! ../../localization/serbian */
+
+/*! ../../localization/simplified-chinese */
+
+/*! ../../localization/spanish */
+
+/*! ../../localization/swahili */
+
+/*! ../../localization/swedish */
+
+/*! ../../localization/tajik */
+
+/*! ../../localization/thai */
+
+/*! ../../localization/traditional-chinese */
+
+/*! ../../localization/turkish */
+
+/*! ../../localization/ukrainian */
+
+/*! ../../localization/vietnamese */
+
+/*! ../../localization/welsh */
+
+/*! ../../main.scss */
+
+/*! ../../page */
+
+/*! ../../panel */
+
+/*! ../../popup */
+
+/*! ../../question */
+
+/*! ../../questionCustomWidgets */
+
+/*! ../../question_baseselect */
+
+/*! ../../question_boolean */
+
+/*! ../../question_buttongroup */
+
+/*! ../../question_checkbox */
+
+/*! ../../question_comment */
+
+/*! ../../question_custom */
+
+/*! ../../question_dropdown */
+
+/*! ../../question_empty */
+
+/*! ../../question_expression */
+
+/*! ../../question_file */
+
+/*! ../../question_html */
+
+/*! ../../question_image */
+
+/*! ../../question_imagepicker */
+
+/*! ../../question_matrix */
+
+/*! ../../question_matrixdropdown */
+
+/*! ../../question_matrixdropdownbase */
+
+/*! ../../question_matrixdynamic */
+
+/*! ../../question_multipletext */
+
+/*! ../../question_paneldynamic */
+
+/*! ../../question_radiogroup */
+
+/*! ../../question_ranking */
+
+/*! ../../question_rating */
+
+/*! ../../question_signaturepad */
+
+/*! ../../question_text */
+
+/*! ../../questionfactory */
+
+/*! ../../questionnonvalue */
+
+/*! ../../reactSurvey */
+
+/*! ../../reactquestion_element */
+
+/*! ../../settings */
+
+/*! ../../stylesmanager */
+
+/*! ../../survey */
+
+/*! ../../survey-element */
+
+/*! ../../survey-error */
+
+/*! ../../surveyProgress */
+
+/*! ../../surveyProgressButtons */
+
+/*! ../../surveyStrings */
+
+/*! ../../surveyWindow */
+
+/*! ../../surveytimer */
+
+/*! ../../template-renderer */
+
+/*! ../../textPreProcessor */
+
+/*! ../../trigger */
+
+/*! ../../utils/cssClassBuilder */
+
+/*! ../../utils/is-mobile */
+
+/*! ../../utils/utils */
+
+/*! ../../validator */
+
+/*! ../action-bar/action-bar */
+
+/*! ../actions/action */
+
+/*! ../actions/adaptive-container */
+
+/*! ../actions/container */
+
+/*! ../base */
+
+/*! ../conditionProcessValue */
+
+/*! ../defaultCss/cssbootstrap */
+
+/*! ../defaultCss/cssbootstrapmaterial */
+
+/*! ../defaultCss/cssmodern */
+
+/*! ../defaultCss/cssstandard */
+
+/*! ../functionsfactory */
+
+/*! ../helpers */
+
+/*! ../jsonobject */
+
+/*! ../list */
+
+/*! ../popup */
+
+/*! ../popup/popup */
+
+/*! ../react/boolean */
+
+/*! ../react/boolean-checkbox */
+
+/*! ../react/components/action-bar/action-bar */
+
+/*! ../react/components/default-title/default-title */
+
+/*! ../react/components/list/list */
+
+/*! ../react/components/matrix-actions/detail-button/detail-button */
+
+/*! ../react/components/matrix-actions/drag-drop-icon/drag-drop-icon */
+
+/*! ../react/components/matrix-actions/remove-button/remove-button */
+
+/*! ../react/components/matrix/row */
+
+/*! ../react/components/popup/popup */
+
+/*! ../react/components/survey-header/logo-image */
+
+/*! ../react/components/survey-header/survey-header */
+
+/*! ../react/components/svg-icon/svg-icon */
+
+/*! ../react/components/title-actions/title-actions */
+
+/*! ../react/element-factory */
+
+/*! ../react/flow-panel */
+
+/*! ../react/image */
+
+/*! ../react/imagepicker */
+
+/*! ../react/page */
+
+/*! ../react/panel */
+
+/*! ../react/reactSurvey */
+
+/*! ../react/reactSurveyNavigation */
+
+/*! ../react/reactSurveyNavigationBase */
+
+/*! ../react/reactSurveyProgress */
+
+/*! ../react/reactSurveyProgressButtons */
+
+/*! ../react/reactSurveyWindow */
+
+/*! ../react/reactquestion */
+
+/*! ../react/reactquestion_buttongroup */
+
+/*! ../react/reactquestion_checkbox */
+
+/*! ../react/reactquestion_comment */
+
+/*! ../react/reactquestion_custom */
+
+/*! ../react/reactquestion_dropdown */
+
+/*! ../react/reactquestion_element */
+
+/*! ../react/reactquestion_empty */
+
+/*! ../react/reactquestion_expression */
+
+/*! ../react/reactquestion_factory */
+
+/*! ../react/reactquestion_file */
+
+/*! ../react/reactquestion_html */
+
+/*! ../react/reactquestion_matrix */
+
+/*! ../react/reactquestion_matrixdropdown */
+
+/*! ../react/reactquestion_matrixdropdownbase */
+
+/*! ../react/reactquestion_matrixdynamic */
+
+/*! ../react/reactquestion_multipletext */
+
+/*! ../react/reactquestion_paneldynamic */
+
+/*! ../react/reactquestion_radiogroup */
+
+/*! ../react/reactquestion_ranking */
+
+/*! ../react/reactquestion_rating */
+
+/*! ../react/reactquestion_text */
+
+/*! ../react/reactsurveymodel */
+
+/*! ../react/reacttimerpanel */
+
+/*! ../react/row */
+
+/*! ../react/signaturepad */
+
+/*! ../react/string-editor */
+
+/*! ../react/string-viewer */
+
+/*! ../rendererFactory */
+
+/*! ../surveyStrings */
+
+/*! ../svg-icon/svg-icon */
+
+/*! ../title-content/title-content */
+
+/*! ../utils/cssClassBuilder */
+
+/*! ../utils/responsivity-manager */
+
+/*! ../utils/utils */
+
+/*! ./../settings */
+
+/*! ./action */
+
+/*! ./action-bar-item */
+
+/*! ./action-bar-item-dropdown */
+
+/*! ./action-bar-separator */
+
+/*! ./actions/action */
+
+/*! ./actions/adaptive-container */
+
+/*! ./base */
+
+/*! ./boolean */
+
+/*! ./choices */
+
+/*! ./choicesRestful */
+
+/*! ./chunks/localization */
+
+/*! ./chunks/model */
+
+/*! ./components/action-bar/action-bar */
+
+/*! ./components/matrix-actions/drag-drop-icon/drag-drop-icon */
+
+/*! ./components/matrix/row */
+
+/*! ./components/survey-header/survey-header */
+
+/*! ./components/svg-icon/svg-icon */
+
+/*! ./components/title-actions/title-actions */
+
+/*! ./conditionProcessValue */
+
+/*! ./conditions */
+
+/*! ./conditionsParser */
+
+/*! ./container */
+
+/*! ./core */
+
+/*! ./cssstandard */
+
+/*! ./custom-widget */
+
+/*! ./defaultCss/cssstandard */
+
+/*! ./dragdrop/matrix-rows */
+
+/*! ./dragdrop/ranking-choices */
+
+/*! ./dxSurveyService */
+
+/*! ./element-factory */
+
+/*! ./error */
+
+/*! ./expressions */
+
+/*! ./expressions/expressionParser */
+
+/*! ./expressions/expressions */
+
+/*! ./functionsfactory */
+
+/*! ./helpers */
+
+/*! ./itemvalue */
+
+/*! ./jsonobject */
+
+/*! ./localizablestring */
+
+/*! ./localization/english */
+
+/*! ./martixBase */
+
+/*! ./page */
+
+/*! ./panel */
+
+/*! ./panel-base */
+
+/*! ./question */
+
+/*! ./questionCustomWidgets */
+
+/*! ./question_baseselect */
+
+/*! ./question_checkbox */
+
+/*! ./question_dropdown */
+
+/*! ./question_expression */
+
+/*! ./question_matrixdropdownbase */
+
+/*! ./question_text */
+
+/*! ./question_textbase */
+
+/*! ./questionfactory */
+
+/*! ./questionnonvalue */
+
+/*! ./react-ui */
+
+/*! ./reactSurvey */
+
+/*! ./reactSurveyNavigation */
+
+/*! ./reactSurveyNavigationBase */
+
+/*! ./reactquestion */
+
+/*! ./reactquestion_checkbox */
+
+/*! ./reactquestion_comment */
+
+/*! ./reactquestion_element */
+
+/*! ./reactquestion_factory */
+
+/*! ./reactquestion_matrixdropdownbase */
+
+/*! ./reactquestion_radiogroup */
+
+/*! ./reactsurveymodel */
+
+/*! ./reacttimerpanel */
+
+/*! ./rendererFactory */
+
+/*! ./row */
+
+/*! ./settings */
+
+/*! ./string-viewer */
+
+/*! ./stylesmanager */
+
+/*! ./survey */
+
+/*! ./survey-element */
+
+/*! ./survey-error */
+
+/*! ./surveyStrings */
+
+/*! ./surveytimer */
+
+/*! ./textPreProcessor */
+
+/*! ./utils/cssClassBuilder */
+
+/*! ./utils/is-mobile */
+
+/*! ./utils/popup */
+
+/*! ./utils/utils */
+
+/*! ./validator */
+
+/*! react */
+
+/*! react-dom */
+
+/*! signature_pad */
+
+/*! sortablejs */
+
+/*! survey-core */
+
+/**
+          * @license
+          * Copyright 2017 Google LLC
+          *
+          * Licensed under the Apache License, Version 2.0 (the "License");
+          * you may not use this file except in compliance with the License.
+          * You may obtain a copy of the License at
+          *
+          *   http://www.apache.org/licenses/LICENSE-2.0
+          *
+          * Unless required by applicable law or agreed to in writing, software
+          * distributed under the License is distributed on an "AS IS" BASIS,
+          * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+          * See the License for the specific language governing permissions and
+          * limitations under the License.
+          */
+
+/**
+        * @license
+        * Copyright 2020 Google LLC
+        *
+        * Licensed under the Apache License, Version 2.0 (the "License");
+        * you may not use this file except in compliance with the License.
+        * You may obtain a copy of the License at
+        *
+        *   http://www.apache.org/licenses/LICENSE-2.0
+        *
+        * Unless required by applicable law or agreed to in writing, software
+        * distributed under the License is distributed on an "AS IS" BASIS,
+        * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+        * See the License for the specific language governing permissions and
+        * limitations under the License.
+        */
+
+/**
+      * @license
+      * Copyright 2020 Google LLC
+      *
+      * Licensed under the Apache License, Version 2.0 (the "License");
+      * you may not use this file except in compliance with the License.
+      * You may obtain a copy of the License at
+      *
+      *   http://www.apache.org/licenses/LICENSE-2.0
+      *
+      * Unless required by applicable law or agreed to in writing, software
+      * distributed under the License is distributed on an "AS IS" BASIS,
+      * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+      * See the License for the specific language governing permissions and
+      * limitations under the License.
+      */
+
+/**
+  * @license
+  * Copyright 2018 Google LLC
+  *
+  * Licensed under the Apache License, Version 2.0 (the "License");
+  * you may not use this file except in compliance with the License.
+  * You may obtain a copy of the License at
+  *
+  *   http://www.apache.org/licenses/LICENSE-2.0
+  *
+  * Unless required by applicable law or agreed to in writing, software
+  * distributed under the License is distributed on an "AS IS" BASIS,
+  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  * See the License for the specific language governing permissions and
+  * limitations under the License.
+  */
+
+/**
+  * @license
+  * Copyright 2020 Google LLC
+  *
+  * Licensed under the Apache License, Version 2.0 (the "License");
+  * you may not use this file except in compliance with the License.
+  * You may obtain a copy of the License at
+  *
+  *   http://www.apache.org/licenses/LICENSE-2.0
+  *
+  * Unless required by applicable law or agreed to in writing, software
+  * distributed under the License is distributed on an "AS IS" BASIS,
+  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  * See the License for the specific language governing permissions and
+  * limitations under the License.
+  */
+
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * @license
+ * Copyright 2018 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * @license
+ * Copyright 2020 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * @license
+ * Copyright 2020 Google LLC.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * @license
+ * Copyright 2021 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * A better abstraction over CSS.
+ *
+ * @copyright Oleg Isonen (Slobodskoi) / Isonen 2014-present
+ * @website https://github.com/cssinjs/jss
+ * @license MIT
+ */
+
+/** @license React v0.20.2
+ * scheduler.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v16.13.1
+ * react-is.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v17.0.2
+ * react-dom.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v17.0.2
+ * react-jsx-runtime.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v17.0.2
+ * react.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/**!
+         * Sortable 1.13.0
+         * @author	RubaXa   <trash@rubaxa.org>
+         * @author	owenm    <owen23355@gmail.com>
+         * @license MIT
+         */
