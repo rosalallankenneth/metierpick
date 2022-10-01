@@ -185,6 +185,15 @@ export default function SignInSide(props) {
                   </Link>
                 </Grid>
               </Grid>
+              <Box mt={2} p={2} style={{ backgroundColor: "#eee" }}>
+                <Grid container direction="column">
+                  <label style={{ marginBottom: 5, fontWeight: 700 }}>
+                    For a quick demo
+                  </label>
+                  <label>Email: test@test.com</label>
+                  <label>Password: 123123</label>
+                </Grid>
+              </Box>
               <Box my={5}>
                 <Copyright />
               </Box>
