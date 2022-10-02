@@ -185,6 +185,8 @@ export default function SignInSide(props) {
                   </Link>
                 </Grid>
               </Grid>
+
+              {/* Added login credentials for demo */}
               <Box mt={2} p={2} style={{ backgroundColor: "#eee" }}>
                 <Grid container direction="column">
                   <label style={{ marginBottom: 5, fontWeight: 700 }}>
